@@ -5,7 +5,7 @@
     z-index: -1;
 }
 main {
-    padding-top: 8% !important;
+    padding-top: 3% !important;
 }
 .btn-wedding {
     background-color: #C1CEBE !important;
@@ -16,6 +16,9 @@ main {
 .font-raleway {
     font-family: 'Raleway', sans-serif;
 }
+.font-alex {
+    font-family: 'Alex Brush', cursive;
+}
 .big {
     font-size: 120% !important;
 }
@@ -23,6 +26,18 @@ main {
     font-size: 140% !important;
 }
 .biggest {
+    font-size: 160% !important;
+}
+.font-2x {
+    font-size: 200% !important;
+}
+.font-3x {
+    font-size: 300% !important;
+}
+.font-4x {
+    font-size: 400% !important;
+}
+h2.biggest {
     font-size: 160% !important;
 }
 .logo {
