@@ -1,0 +1,31 @@
+.arrow-btn {
+    width: 100px;
+    top: 20px;
+    left: -50px;
+    z-index: -1;
+}
+main {
+    padding-top: 8% !important;
+}
+.btn-wedding {
+    background-color: #C1CEBE !important;
+}
+.font-caveat {
+    font-family: 'Caveat', cursive;
+}
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+.big {
+    font-size: 120% !important;
+}
+.bigger {
+    font-size: 140% !important;
+}
+.biggest {
+    font-size: 160% !important;
+}
+.logo {
+    width: 250px !important;
+    height: auto !important;
+}
