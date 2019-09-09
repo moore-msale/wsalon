@@ -9,8 +9,11 @@
                         <div class="col-6 p-1" style="transform: translateY(-50px);">
                             <div class="card">
                                 <img src="{{ asset('images/image-2.png') }}" class="card-img" alt="">
-                                <div class="card-img-overlay d-flex justify-content-center align-items-center text-center text-white">
-                                    <p class="font-weight-bold font-caveat h1" style="line-height: 140%; letter-spacing: 0.07em;">Дарим <br> подарки за <br> примерку</p>
+                                <div
+                                    class="card-img-overlay d-flex justify-content-center align-items-center text-center text-white">
+                                    <p class="font-weight-bold font-caveat h1"
+                                       style="line-height: 140%; letter-spacing: 0.07em;">Дарим <br> подарки за <br>
+                                        примерку</p>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +52,8 @@
                         <br>очередь история
                         <br>о тебе
                     </p>
-                    <a href="#" class="btn btn-wedding shadow font-raleway font-weight-bold text-dark rounded-pill px-4">
+                    <a href="#"
+                       class="btn btn-wedding shadow font-raleway font-weight-bold text-dark rounded-pill px-4">
                         Узнать о нас больше
                     </a>
                 </div>
@@ -71,10 +75,16 @@
                 </div>
                 <div class="col-4"></div>
                 <div class="col-4 position-relative">
-                    <img src="{{ asset('svg/eaves.svg') }}" class="position-absolute" style="bottom: -10%; left: -20%; width: 60px;" alt="">
-                    <img src="{{ asset('svg/eaves2.svg') }}" class="position-absolute" style="right: 0; top: 0; width: 60px;" alt="">
-                    <img src="{{ asset('images/3.png') }}" class="img-fluid rounded-circle border border-dark shadow-lg" style="border-bottom-left-radius: 0px !important;" alt="">
-                    <img src="{{ asset('images/3.png') }}" class="img-fluid rounded-circle border border-dark position-absolute" style="border-bottom-left-radius: 0px !important; width: 92%; top: 5px; left: 20px; z-index: -1;" alt="">
+                    <img src="{{ asset('svg/eaves.svg') }}" class="position-absolute"
+                         style="bottom: -10%; left: -20%; width: 60px;" alt="">
+                    <img src="{{ asset('svg/eaves2.svg') }}" class="position-absolute"
+                         style="right: 0; top: 0; width: 60px;" alt="">
+                    <img src="{{ asset('images/3.png') }}" class="img-fluid rounded-circle border border-dark shadow-lg"
+                         style="border-bottom-left-radius: 0px !important;" alt="">
+                    <img src="{{ asset('images/3.png') }}"
+                         class="img-fluid rounded-circle border border-dark position-absolute"
+                         style="border-bottom-left-radius: 0px !important; width: 92%; top: 5px; left: 20px; z-index: -1;"
+                         alt="">
                 </div>
             </div>
         </div>
@@ -87,7 +97,8 @@
                     <div style="transform: translateX(-20%);">
                         <div class="position-absolute" style="width: 70%; right: -50%; top: -35%; z-index: 2;">
                             <img src="{{ asset('images/circle.png') }}" class="img-fluid" style="" alt="">
-                            <p class="font-caveat font-2x text-center position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-4deg);">
+                            <p class="font-caveat font-2x text-center position-absolute"
+                               style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-4deg);">
                                 Твоя улыбка и
                                 <br>счастливые глаза
                                 <br>- <span class="text-white">
@@ -96,7 +107,9 @@
                                 </span>
                             </p>
                         </div>
-                        <div style="width: 130%; height: 90%; border: 2px dashed #fff; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-2deg); " class="position-absolute"></div>
+                        <div
+                            style="width: 130%; height: 90%; border: 2px dashed #fff; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-2deg); "
+                            class="position-absolute"></div>
                         <img src="{{ asset('images/image-5.png') }}" class="" style="width: 120%;" alt="">
                     </div>
                 </div>
@@ -113,7 +126,8 @@
                         </p>
                     </div>
                     <div class="col-7 position-relative">
-                        <div class="position-absolute" style="border: 2px dashed #fff; width: 80%; height: 90%; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-2deg);"></div>
+                        <div class="position-absolute"
+                             style="border: 2px dashed #fff; width: 80%; height: 90%; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-2deg);"></div>
                         <img src="{{ asset('images/image-6.png') }}" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -125,7 +139,8 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-5">
-                    <img src="{{ asset('svg/love.svg') }}" class="mb-5 position-relative" style="z-index: 5; width: 60%; transform: translateX(80%);" alt="">
+                    <img src="{{ asset('svg/love.svg') }}" class="mb-5 position-relative"
+                         style="z-index: 5; width: 60%; transform: translateX(80%);" alt="">
                     <p class="font-caveat font-2x">Только ты и твоя
                         <br>улыбка!</p>
                     <p class="font-raleway">
@@ -140,12 +155,18 @@
                     </p>
                 </div>
                 <div class="col-7 position-relative">
-                    <img src="{{ asset('svg/logo.svg') }}" class="position-absolute w-25" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;" alt="">
-                    <img src="{{ asset('images/image-7.png') }}" class="img-fluid w-75 position-relative" style="z-index: 3; transform: translateX(-10%);" alt="">
-                    <img src="{{ asset('images/image-8.png') }}" class="img-fluid w-75 position-relative" style="z-index: 2; transform: translate(50%, -62%);" alt="">
-                    <img src="{{ asset('images/image-9.png') }}" class="img-fluid w-75 position-relative" style="z-index: 1; margin: -100% 0 -20% 0;" alt="">
-                    <p class="position-absolute font-alex font-4x" style="color: #C1CEBE; bottom: 10%; right: -10%; z-index: 5;">Wedding Salon</p>
-                    <img src="{{ asset('svg/rectangles.svg') }}" class="position-absolute" style="bottom: 10%; left: 30%;" alt="">
+                    <img src="{{ asset('svg/logo.svg') }}" class="position-absolute w-25"
+                         style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;" alt="">
+                    <img src="{{ asset('images/image-7.png') }}" class="img-fluid w-75 position-relative"
+                         style="z-index: 3; transform: translateX(-10%);" alt="">
+                    <img src="{{ asset('images/image-8.png') }}" class="img-fluid w-75 position-relative"
+                         style="z-index: 2; transform: translate(50%, -62%);" alt="">
+                    <img src="{{ asset('images/image-9.png') }}" class="img-fluid w-75 position-relative"
+                         style="z-index: 1; margin: -100% 0 -20% 0;" alt="">
+                    <p class="position-absolute font-alex font-4x"
+                       style="color: #C1CEBE; bottom: 10%; right: -10%; z-index: 5;">Wedding Salon</p>
+                    <img src="{{ asset('svg/rectangles.svg') }}" class="position-absolute"
+                         style="bottom: 10%; left: 30%;" alt="">
                 </div>
             </div>
         </div>
@@ -156,30 +177,42 @@
             <div class="row">
                 @for($i = 0; $i < 3; $i++)
                     <div class="col-4 my-3">
-                        <div class="card border-0 rounded-0" style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
-                                <div class="position-relative text-center py-5">
-                                    <img src="{{ asset('svg/dress'.($i+1).'.svg') }}" alt="">
-                                    <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute" style="{{ $i == 2 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}" alt="">
-                                </div>
-                                <div class="card-body text-center text-white">
-                                    <h3 class="font-caveat font-2x">Прямое</h3>
-                                    <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный наряд в сочетании с очарованием невесты в любом фасоне выглядит просто изумительно.</p>
-                                </div>
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress'.($i+1).'.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute"
+                                     style="{{ $i == 2 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}"
+                                     alt="">
                             </div>
+                            <div class="card-body text-center text-white">
+                                <h3 class="font-caveat font-2x">Прямое</h3>
+                                <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
+                                    женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
+                                    наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
+                                    изумительно.</p>
+                            </div>
+                        </div>
                     </div>
                 @endfor
             </div>
             <div class="row">
                 @for($i = 3; $i < 6; $i++)
                     <div class="col-4 my-3">
-                        <div class="card border-0 rounded-0" style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
                             <div class="position-relative text-center py-5">
                                 <img src="{{ asset('svg/dress'.($i+1).'.svg') }}" alt="">
-                                <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute" style="{{ $i == 5 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}" alt="">
+                                <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute"
+                                     style="{{ $i == 5 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}"
+                                     alt="">
                             </div>
                             <div class="card-body text-center text-white">
                                 <h3 class="font-caveat font-2x">Прямое</h3>
-                                <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный наряд в сочетании с очарованием невесты в любом фасоне выглядит просто изумительно.</p>
+                                <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
+                                    женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
+                                    наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
+                                    изумительно.</p>
                             </div>
                         </div>
                     </div>
@@ -216,6 +249,100 @@
             </div>
         </div>
     </section>
+    <!-- Наши девочки помогут вам -->
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4 pt-4">
+                    <h3 class="font-caveat font-3x text-left position-relative" style="z-index: 5;">Привет,<br> я - Юля
+                    </h3>
+                    <img src="{{ asset('images/cholpon.png') }}" class="img-fluid rounded-circle position-relative w-75"
+                         style="z-index: 1; transform: translate(35%,-17%); border: 5px solid #D97AA2;" alt="">
+                    <img src="{{ asset('images/arrow.png') }}" class="img-fluid position-relative"
+                         style="z-index: 2; transform: translate(40%,-360%); width: 87px; height: 68px;" alt="">
+                </div>
+
+                <div class="col-4">
+                    <h3 class="font-caveat font-3x text-left">Наши девочки помогут выбрать твое платье!</h3>
+
+                    <img src="{{ asset('images/cholpon.png') }}" class="img-fluid rounded-circle position-relative w-75"
+                         style="z-index: 1; transform: translate(15%, 20%); border: 5px solid #D97AA2;" alt="">
+                    <img src="{{ asset('images/swirling-arrow.png') }}" class="img-fluid position-relative"
+                         style="z-index: 2; transform: translate(190%, -20%); width: 122px; height: 119px" alt="">
+
+                    <h3 class="font-caveat font-3x align-self-end text-center" style="transform: translate(70%,-150%)">
+                        Меня зовут <br>Чолпон
+                    </h3>
+                </div>
+                <div class="col-4 pt-5">
+                    <p class="font-raleway">
+                        Мы знаем что выбор свадебного
+                        <br>платья не из легких и поэтому мы и
+                        <br>наши дорогуши феечки выслушают
+                        <br>тебя, помогут разобраться в
+                        <br>ассортименте и выберут для тебя то
+                        <br>самое платье.
+                    </p>
+                    <p class="font-raleway">
+                        Доверься нам и не беспокойся ни о чем!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Мы поможем вам подобрать то самое платье-->
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-3">
+                    <img src="{{ asset('images/arrow-in-heart.png') }}" class="img-fluid w-75"
+                         style="transform: translateY(-40%);" alt="">
+                </div>
+
+                <div class="col-6 text-center">
+                    <p class="font-caveat font-3x align-self-center" style="line-height: 1.5;">
+                        Мы поможем подобрать “то самое платье” для твоего счастливого дня
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <img src="{{ asset('images/rings.png') }}" class="img-fluid w-50"
+                         style="transform: translate(100%,-30%);" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Свадебное платье главный атребут-->
+    <section>
+        <div class="container py-4">
+            <div class="row">
+
+                <div class="col-3">
+                    <img src="{{ asset('images/heart.png') }}" class="img-fluid w-75 position-relative"
+                         style="z-index: 1;" alt="">
+                    <img src="{{ asset('images/heart.png') }}" class="img-fluid w-50 position-relative"
+                         style="z-index: 2; transform: translate(70%,-110%)" alt="">
+                </div>
+
+                <div class="col-6 text-center">
+                    <p class="font-caveat font-2x">
+                        „Свадебное платье — главный атрибут истинной любви.“
+                    </p>
+                    <img src="{{ asset('images/oliva.png') }}" class="img-fluid w-25" alt="">
+                </div>
+
+                <div class="col-3">
+                    <img src="{{ asset('images/and.png') }}" class="img-fluid"
+                         style="width: 80px; height: auto; transform: translate(100%, 100%);" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section>
         <div class="container">
@@ -229,14 +356,17 @@
                     <h3 class="font-caveat font-3x">Daria karlozi</h3>
                     <img src="{{ asset('svg/hr.svg') }}" class="mb-4" alt="">
                     <p class="font-raleway">
-                        Свадебные образы от «Daria Karlozi» легко узнать с первого взгляда!  Во всем присутствует классика во всех ее широких гранях. И именно эти «грани» делают каждое платье уникальным, неповторим и весьма стильным.
+                        Свадебные образы от «Daria Karlozi» легко узнать с первого взгляда! Во всем присутствует
+                        классика во всех ее широких гранях. И именно эти «грани» делают каждое платье уникальным,
+                        неповторим и весьма стильным.
                     </p>
                 </div>
                 <div class="col-4 text-center">
                     <h3 class="font-caveat font-3x">Oksana mukha</h3>
                     <img src="{{ asset('svg/hr.svg') }}" class="mb-4" alt="">
                     <p class="font-raleway">
-                        В создании платьев используются отборные материалы мировых производителей — кружева сhantilly, органза, атлас, натуральный шелк, оригинальные кристаллы Swarovski.
+                        В создании платьев используются отборные материалы мировых производителей — кружева сhantilly,
+                        органза, атлас, натуральный шелк, оригинальные кристаллы Swarovski.
                         Именно такие детали делают платья “Oksana Mukha”
                         особенными.
                     </p>
@@ -245,7 +375,8 @@
                     <h3 class="font-caveat font-3x">Ida torez</h3>
                     <img src="{{ asset('svg/hr.svg') }}" class="mb-4" alt="">
                     <p class="font-raleway">
-                        Каждая новая коллекция создается с учетом глобальных свадебных тенденций и региональных традиций, чтобы удовлетворить вкусы невест всего мира. Уникальные наряды “Ida Torez” ждут тебя!
+                        Каждая новая коллекция создается с учетом глобальных свадебных тенденций и региональных
+                        традиций, чтобы удовлетворить вкусы невест всего мира. Уникальные наряды “Ida Torez” ждут тебя!
                     </p>
                 </div>
             </div>
