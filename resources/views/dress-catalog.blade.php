@@ -26,14 +26,18 @@
                 </div>
                 <div class="col-2">
                     <a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">
-                        <img src="{{ asset('images/grid-icon.png') }}" class="w-25 text-dark" alt="">Список
+                        <img src="{{ asset('images/grid.png') }}" class="w-25 text-dark" alt="">
+                        &nbsp;
+                        <span class="font-raleway font-weight-bold">Список</span>
                     </a>
 
 
                 </div>
                 <div class="col-2">
                     <a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">
-                        <img src="{{ asset('images/list-icon.png') }}" class="w-25 text-dark" alt="">Строка
+                        <img src="{{ asset('images/scroll.png') }}" class="w-25 text-dark" alt="">
+                        &nbsp;
+                        <span class="font-raleway">Строка</span>
                     </a>
 
                 </div>
@@ -42,16 +46,16 @@
     </section>
 
     <section>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 @for($i = 0; $i < 4; $i++)
-                    <div class="col-4 my-3">
+                    <div class="col-4 my-2">
                         <img src="{{ asset('images/catalog-photo1.png') }}" class="img-fluid" alt="">
                     </div>
-                    <div class="col-4 my-3">
+                    <div class="col-4 my-2">
                         <img src="{{ asset('images/catalog-photo2.png') }}" class="img-fluid" alt="">
                     </div>
-                    <div class="col-4 my-3">
+                    <div class="col-4 my-2">
                         <img src="{{ asset('images/catalog-photo3.png') }}" class="img-fluid" alt="">
                     </div>
                 @endfor
