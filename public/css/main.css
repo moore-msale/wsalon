@@ -44,3 +44,6 @@ h2.biggest {
     width: 250px !important;
     height: auto !important;
 }
+#feedback.owl-carousel .owl-nav button.owl-prev{
+    margin-right: 5%!important;
+}

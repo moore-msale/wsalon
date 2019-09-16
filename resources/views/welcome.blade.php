@@ -17,27 +17,40 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 p-1">
+                        <div class="col-6 p-1 position-relative">
                             <img src="{{ asset('images/image-1.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('svg/ribbons.svg') }}" class="position-absolute" style="width: 90%;right: 5%; top: -3%;" alt="">
                         </div>
                     </div>
                     <div class="d-flex align-items-end" style="transform: translateY(-50px);">
                         <div class="col-6 p-1" style="transform: translateY(-50px);">
                             <img src="{{ asset('images/image-3.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('svg/broke-heart.svg') }}" class="position-absolute" style="right: 15%; top: 13%;" alt="">
+                            <p class="font-caveat position-absolute" style=" font-size: 2.2rem; line-height: 100%; letter-spacing: 0.05em; color: #fff; bottom: 10%; right: 25%;">Love &<br> marriage</p>
                         </div>
-                        <div class="col-6 p-1">
+                        <div class="col-6 p-1 position-relative">
                             <img src="{{ asset('images/image-4.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('svg/flo.svg') }}" class="position-absolute" style="width: 90%;right:-19%; bottom: 26%;" alt="">
                         </div>
+                        <img src="{{ asset('images/flowers.png') }}" class="position-absolute" style="width: 40%; right: 0; bottom: 40%;" alt="">
+                        <img src="{{ asset('svg/flour.svg') }}" class="position-absolute" style="width: 10%; right: 0; top: 0;" alt="">
+
                     </div>
                 </div>
                 <div class="col-6 text-center">
+                    <img src="{{ asset('svg/hearts.svg') }}" class="position-absolute" style="left: -3%; top: -23%;" alt="">
                     <img src="{{ asset('images/logo.png') }}" class="logo" alt="">
+                    <img src="{{ asset('svg/flours.svg') }}" class="position-absolute" style="right: -3%; top: 10%;" alt="">
                     <img src="{{ asset('images/heart.png') }}" class="position-absolute" style="left: -30%;" alt="">
                     <p class="font-caveat mt-5 h1">“Искренность твоих эмоций,<br>
                         когда мы находим вместе то самое <br> платье - наша величайшая награда.”</p>
                     <img src="{{ asset('images/mini-hr.png') }}" width="70" alt="">
                     <img src="{{ asset('images/effect-1.png') }}" class="d-block ml-auto" width="120" alt="">
+                    <img src="{{ asset('svg/tho-love.svg') }}" class="position-absolute" style="left: 30%; bottom: 25%;" alt="">
+
                     <h2 class="font-alex mt-4 font-4x font-weight-bold">Wedding Salon</h2>
+                    <img src="{{ asset('svg/mimi.svg') }}" class="position-absolute" style="right: -3%; bottom: -10%;" alt="">
+
                 </div>
             </div>
         </div>
@@ -172,79 +185,27 @@
         </div>
     </section>
 
+    {{--Счастье должно быть во всем--}}
     <section>
-        <div class="container py-5">
+        <div class="py-5">
             <div class="row">
-                @for($i = 0; $i < 3; $i++)
-                    <div class="col-4 my-3">
-                        <div class="card border-0 rounded-0"
-                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
-                            <div class="position-relative text-center py-5">
-                                <img src="{{ asset('svg/dress'.($i+1).'.svg') }}" alt="">
-                                <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute"
-                                     style="{{ $i == 2 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}"
-                                     alt="">
-                            </div>
-                            <div class="card-body text-center text-white">
-                                <h3 class="font-caveat font-2x">Прямое</h3>
-                                <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
-                                    женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
-                                    наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
-                                    изумительно.</p>
-                            </div>
-                        </div>
-                    </div>
-                @endfor
-            </div>
-            <div class="row">
-                @for($i = 3; $i < 6; $i++)
-                    <div class="col-4 my-3">
-                        <div class="card border-0 rounded-0"
-                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
-                            <div class="position-relative text-center py-5">
-                                <img src="{{ asset('svg/dress'.($i+1).'.svg') }}" alt="">
-                                <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute"
-                                     style="{{ $i == 5 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}"
-                                     alt="">
-                            </div>
-                            <div class="card-body text-center text-white">
-                                <h3 class="font-caveat font-2x">Прямое</h3>
-                                <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
-                                    женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
-                                    наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
-                                    изумительно.</p>
-                            </div>
-                        </div>
-                    </div>
-                @endfor
-            </div>
-        </div>
-    </section>
+                <div class="col-8 position-relative" style="background:#000;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus eligendi est facere labore maxime, nulla. Beatae cumque, deserunt, distinctio maiores minus modi placeat quam quia quidem sapiente tenetur unde.
+                </div>
+                <div class="col-4 position-relative" style="background:#000;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus eligendi est facere labore maxime, nulla. Beatae cumque, deserunt, distinctio maiores minus modi placeat quam quia quidem sapiente tenetur unde.
 
-    <section>
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="font-caveat font-4x text-center">Топовые платья</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="owl-carousel owl-theme">
-                        @for($i = 0; $i < 4; $i++)
-                            <div class="item">
-                                <div class="card border-0">
-                                    <div class="card-img-top">
-                                        <img src="{{ asset('images/item-'.($i+1).'.png') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h3 class="font-caveat font-3x">Daria karlozi</h3>
-                                        <p class="font-raleway">Collection 2019</p>
-                                    </div>
-                                </div>
-                            </div>
-                        @endfor
-                    </div>
+            <div class="container">
+                <div class="row">
+                <div class="col-7 position-relative" style="background:#000;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus eligendi est facere labore maxime, nulla. Beatae cumque, deserunt, distinctio maiores minus modi placeat quam quia quidem sapiente tenetur unde.
+
+                </div>
+                <div class="col-4 position-relative" style="background:#000;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus eligendi est facere labore maxime, nulla. Beatae cumque, deserunt, distinctio maiores minus modi placeat quam quia quidem sapiente tenetur unde.
+                </div>
                 </div>
             </div>
         </div>
@@ -257,7 +218,7 @@
                 <div class="col-4 pt-4">
                     <h3 class="font-caveat font-3x text-left position-relative" style="z-index: 5;">Привет,<br> я - Юля
                     </h3>
-                    <img src="{{ asset('images/cholpon.png') }}" class="img-fluid rounded-circle position-relative w-75"
+                    <img src="{{ asset('images/ulia.png') }}" class="img-fluid rounded-circle position-relative w-75"
                          style="z-index: 1; transform: translate(35%,-17%); border: 5px solid #D97AA2;" alt="">
                     <img src="{{ asset('images/arrow.png') }}" class="img-fluid position-relative"
                          style="z-index: 2; transform: translate(40%,-360%); width: 87px; height: 68px;" alt="">
@@ -291,7 +252,6 @@
             </div>
         </div>
     </section>
-
     <!--Мы поможем вам подобрать то самое платье-->
     <section>
         <div class="container">
@@ -315,36 +275,92 @@
             </div>
         </div>
     </section>
-
-    <!--Свадебное платье главный атребут-->
-    <section>
-        <div class="container py-4">
+    <section class=" position-relative">
+        <div class="container py-5">
             <div class="row">
+                @for($i = 0; $i < 3; $i++)
+                    <div class="col-4 my-3">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress'.($i+1).'.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute"
+                                     style="{{ $i == 2 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}"
+                                     alt="">
+                            </div>
+                            <div class="card-body text-center text-white">
+                                <h3 class="font-caveat font-2x">Прямое</h3>
+                                <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
+                                    женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
+                                    наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
+                                    изумительно.</p>
+                            </div>
+                        </div>
+                    </div>
+                @endfor
+                    <img src="{{ asset('svg/some-grass.svg') }}" class="position-absolute" alt="" style="width: 10%; left: 0%; top: 20%;">
+                    <img src="{{ asset('svg/lists.svg') }}" class="position-absolute" alt="" style="width: 9%; right: 0%; top: 40%;">
+            </div>
 
-                <div class="col-3">
-                    <img src="{{ asset('images/heart.png') }}" class="img-fluid w-75 position-relative"
-                         style="z-index: 1;" alt="">
-                    <img src="{{ asset('images/heart.png') }}" class="img-fluid w-50 position-relative"
-                         style="z-index: 2; transform: translate(70%,-110%)" alt="">
+            <div class="row">
+                @for($i = 3; $i < 6; $i++)
+                    <div class="col-4 my-3">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress'.($i+1).'.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute"
+                                     style="{{ $i == 5 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}"
+                                     alt="">
+                            </div>
+                            <div class="card-body text-center text-white">
+                                <h3 class="font-caveat font-2x">Прямое</h3>
+                                <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
+                                    женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
+                                    наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
+                                    изумительно.</p>
+                            </div>
+                        </div>
+                    </div>
+                @endfor
+            </div>
+        </div>
+    </section>
+
+    <section class="position-relative">
+        <img src="{{ asset('svg/OBJECTS.svg') }}" class="position-absolute" alt="" style="width: 15%; right: 0%; top: -5%;">
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="font-caveat font-4x text-center">Топовые платья</h2>
                 </div>
-
-                <div class="col-6 text-center">
-                    <p class="font-caveat font-2x">
-                        „Свадебное платье — главный атрибут истинной любви.“
-                    </p>
-                    <img src="{{ asset('images/oliva.png') }}" class="img-fluid w-25" alt="">
-                </div>
-
-                <div class="col-3">
-                    <img src="{{ asset('images/and.png') }}" class="img-fluid"
-                         style="width: 80px; height: auto; transform: translate(100%, 100%);" alt="">
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="dresses" class="owl-carousel owl-theme">
+                        @for($i = 0; $i < 4; $i++)
+                            <div class="item">
+                                <div class="card border-0">
+                                    <div class="card-img-top">
+                                        <img src="{{ asset('images/item-'.($i+1).'.png') }}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="font-caveat font-3x">Daria karlozi</h3>
+                                        <p class="font-raleway">Collection 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endfor
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="position-relative">
+        <img src="{{ asset('svg/your_love.svg') }}" class="position-absolute" alt="" style="width: 20%; left: 0%; top: -10%;">
 
-    <section>
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12">
@@ -383,9 +399,10 @@
         </div>
     </section>
 
-    <section>
+    <section class="position-relative">
+        <img src="{{ asset('svg/coffeeMaker.svg') }}" class="position-absolute" alt="" style="width: 15%; left: 0%; top: 1%;">
         <div class="container py-5">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-5 offset-1">
                     <h2 class="font-caveat font-3x">Приходи на примерку и мы угостим вкусняшками :)</h2>
                     <p class="font-raleway">
@@ -402,6 +419,88 @@
                     <img src="{{ asset('images/coffee.png') }}" class="img-fluid" alt="">
                 </div>
             </div>
+            <img src="{{ asset('svg/love_2.svg') }}" class="position-absolute" alt="" style="width: 15%; right: 55%; bottom: 1%;">
+
+            <img src="{{ asset('svg/kit.svg') }}" class="position-absolute" alt="" style="width: 27%; right: 0%; bottom: 1%;">
+        </div>
+    </section>
+
+    {{-- Лучший свадебный салон в городе --}}
+    <section>
+        <div class="container-fluid py-5">
+            <div class="row position-relative">
+                <div class="col-4 offset-1">
+                    <img src="{{ asset('images/colage.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('svg/letter.svg') }}" class="img-fluid position-absolute" alt="" style="left: 0; bottom: 10%;">
+                </div>
+                <div class="col-5">
+                    <div class="owl-carousel" id="feedback">
+                        <div class="item">
+                            <h2 class="font-caveat font-3x">Лучший свадебный салон в городе</h2>
+                            <p class="font-raleway">
+                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего н
+                            </p>
+                            <h3 class="font-raleway pb-2 pt-2" style="font-weight: 600; text-transform: uppercase; font-size:15px;">Айгуль Караева</h3>
+
+                        </div>
+                        <div class="item">
+                            <h2 class="font-caveat font-3x">Лучший свадебный салон в городе</h2>
+                            <p class="font-raleway">
+                                Кофе - это не всё, чем может похвастаться
+                                <br>наш кофе поинт. В уютной атмосфере вы
+                                <br>можете проводить встречи и обсудить
+                                <br>организационные вопросы за чашечкой
+                                <br>свежесваренного кофе.
+                                <br>Мы, как место встречи, обеспечим тёплую
+                                <br>атмосферу и вкуснейший кофе.
+                            </p>
+                            <h3 class="font-raleway pb-2 pt-2" style="font-weight: 600; text-transform: uppercase; font-size:15px;">Айгуль Караева</h3>
+                        </div>
+                        <div class="item">
+                            <h2 class="font-caveat font-3x">Лучший свадебный салон в городе</h2>
+                            <p class="font-raleway">
+                                Кофе - это не всё, чем может похвастаться
+                                <br>наш кофе поинт. В уютной атмосфере вы
+                                <br>можете проводить встречи и обсудить
+                                <br>организационные вопросы за чашечкой
+                                <br>свежесваренного кофе.
+                                <br>Мы, как место встречи, обеспечим тёплую
+                                <br>атмосферу и вкуснейший кофе.
+                            </p>
+                            <h3 class="font-raleway pb-2 pt-2" style="font-weight: 600; text-transform: uppercase; font-size:15px;">Айгуль Караева</h3>
+                        </div>
+                    </div>
+                </div>
+                <img src="{{ asset('svg/hanger.svg') }}" class="position-absolute" alt="" style="width: 6%; right: 10%; bottom: 5%;">
+                <img src="{{ asset('svg/the.svg') }}" class="position-absolute" alt="" style="width: 6%; right: 35%; bottom: 1%;">
+
+            </div>
+        </div>
+    </section>
+    <!--Свадебное платье главный атребут-->
+    <section>
+        <div class="container py-4">
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="{{ asset('images/heart.png') }}" class="img-fluid w-75 position-relative"
+                         style="z-index: 1;" alt="">
+                    <img src="{{ asset('images/heart.png') }}" class="img-fluid w-50 position-relative"
+                         style="z-index: 2; transform: translate(70%,-110%)" alt="">
+                </div>
+
+                <div class="col-8 text-center">
+                    <p class="font-caveat font-3x" style="letter-spacing: 0.02em;">
+                        „Свадебное платье — главный атрибут истинной любви.“
+                    </p>
+                    <img src="{{ asset('images/oliva.png') }}" class="img-fluid w-25" alt="">
+                </div>
+
+                <div class="col-2">
+                    <img src="{{ asset('images/and.png') }}" class="img-fluid"
+                         style="width: 80px; height: auto; transform: translate(100%, 100%);" alt="">
+                </div>
+            </div>
         </div>
     </section>
 @endsection
@@ -412,12 +511,4 @@
 @endpush
 @push('scripts')
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            items: 4,
-            loop: true,
-            margin: 10,
-            nav: true
-        });
-    </script>
 @endpush
