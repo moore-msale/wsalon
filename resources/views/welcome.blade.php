@@ -295,8 +295,32 @@
                                      alt="">
                             </div>
                             <div class="card-body text-center text-white">
-                                <h3 class="font-caveat font-2x">Прямое</h3>
-                                <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
+                                <h3 class="font-caveat font-2x d-flex align-items-end justify-content-center">Прямое</h3>
+                                <p class="font-raleway d-flex align-items-end" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
+                                    женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
+                                    наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
+                                    изумительно.</p>
+                            </div>
+                        </div>
+                    </div>
+                @endfor
+                    <img src="{{ asset('svg/some-grass.svg') }}" class="position-absolute display-none" alt="" style="width: 10%; left: 0%; top: 20%;">
+                    <img src="{{ asset('svg/lists.svg') }}" class="position-absolute display-none" alt="" style="width: 9%; right: 0%; top: 40%;">
+            </div>
+            <div class="row">
+                @for($i = 0; $i < 3; $i++)
+                    <div class="col-12 col-md-4 my-3">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress'.($i+1).'.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute"
+                                     style="{{ $i == 2 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}"
+                                     alt="">
+                            </div>
+                            <div class="card-body text-center text-white">
+                                <h3 class="font-caveat font-2x d-flex align-items-end justify-content-center">Прямое</h3>
+                                <p class="font-raleway d-flex align-items-end" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
                                     женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
                                     наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
                                     изумительно.</p>
@@ -308,7 +332,7 @@
                     <img src="{{ asset('svg/lists.svg') }}" class="position-absolute display-none" alt="" style="width: 9%; right: 0%; top: 40%;">
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
                 @for($i = 3; $i < 6; $i++)
                     <div class="col-12 col-md-4 my-3">
                         <div class="card border-0 rounded-0"
@@ -320,8 +344,8 @@
                                      alt="">
                             </div>
                             <div class="card-body text-center text-white">
-                                <h3 class="font-caveat font-2x">Прямое</h3>
-                                <p class="font-raleway" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
+                                <h3 class="font-caveat font-2x  text-center justify-content-center d-flex align-items-end">Прямое</h3>
+                                <p class="font-raleway d-flex align-items-end" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
                                     женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
                                     наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
                                     изумительно.</p>
@@ -329,7 +353,7 @@
                         </div>
                     </div>
                 @endfor
-            </div>
+            </div> -->
         </div>
     </section>
 
