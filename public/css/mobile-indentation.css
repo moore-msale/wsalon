@@ -1,0 +1,132 @@
+/* 300px - 500px */
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .only-you {
+
+    }
+    .right-3 {
+        right: 3%!important;
+    }
+    .owl-dots {
+        display:  none!important;
+    }
+    .pos-img {
+        width: 41%!important;
+        right: 55%!important;
+        bottom: -7%!important;
+    }
+    .pos-img2 {
+        width: 21%!important;
+        bottom: -4%!important;
+    }
+    .pos-img3{
+        width: 16%!important;
+        bottom: 13%!important;
+        left: 7%!important;
+    }
+    .hanger {
+        width: 9%!important;
+        right: 6%!important;
+        bottom: -4%!important;
+    }
+    .display-none {
+        display:  none!important;
+    }
+    .display-flex {
+        display:  flex;
+        justify-content: center;
+        
+    }
+    .pos-ab-mobile {
+        right: -20%!important;
+    }
+    .cholpon {
+        transform: translate(20%,-103%)!important;
+    }
+    .main-section-img-1 {
+        right: 3%!important;
+        bottom: 59%!important;
+        width: 30%!important;
+    }
+    .main-section-img-2 {
+        right: 2%!important;
+        bottom: 29%!important;
+    }
+    .translateY-none {
+        transform: translateY(0px)!important;
+    }
+    .translate-none {
+        transform: translate(0%, 0%)!important;
+    }
+    .effect-2 {
+        margin: 30% 5% 0% 5%!important;
+    }
+
+    .mar {
+        margin: 12% 4%;
+    }
+    /* .img-layers {
+        top: -195%!important;
+        left: -30%!important;
+    } */
+    .overflow-h {
+        overflow: hidden!important;
+    }
+    .font-3x {
+        font-size: 282%!important;
+        width: 90%;
+    }
+    .coffeeMaker {
+        width: 13%!important;
+        left: 0%!important;
+        top: -1%!important;
+    }
+    .mar-img {
+        margin: 5% 0 5% 0!important;
+    }
+    .translateY {
+        transform: translateY(8%)!important;
+    }
+    .translate {
+        transform: translate(99%,-8%)!important; 
+    }
+    .name-arr {
+        transform: translate(34%, 38%)!important; 
+        width: 139px!important; 
+        height: 142px!important; 
+    }
+    .ulia {
+        transform: translate(31%,-324%)!important;
+    }
+    .main-text {
+        font-size: 1.2rem!important;
+    }
+    .hearts {
+        left: 0%!important;
+        top: -11%!important;
+    }
+    .pad {
+        padding-top: 0!important;
+    }
+    .flavor {
+        top: -17%!important;
+        left: 0%!important;
+    }
+    .balloon {
+        bottom: 50%!important;
+        right: 21%!important;
+    }
+    .our-wedding {
+        top: 3%!important;
+        width: 46%!important;
+    }
+    .love {
+        width: 39%!important;
+    }
+    .wish {
+        margin-top: -20%!important;
+    }
+    .m25 {
+        margin-bottom: 25%!important;
+    }
+
+}
