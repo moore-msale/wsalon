@@ -59,7 +59,7 @@
         <div class="container mt-3 mb-5 pb-5">
             <div class="row">
                 <div class="col-12 col-md-4 pr-0">
-                    <p class="font-caveat font-3x mar" style="line-height: 110%; letter-spacing: 0.02em;">
+                    <p class="font-caveat font-3x" style="line-height: 110%; letter-spacing: 0.02em;">
                         W салон - это в первую
                         <br>очередь история
                         <br>о тебе
