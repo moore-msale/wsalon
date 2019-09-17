@@ -44,7 +44,7 @@
     <div class="container">
         <div class="row justify-content-between align-items-center text-light py-4">
             <div class="col-md-2 col-12">
-                <img src="{{ asset('images/logo.png') }}" class="w-100" alt="">
+                <img src="{{ asset('svg/white-logo.svg') }}" class="w-100" alt="">
             </div>
 
             <div class="col-md-2 col-12 copy">
