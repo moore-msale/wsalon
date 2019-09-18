@@ -9,7 +9,7 @@
                     <h2 class="font-caveat font-3x">Каталог платьев</h2>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-2 col-12">
                     <div class="dropdown">
                         <button class="btn dropdown-toggle font-raleway"
                                 style="font-size: 16px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA;"
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-2 mr-3">
                     <a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">
                         <img src="{{ asset('images/grid.png') }}" class="w-25 text-dark" alt="">
                         &nbsp;
@@ -48,8 +48,8 @@
     <section>
         <div class="container">
             <div class="row">
-{{--                @include("dress.grid")--}}
-                @include("dress.list")
+                @include("dress.grid")
+{{--                @include("dress.list")--}}
             </div>
         </div>
     </section>

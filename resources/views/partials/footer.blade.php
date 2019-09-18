@@ -1,8 +1,8 @@
 <!--Форма заявки-->
-<section class="pt-5 mt-5" style="margin-top: -100px;">
+<section class="mt-2" style="margin-top: -100px;">
     <div class="container-fluid">
         <div class="row align-items-end">
-            <div class="col-md-2 col-12 p-0">
+            <div class="col-md-2 col-12 p-0 display-none">
                 <img src="{{ asset('images/footer-img.png') }}" class="img-fluid girl">
             </div>
             <div class="col-md-4 col-12 px-0">

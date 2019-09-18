@@ -34,7 +34,7 @@
     .display-flex {
         display:  flex;
         justify-content: center;
-        
+
     }
     .pos-ab-mobile {
         right: -20%!important;
@@ -56,6 +56,16 @@
     }
     .translate-none {
         transform: translate(0%, 0%)!important;
+    }
+    .about-us-translate{
+        transform: translate(1%,0)!important;
+    }
+    .about-us-text {
+        transform: translate(49%,23%)!important;
+    }
+    .about-us-frame {
+        transform: translate(32%,-123%)!important;
+        font-size: 18px!important;
     }
     .effect-2 {
         margin: 30% 5% 0% 5%!important;
@@ -87,12 +97,12 @@
         transform: translateY(8%)!important;
     }
     .translate {
-        transform: translate(99%,-8%)!important; 
+        transform: translate(99%,-8%)!important;
     }
     .name-arr {
-        transform: translate(34%, 38%)!important; 
-        width: 139px!important; 
-        height: 142px!important; 
+        transform: translate(34%, 38%)!important;
+        width: 139px!important;
+        height: 142px!important;
     }
     .ulia {
         transform: translate(31%,-324%)!important;
@@ -128,5 +138,24 @@
     .m25 {
         margin-bottom: 25%!important;
     }
+    .bg-transparent {
+        background: white!important;
+    }
 
+}
+@media screen and (min-width: 315px) and (max-width: 330px){
+    .about-us-frame {
+        transform: translate(28%,-120%)!important;
+        font-size: 16px!important;
+    }
+    .about-us-text {
+        transform: translate(48%,23%)!important;
+        font-size: 23px!important;
+    }
+}
+@media screen and (min-width: 410px) and (max-width: 420px) {
+    .about-us-frame {
+        transform: translate(32%,-123%)!important;
+        font-size: 20px!important
+    }
 }

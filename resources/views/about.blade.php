@@ -2,16 +2,15 @@
 
 @section('content')
 
-<section class="my-5 py-5">
+<section class="my-md-5 mt-5 py-md-5 overflow-h">
     <div class="container">
         <div class="row">
-            <div class="col-8">
-                <p class="font-caveat font-3x">
+            <div class="col-md-8 col-12">
+                <p class="font-caveat font-3x  text-md-left text-center">
                     <img src="{{ asset('images/lil-flower.png') }}" class="img-fluid position-relative"
                          style="transform: translate(-80%, -80%);" alt="">
                     Давно выяснено, что при оценке дизайна и
                     <br>композиции читаемый
-
                 </p>
 
 
@@ -25,9 +24,9 @@
     </div>
 </section>
 <section>
-    <div class="container">
+    <div class="container overflow-h">
         <div class="row">
-            <div class="col-7">
+            <div class="col-md-7 col-12">
                 <p class="font-raleway ">
                     Индивидуальность каждой невесты - вот самый главный принцип нашей работы.
                     <br>Искренность в улыбке в тот самый момент когда мы находим вместе то самое
@@ -61,15 +60,15 @@
                 </p>
             </div>
 
-            <div class="col-5">
-                <p class="font-caveat font-2x position-absolute" style="transform: translate(90%,40%);">
+            <div class="col-md-5 col-12 py-3">
+                <p class="font-caveat font-2x position-absolute about-us-text" style="transform: translate(90%,40%);">
                     Индивидуальность
                     <br>каждой невесты -
                     <br>вот самый главный
                     <br>принцип нашей
                     <br>работе
                 </p>
-                <img src="{{ asset('images/flower-frame.png') }}" class="img-fluid position-relative"
+                <img src="{{ asset('images/flower-frame.png') }}" class="img-fluid position-relative about-us-translate"
                      style="transform: translate(10%,0)" alt="">
 
             </div>
@@ -78,10 +77,10 @@
 
 </section>
 
-<section class="pb-5 my-5">
+<section class="pb-md-5 my-2 overflow-h">
     <div class="container">
         <div class="row">
-            <div class="col-12 ">
+            <div class="col-12">
                 <p class="font-raleway">
                     Свадьба о влюбленных и то как она должна выглядеть включая ваше представление о свадебном платье
                     очень лично для многих молодожен
@@ -101,11 +100,11 @@
 </section>
 
 <section>
-    <div class="container">
+    <div class="container overflow-h">
         <div class="row">
-            <div class="col-6 text-center">
+            <div class="col-md-6 col-12 text-center pb-4">
                 <img src="{{ asset('images/circle-flower.png') }}" class="img-fluid w-75 position-relative" alt="">
-                <p class="font-caveat position-absolute" style="transform: translate(50%,-145%); font-size: 24px;">
+                <p class="font-caveat position-absolute about-us-frame" style="transform: translate(50%,-145%); font-size: 24px;">
                     В W салоне каждая невеста
                     <br>преображается, словно Золушка из
                     <br>сказки. Ну а после полуночи
@@ -115,7 +114,7 @@
                 </p>
             </div>
 
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <p class="font-raleway">
                     В W салоне каждая невеста преображается, словно Золушка из
                     <br>сказки. Ну а после полуночи волшебство не заканчивается, ведь
@@ -142,10 +141,10 @@
     </div>
 </section>
 
-<section class="mt-5">
+<section class="mt-3 mt-md-5 mb-1 mb-md-5 overflow-h">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-12">
 
                 <h4 class="font-raleway">Ну что, до встречи?</h4>
 
@@ -156,7 +155,7 @@
                     <br>записывайся к нам на примерку заранее.
                 </p>
             </div>
-            <div class="col-6 text-center">
+            <div class="col-md-6 col-12 text-center mb-4">
                 <img src="{{ asset('images/flower-heart.png') }}" class="img-fluid w-50" alt="">
             </div>
         </div>

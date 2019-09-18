@@ -4,7 +4,7 @@
     <section class="overflow-h">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-6 p-0 translate-none" style="transform: translate(-18%, -2%);">
+                <div class="col-12 col-lg-6 p-0 mt-md-0 mt-4 translate-none" style="transform: translate(-18%, -2%);">
                     <div class="d-flex align-items-end">
                         <div class="col-6 p-1 translateY-none" style="transform: translateY(-50px);">
                             <div class="card">
