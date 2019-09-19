@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="overflow-h">
-        <div class="container">
+    <section>
+        <div class="container overflow-h">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 p-0 mt-md-0 mt-4 translate-none" style="transform: translate(-18%, -2%);">
                     <div class="d-flex align-items-end">
@@ -54,7 +54,6 @@
             </div>
         </div>
     </section>
-
     <section class="overflow-h">
         <div class="container mt-3 mb-5 pb-5">
             <div class="row">
@@ -172,11 +171,11 @@
                     <img src="{{ asset('images/image-7.png') }}" class="img-fluid w-75 position-relative"
                          style="z-index: 3; transform: translateX(-10%);" alt="">
                     <img src="{{ asset('images/image-8.png') }}" class="img-fluid w-75 position-relativ"
-                         style="z-index: 2; transform: translate(50%, -62%);" alt="">
+                         style="z-index: 2; transform: translate(45%, -87%);" alt="">
                     <img src="{{ asset('images/image-9.png') }}" class="img-fluid w-75 position-relative"
                          style="z-index: 1; margin: -100% 0 -20% 0;" alt="">
                     <p class="position-absolute font-alex font-4x right-3"
-                       style="color: #C1CEBE; bottom: 10%; right: -10%; z-index: 5;">Wedding Salon</p>
+                       style="color: #C1CEBE; bottom: 10%; right: -5%; z-index: 5;">Wedding Salon</p>
                     <img src="{{ asset('svg/rectangles.svg') }}" class="position-absolute d-md-block d-none"
                          style="bottom: 10%; left: 30%;" alt="">
                 </div>
@@ -200,7 +199,6 @@
                             «W Salon» знает, что такое качество<br>, и предлагает покупателям только лучшее. Индивидуальность каждой невесты - вот самый главный принцип нашей работы. Искренность<br> в улыбке в момент, когда мы находим вместе то самое платье - наша величайшая награда.
                         </p>
                     </div>
-
                 </div>
 
                 <div class="col-12 col-md-4 position-relative text-center">
