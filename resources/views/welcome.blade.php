@@ -219,7 +219,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-12 col-md-4 pt-4">
+                <div class="col-12 col-md-4 pt-4 order-2 order-lg-1">
                     <h3 class="font-caveat font-3x text-left position-relative" style="z-index: 5;">Привет,<br> я - Юля
                     </h3>
                     <img src="{{ asset('images/ulia.png') }}" class="img-fluid rounded-circle position-relative w-75"
@@ -228,7 +228,7 @@
                          style="z-index: 2; transform: translate(40%,-360%); width: 87px; height: 68px;" alt="">
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 order-1 order-lg-2">
                     <h3 class="font-caveat font-3x text-left">Наши девочки помогут выбрать твое платье!</h3>
 
                     <img src="{{ asset('images/cholpon.png') }}" class="img-fluid rounded-circle position-relative w-75"
@@ -240,7 +240,7 @@
                         Меня зовут <br>Чолпон
                     </h3>
                 </div>
-                <div class="col-12 col-md-4 pt-md-5 pb-3 text-md-left text-right">
+                <div class="col-12 col-md-4 pt-md-5 pb-3 text-md-left text-right order-3 order-lg-3">
                     <p class="font-raleway">
                         Мы знаем что выбор свадебного
                         <br>платья не из легких и поэтому мы и
