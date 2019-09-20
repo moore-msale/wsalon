@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <div class="container-fluid">
 {{--        <a class="navbar-brand" href="{{ url('/') }}">--}}
 {{--            {{ config('app.name', 'Laravel') }}--}}
@@ -60,12 +60,21 @@
                     </a>
                 </li>
                 <li class="nav-item position-relative">
-                    <a class="nav-link" href="{{ url('/') }}">
+                    <a class="nav-link " href="{{ url('#navbarToggleExternalContent') }}"  data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img src="{{ asset('images/burger.png') }}" width="20" alt="">
                     </a>
                     <img src="{{ asset('svg/arrow-btn.svg') }}" class="position-absolute arrow-btn" alt="">
                 </li>
+                <nav  class="navbar-nav pos-f-t position-absolute text-right" style="right: 3vh; top: 15vh;">
+                    <ul id="navbarToggleExternalContent" class="collapse" style="list-style: none">
+                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/') }}">ГЛАВНАЯ</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/about') }}">О САЛОНЕ</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/catalog') }}">СИЛЕЭТЫ ПЛАТЬЕВ</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/#favorite-brends') }}">НАШИ ЛЮБИМЫЕ БРЭНДЫ</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/#contacts-form') }}">ОСТАВИТЬ ЗАЯВКУ</a></li>
+                    </ul>
+                </nav>
             </ul>
         </div>
     </div>
-</nav>
+</div>

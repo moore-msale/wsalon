@@ -1,5 +1,5 @@
 <!--Форма заявки-->
-<section class="mt-2" style="margin-top: -100px;">
+<section class="mt-2" style="margin-top: -100px;" id="contacts-form">
     <div class="container-fluid">
         <div class="row align-items-end">
             <div class="col-lg-2 p-0 d-none d-md-block">

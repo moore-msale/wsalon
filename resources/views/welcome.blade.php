@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section>
+    <section class="mt-md-4">
         <div class="container overflow-h">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 p-0 mt-md-0 mt-4 translate-none" style="transform: translate(-18%, -2%);">
@@ -374,7 +374,7 @@
                                         <img src="{{ asset('images/item-'.($i+1).'.png') }}" class="img-fluid" alt="">
                                     </div>
                                     <div class="card-body text-center">
-                                        <h3 class="font-caveat font-3x">Daria karlozi</h3>
+                                        <h3 class="font-caveat font-3x" id="favorite-brends">Daria karlozi</h3>
                                         <p class="font-raleway">Collection 2019</p>
                                     </div>
                                 </div>
