@@ -14,7 +14,7 @@
             </ul>
 
             <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto d-flex align-items-center">
+            <ul class="navbar-nav ml-auto d-flex" >
 {{--                <!-- Authentication Links -->--}}
 {{--                @guest--}}
 {{--                    <li class="nav-item">--}}
@@ -44,34 +44,95 @@
 {{--                        </div>--}}
 {{--                    </li>--}}
 {{--                @endguest--}}
-                <li class="nav-item mr-4">
+                <img src="{{ asset('images/logo.png') }}" class="logo d-md-none" alt="">
+                <li class="nav-item mr-md-4 d-md-none order-1">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
+                        ГЛАВНАЯ
+                    </a>
+                </li>
+                <li class="nav-item mr-md-4 d-md-none order-2">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
+                        О САЛОНЕ
+                    </a>
+                </li>
+                <li class="nav-item mr-md-4 d-md-none order-3">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
+                        СИЛУЭТЫ ПЛАТЬЕВ
+                    </a>
+                </li>
+                <li class="nav-item mr-md-4 d-md-none order-4">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
+                        НАШИ ЛЮБИМЫЕ БРЭНДЫ
+                    </a>
+                </li>
+                <li class="nav-item mr-md-4 order-6">
                     <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
                         г. Бишкек, Московская 150
                     </a>
                 </li>
-                <li class="nav-item mr-4">
+                <li class="nav-item mr-md-4 order-7">
                     <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
                         +996 770 001 188
                     </a>
                 </li>
-                <li class="nav-item mr-5 pr-5">
+                <li class="nav-item mr-md-5 pr-md-5 order-5 mt-5 mt-md-0 order-md-11">
                     <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4" href="{{ url('/') }}">
                         Записаться на примерку
                     </a>
                 </li>
-                <li class="nav-item position-relative">
+
+
+                <li class="nav-item position-relative d-none d-md-block order-md-12">
                     <a class="nav-link " href="{{ url('#navbarToggleExternalContent') }}"  data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img src="{{ asset('images/burger.png') }}" width="20" alt="">
                     </a>
                     <img src="{{ asset('svg/arrow-btn.svg') }}" class="position-absolute arrow-btn" alt="">
                 </li>
-                <nav  class="navbar-nav pos-f-t position-absolute text-right" style="right: 3vh; top: 15vh;">
+                <nav  class="navbar-nav pos-f-t position-absolute text-right" style="right: 0vh; top: 0vh; width: 22%; background: #3A3C51;">
                     <ul id="navbarToggleExternalContent" class="collapse" style="list-style: none">
-                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/') }}">ГЛАВНАЯ</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/about') }}">О САЛОНЕ</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/catalog') }}">СИЛЕЭТЫ ПЛАТЬЕВ</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/#favorite-brends') }}">НАШИ ЛЮБИМЫЕ БРЭНДЫ</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold font-caveat big"  href="{{ url('/#contacts-form') }}">ОСТАВИТЬ ЗАЯВКУ</a></li>
+                        <li>
+                            <a href="{{ url('#navbarToggleExternalContent') }}"  data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="{{ asset('svg/cross.svg') }}" alt="" class="mt-4 mb-5">
+                            </a>
+                        </li>
+                        <li class="w-100"></li>
+                        <img src="{{ asset('svg/white-logo.svg') }}" class="logo mb-5" alt="">
+
+                        <li class="nav-item text-left mb-2">
+                            <a class="nav-link text-light font-weight-bold font-caveat big"  href="{{ url('/') }}">
+                                ГЛАВНАЯ
+                            </a>
+                        </li>
+                        <li class="nav-item text-left mb-2">
+                                <a class="nav-link text-light font-weight-bold font-caveat big"  href="{{ url('/about') }}">
+                                О САЛОНЕ
+                            </a>
+                        </li>
+                        <li class="nav-item text-left mb-2">
+                                <a class="nav-link text-light font-weight-bold font-caveat big"  href="{{ url('/catalog') }}">
+                                СИЛУЭТЫ ПЛАТЬЕВ
+                            </a>
+                        </li>
+                        <li class="nav-item text-left mb-2">
+                                <a class="nav-link text-light font-weight-bold font-caveat big"  href="{{ url('/#favorite-brends') }}">
+                                НАШИ ЛЮБИМЫЕ БРЭНДЫ
+                            </a>
+                        </li>
+                        <li class="nav-item mt-5 text-center mb-2">
+                            <a class="nav-link btn-sm btn-wedding text-light font-weight-bold shadow rounded-pill px-4" href="{{ url('/') }}">
+                                Записаться на примерку
+                            </a>
+                        </li>
+                        <li class="nav-item text-center mb-2">
+                            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('/') }}">
+                                г. Бишкек, Московская 150
+                            </a>
+                        </li>
+                        <li class="nav-item text-center mb-4">
+                            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('/') }}">
+                                +996 770 001 188
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </ul>

@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css">
 @endpush
 
-@push ("scripts")
+@push("scripts")
 <script src="http://fancyapps.com/fancybox/source/jquery.fancybox.js">
 </script>
 <script>
