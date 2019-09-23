@@ -15,32 +15,32 @@
                                 style="font-size: 16px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA;"
                                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                            Dropdown button
+                            Сортировка по авторам
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item font-raleway" href="#">Action</a>
-                            <a class="dropdown-item font-raleway" href="#">Another action</a>
-                            <a class="dropdown-item font-raleway" href="#">Something else here</a>
+                            @foreach(\App\Author::all() as $author)
+                            <a class="dropdown-item font-raleway" href="{{ route('catalog',['author' => $author->id]) }}">{{ $author->name }}</a>
+                            @endforeach
                         </div>
                     </div>
                 </div>
-                <div class="col-2 mr-3">
-                    <a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">
-                        <img src="{{ asset('images/grid.png') }}" class="w-25 text-dark" alt="">
-                        &nbsp;
-                        <span class="font-raleway font-weight-bold">Список</span>
-                    </a>
+                {{--<div class="col-2 mr-3">--}}
+                    {{--<a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">--}}
+                        {{--<img src="{{ asset('images/grid.png') }}" class="w-25 text-dark" alt="">--}}
+                        {{--&nbsp;--}}
+                        {{--<span class="font-raleway font-weight-bold">Список</span>--}}
+                    {{--</a>--}}
 
 
-                </div>
-                <div class="col-2">
-                    <a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">
-                        <img src="{{ asset('images/scroll.png') }}" class="w-25 text-dark" alt="">
-                        &nbsp;
-                        <span class="font-raleway">Строка</span>
-                    </a>
+                {{--</div>--}}
+                {{--<div class="col-2">--}}
+                    {{--<a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">--}}
+                        {{--<img src="{{ asset('images/scroll.png') }}" class="w-25 text-dark" alt="">--}}
+                        {{--&nbsp;--}}
+                        {{--<span class="font-raleway">Строка</span>--}}
+                    {{--</a>--}}
 
-                </div>
+                {{--</div>--}}
             </div>
         </div>
     </section>

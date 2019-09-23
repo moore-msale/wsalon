@@ -16,7 +16,7 @@
             </ul>
 
             <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto d-flex" >
+            <ul class="navbar-nav ml-auto d-flex align-items-center" >
 {{--                <!-- Authentication Links -->--}}
 {{--                @guest--}}
 {{--                    <li class="nav-item">--}}
@@ -111,7 +111,7 @@
                             </a>
                         </li>
                         <li class="nav-item text-left mb-2">
-                                <a class="nav-link text-light font-weight-bold font-caveat big"  href="{{ url('/catalog') }}">
+                                <a class="nav-link text-light font-weight-bold font-caveat big"  href="{{ url('catalog') }}">
                                 СИЛУЭТЫ ПЛАТЬЕВ
                             </a>
                         </li>
