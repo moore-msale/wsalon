@@ -58,17 +58,17 @@
                     </a>
                 </li>
                 <li class="nav-item mr-md-4 d-md-none order-2">
-                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/about') }}">
                         О САЛОНЕ
                     </a>
                 </li>
                 <li class="nav-item mr-md-4 d-md-none order-3">
-                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('catalog') }}">
                         СИЛУЭТЫ ПЛАТЬЕВ
                     </a>
                 </li>
                 <li class="nav-item mr-md-4 d-md-none order-4">
-                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/#favorite-brends') }}">
                         НАШИ ЛЮБИМЫЕ БРЭНДЫ
                     </a>
                 </li>
