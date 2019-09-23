@@ -63,7 +63,7 @@
                         <br>очередь история
                         <br>о тебе
                     </p>
-                    <a href="#"
+                    <a href="/about"
                        class="btn btn-wedding shadow font-raleway font-weight-bold text-dark rounded-pill px-4">
                         Узнать о нас больше
                     </a>
@@ -205,9 +205,9 @@
                     <img src="{{ asset('svg/our-wedding.svg') }}" class="position-absolute our-wedding" style="top: -20%; width: 80%;right: 48%;" alt="">
                     <img src="{{ asset('svg/atmos.svg') }}" class="" style="margin-top: 30%; width: 100%;" alt="">
                     <div class="text-center">
-                        <img src="{{ asset('svg/video.svg') }}" class="pt-2 pb-2" style="bottom: -15%; right: 9%; width: 60%;" alt="">
+                        <a href="#"><img src="{{ asset('svg/video.svg') }}" class="pt-2 pb-2 hover01" style="bottom: -15%; right: 9%; width: 60%;" alt="">
                         <div class="w-100"></div>
-                        <a href=""><img src="{{ asset('svg/watch-video.svg') }}" class="" style="bottom: -15%; right: 9%; width: 60%;" alt=""></a>
+                        <img src="{{ asset('svg/watch-video.svg') }}" class="" style="bottom: -15%; right: 9%; width: 60%;" alt=""></a>
                     </div>
 
                 </div>
@@ -282,8 +282,92 @@
     <section class=" position-relative overflow-h">
         <div class="container py-5">
             <div class="row">
+                    <div class="col-12 col-md-4 my-3 hover01 ">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 500px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress1.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow1.svg') }}" class="position-absolute" style="left: 10%; bottom: -10%;" alt="">
+                            </div>
+                            <div class="card-body text-center text-white">
+                                <h3 class="font-caveat font-2x d-flex align-items-end justify-content-center">Прямое</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 my-3 hover01">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 500px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress2.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow2.svg') }}" class="position-absolute" style="left:2%; bottom: -7%;" alt="">
+                            </div>
+                            <div class="card-body text-center text-white">
+                                <h3 class="font-caveat font-2x d-flex align-items-end justify-content-center">А-силуэт</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 my-3 hover01 ">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 500px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress3.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow3.svg') }}" class="position-absolute" style="right: 0; bottom: -8%;" alt="">
+                            </div>
+                            <div class="card-body text-center text-white">
+                                <h3 class="font-caveat font-2x d-flex align-items-end justify-content-center">Русалочка</h3>
+                            </div>
+                        </div>
+                    </div>
+                                     <img src="{{ asset('svg/some-grass.svg') }}" class="position-absolute display-none" alt="" style="width: 10%; left: 0%; top: 20%;">
+                    <img src="{{ asset('svg/lists.svg') }}" class="position-absolute display-none" alt="" style="width: 9%; right: 0%; top: 40%;">
+
+            </div>
+
+            <div class="row">
+                    <div class="col-12 col-md-4 my-3 hover01 ">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 500px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress4.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow4.svg') }}" class="position-absolute" style="left: 0%; bottom: -8%;" alt="">
+                            </div>
+                            <div class="card-body text-center text-white">
+                                <h3 class="font-caveat font-2x d-flex align-items-end justify-content-center">Ампир</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 my-3 hover01">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 400px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress5.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow5.svg') }}" class="position-absolute" style="left: 25%; bottom: -30%;" alt="">
+                            </div>
+                            <div class="card-body text-center text-white p-32">
+                                <h3 class="font-caveat font-2x d-flex align-items-end justify-content-center">Короткое</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 my-3 hover01 ">
+                        <div class="card border-0 rounded-0"
+                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 500px; max-height: 650px;">
+                            <div class="position-relative text-center py-5">
+                                <img src="{{ asset('svg/dress6.svg') }}" alt="">
+                                <img src="{{ asset('svg/arrow6.svg') }}" class="position-absolute" style="right: 10%; bottom: -10%;" alt="">
+                            </div>
+                            <div class="card-body text-center text-white">
+                                <h3 class="font-caveat font-2x d-flex align-items-end justify-content-center">Бальное</h3>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- <div class="row">
                 @for($i = 0; $i < 3; $i++)
-                    <div class="col-12 col-md-4 my-3">
+                    <div class="col-12 col-md-4 my-3 hover01 ">
                         <div class="card border-0 rounded-0"
                              style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
                             <div class="position-relative text-center py-5">
@@ -329,29 +413,7 @@
                     <img src="{{ asset('svg/some-grass.svg') }}" class="position-absolute display-none" alt="" style="width: 10%; left: 0%; top: 20%;">
                     <img src="{{ asset('svg/lists.svg') }}" class="position-absolute display-none" alt="" style="width: 9%; right: 0%; top: 40%;">
             </div>
-
-            <!-- <div class="row">
-                @for($i = 3; $i < 6; $i++)
-                    <div class="col-12 col-md-4 my-3">
-                        <div class="card border-0 rounded-0"
-                             style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 650px; max-height: 650px;">
-                            <div class="position-relative text-center py-5">
-                                <img src="{{ asset('svg/dress'.($i+1).'.svg') }}" alt="">
-                                <img src="{{ asset('svg/arrow'.($i+1).'.svg') }}" class="position-absolute"
-                                     style="{{ $i == 5 ? 'bottom: -5%; right: 5%;' : 'bottom: -5%; left: 5%;' }}"
-                                     alt="">
-                            </div>
-                            <div class="card-body text-center text-white">
-                                <h3 class="font-caveat font-2x  text-center justify-content-center d-flex align-items-end">Прямое</h3>
-                                <p class="font-raleway d-flex align-items-end" style="color: #D6D6D6;">Простота и нежность - лучшие украшения
-                                    женщины. Свадебное прямое платье отличное тому подтверждение. Белый подвенечный
-                                    наряд в сочетании с очарованием невесты в любом фасоне выглядит просто
-                                    изумительно.</p>
-                            </div>
-                        </div>
-                    </div>
-                @endfor
-            </div> -->
+ -->
         </div>
     </section>
 
@@ -367,8 +429,8 @@
             <div class="row">
                 <div class="col-12">
                     <div id="dresses" class="owl-carousel owl-theme">
-                        @for($i = 0; $i < 4; $i++)
-                            <div class="item">
+                        @for($i = 0; $i < 6; $i++)
+                            <div class="item hover01">
                                 <div class="card border-0">
                                     <div class="card-img-top">
                                         <img src="{{ asset('images/item-'.($i+1).'.png') }}" class="img-fluid" alt="">

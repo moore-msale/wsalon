@@ -50,3 +50,48 @@ h2.biggest {
 .p-6 {
     padding: 6rem!important;
 }
+.nav-item {
+    list-style: none;
+}
+
+.hover01 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover01:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+.p-32 {
+    padding-top: 32%;
+}
+.owl-dots {
+    display: none!important;
+}
+.owl-nav.disabled {
+    display: block!important;
+}
+
+#dresses .owl-prev {
+    display: block;
+    position: absolute;
+    left: -12%;
+    top: 35%;
+    transition: .3s ease-in-out;
+}
+#dresses .owl-next {
+    position: absolute;
+    right: -12%;
+    top: 35%;
+    transition: .3s ease-in-out;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    background: #d6d6d600!important;
+}
+.owl-theme .owl-nav .disabled {
+    opacity: 1!important;
+}

@@ -42,7 +42,7 @@
         })
     </script>
     <script>
-        $('.owl-carousel').owlCarousel({
+        $('#dresses').owlCarousel({
             items: 4,
             loop: true,
             margin: 10,
