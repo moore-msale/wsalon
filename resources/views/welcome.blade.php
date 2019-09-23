@@ -279,8 +279,8 @@
             </div>
         </div>
     </section>
-    <section class=" position-relative overflow-h">
-        <div class="container py-5">
+    <section class="overflow-h">
+        <div class="container py-5 position-relative">
             <div class="row">
                     <div class="col-12 col-md-4 my-3 hover01 ">
                         <div class="card border-0 rounded-0"
@@ -320,8 +320,8 @@
                             </div>
                         </div>
                     </div>
-                                     <img src="{{ asset('svg/some-grass.svg') }}" class="position-absolute display-none" alt="" style="width: 10%; left: 0%; top: 20%;">
-                    <img src="{{ asset('svg/lists.svg') }}" class="position-absolute display-none" alt="" style="width: 9%; right: 0%; top: 40%;">
+                    <img src="{{ asset('svg/some-grass.svg') }}" class="position-absolute display-none" alt="" style="width: 10%; left: -10%; top: 20%;">
+                    <img src="{{ asset('svg/lists.svg') }}" class="position-absolute display-none" alt="" style="width: 9%; right: -10%; top: 40%;">
 
             </div>
 
@@ -417,10 +417,10 @@
         </div>
     </section>
 
-    <section class="position-relative overflow-h">
-        <img src="{{ asset('svg/OBJECTS.svg') }}" class="position-absolute right-3" alt="" style="width: 15%; right: 0%; top: -5%;">
+    <section class=" overflow-h">
 
-        <div class="container py-5">
+        <div class="container py-5 position-relative">
+            <img src="{{ asset('svg/OBJECTS.svg') }}" class="position-absolute right-3" alt="" style="width: 15%; right: -10%; top: -5%;">
             <div class="row">
                 <div class="col-12">
                     <h2 class="font-caveat font-4x text-center">Топовые платья</h2>
@@ -489,9 +489,9 @@
         </div>
     </section>
 
-    <section class="position-relative overflow-h">
-        <img src="{{ asset('svg/coffeeMaker.svg') }}" class="coffeeMaker position-absolute" alt="" style="width: 15%; left: 0%; top: 1%;">
-        <div class="container py-5 ">
+    <section class=" overflow-h">
+        <div class="container py-5 position-relative ">
+            <img src="{{ asset('svg/coffeeMaker.svg') }}" class="coffeeMaker position-absolute" alt="" style="width: 15%; left: -10%; top: 1%;">
             <div class="row align-items-center mar-img">
                 <div class="col-12 col-md-5 offset-1">
                     <h2 class="font-caveat font-3x">Приходи на примерку и мы угостим вкусняшками :)</h2>
@@ -511,7 +511,7 @@
             </div>
             <img src="{{ asset('svg/love_2.svg') }}" class="position-absolute pos-img display-none" alt="" style="width: 15%; right: 55%; bottom: 1%;">
 
-            <img src="{{ asset('svg/kit.svg') }}" class="position-absolute right-3" alt="" style="width: 27%; right: 0%; bottom: 1%;">
+            <img src="{{ asset('svg/kit.svg') }}" class="position-absolute right-3" alt="" style="width: 27%; right: -10%; bottom: 1%;">
         </div>
     </section>
 

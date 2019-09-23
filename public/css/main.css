@@ -116,3 +116,6 @@ h2.biggest {
     letter-spacing: 0.02em;
     color: #151515;
 }
+.show {
+     height: 100vh!important;
+}
