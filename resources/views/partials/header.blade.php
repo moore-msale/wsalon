@@ -1,5 +1,3 @@
-
-  
 <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <div class="container-fluid">
 {{--        <a class="navbar-brand" href="{{ url('/') }}">--}}
@@ -8,15 +6,30 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+                <li class="nav-item mr-md-4 order-6">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
+                        г. Бишкек, Московская 150
+                    </a>
+                </li>
+                <li class="nav-item mr-md-4 order-7">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
+                        +996 770 001 188
+                    </a>
+                </li>
+                <li class="nav-item mr-md-5 pr-md-5 order-5 mt-5 mt-md-0 order-md-11">
+                    <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4" href="{{ url('/') }}">
+                        Записаться на примерку
+                    </a>
+                </li>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
 
             </ul>
 
+
             <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto d-flex" >
+            <ul class="navbar-nav ml-auto d-flex align-items-center " >
 {{--                <!-- Authentication Links -->--}}
 {{--                @guest--}}
 {{--                    <li class="nav-item">--}}
@@ -46,42 +59,6 @@
 {{--                        </div>--}}
 {{--                    </li>--}}
 {{--                @endguest--}}
-                <img src="{{ asset('images/logo.png') }}" class="logo d-md-none" alt="">
-                <li class="nav-item mr-md-4 d-md-none order-1">
-                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
-                        ГЛАВНАЯ
-                    </a>
-                </li>
-                <li class="nav-item mr-md-4 d-md-none order-2">
-                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
-                        О САЛОНЕ
-                    </a>
-                </li>
-                <li class="nav-item mr-md-4 d-md-none order-3">
-                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
-                        СИЛУЭТЫ ПЛАТЬЕВ
-                    </a>
-                </li>
-                <li class="nav-item mr-md-4 d-md-none order-4">
-                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
-                        НАШИ ЛЮБИМЫЕ БРЭНДЫ
-                    </a>
-                </li>
-                <li class="nav-item mr-md-4 order-6">
-                    <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{{ url('/') }}">
-                        г. Бишкек, Московская 150
-                    </a>
-                </li>
-                <li class="nav-item mr-md-4 order-7">
-                    <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{{ url('/') }}">
-                        +996 770 001 188
-                    </a>
-                </li>
-                <li class="nav-item mr-md-5 pr-md-5 order-5 mt-5 mt-md-0 order-md-11">
-                    <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4" href="{{ url('/') }}">
-                        Записаться на примерку
-                    </a>
-                </li>
 
 
                 <li class="nav-item position-relative d-none d-md-block order-md-12">
@@ -141,4 +118,3 @@
         </div>
     </div>
 </div>
-
