@@ -16,7 +16,7 @@
             </ul>
 
             <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto d-flex" >
+            <ul class="navbar-nav ml-auto d-flex align-items-center" >
 {{--                <!-- Authentication Links -->--}}
 {{--                @guest--}}
 {{--                    <li class="nav-item">--}}
