@@ -15,12 +15,12 @@
                                 style="font-size: 16px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA;"
                                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                            Dropdown button
+                            Сортировка по авторам
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item font-raleway" href="#">Action</a>
-                            <a class="dropdown-item font-raleway" href="#">Another action</a>
-                            <a class="dropdown-item font-raleway" href="#">Something else here</a>
+                            @foreach(\App\Author::all() as $author)
+                            <a class="dropdown-item font-raleway" href="{{ route('catalog',['author' => $author->id]) }}">{{ $author->name }}</a>
+                            @endforeach
                         </div>
                     </div>
                 </div>

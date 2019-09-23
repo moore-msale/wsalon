@@ -25,8 +25,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/catalog', function () {
-    return view('dress-catalog',['dresses' => \App\Dress::all()]);
-});
+Route::get('/catalog', 'DressController@catalog')->name('catalog');
+
+//Route::get('/catalog', function () {
+//    return view('dress-catalog',['dresses' => \App\Dress::all()]);
+//});
 
 Route::get('/dress/{id}', 'DressController@index')->name('dress');

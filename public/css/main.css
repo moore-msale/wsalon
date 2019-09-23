@@ -95,3 +95,24 @@ h2.biggest {
 .owl-theme .owl-nav .disabled {
     opacity: 1!important;
 }
+.dress-desc
+{
+    background: #FFFFFF;
+    box-shadow: 2px 4px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    top:10%;
+}
+.dress-header
+{
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #3A3C51;
+}
+.dress-info
+{
+    font-size: 13px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #151515;
+}

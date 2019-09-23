@@ -111,7 +111,7 @@
                             </a>
                         </li>
                         <li class="nav-item text-left mb-2">
-                                <a class="nav-link text-light font-weight-bold font-caveat big"  href="{{ url('/catalog') }}">
+                                <a class="nav-link text-light font-weight-bold font-caveat big"  href="{{ url('catalog') }}">
                                 СИЛУЭТЫ ПЛАТЬЕВ
                             </a>
                         </li>
