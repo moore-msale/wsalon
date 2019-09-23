@@ -17,6 +17,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mobile-indentation.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mmenu.css') }}">
+
     @stack('styles')
 </head>
 <body class="bg-white">
