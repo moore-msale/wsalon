@@ -87,6 +87,10 @@ h2.biggest {
     top: 35%;
     transition: .3s ease-in-out;
 }
+.owl-next:focus, .owl-prev:focus
+{
+    outline: none;
+}
 .owl-theme .owl-nav [class*=owl-]:hover {
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
@@ -116,6 +120,6 @@ h2.biggest {
     letter-spacing: 0.02em;
     color: #151515;
 }
-.show {
+.menu-nav.show {
      height: 100vh!important;
 }

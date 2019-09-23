@@ -9,8 +9,7 @@
                 <p class="font-caveat font-3x  text-md-left text-center">
                     <img src="{{ asset('images/lil-flower.png') }}" class="img-fluid position-relative"
                          style="transform: translate(-80%, -80%);" alt="">
-                    Давно выяснено, что при оценке дизайна и
-                    <br>композиции читаемый
+                    Твоя улыбка и счастливые глаза - наше вдохновение
                 </p>
 
 
@@ -27,7 +26,7 @@
     <div class="container overflow-h">
         <div class="row">
             <div class="col-md-7 col-12">
-                <p class="font-raleway ">
+                <p class="font-raleway">
                     Индивидуальность каждой невесты - вот самый главный принцип нашей работы.
                     <br>Искренность в улыбке в тот самый момент когда мы находим вместе то самое
                     <br>платье наша величайшая награда.
@@ -150,7 +149,7 @@
 
                 <h2 class="font-caveat font-3x">p.s.</h2>
 
-                <p class="font-raleway">
+                <p class="font-raleway big">
                     Чтобы погрузится в выбор платьев и ничего не могло отвлечь тебя,
                     <br>записывайся к нам на примерку заранее.
                 </p>

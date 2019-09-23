@@ -72,7 +72,7 @@
                     <img src="{{ asset('images/effect-2.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-12 col-md-4 pl-0 text-md-left text-center m25">
-                    <p class="font-raleway">
+                    <p class="font-raleway big">
                         Трепетный выбор платья, о котором
                         <br>мы мечтали, которое представляли
                         <br>и фантазировали, начинается с
@@ -126,7 +126,7 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-end">
                     <div class="col-md-5 col-12 pt-2">
-                        <p class="font-raleway text-right">
+                        <p class="font-raleway text-right big">
                             В W салоне каждая невеста
                             <br>преображается, словно
                             <br>Золушка из сказки. Ну а
@@ -152,13 +152,13 @@
                 <div class="col-12 col-md-5">
                     <img src="{{ asset('svg/love.svg') }}" class="mb-5 position-relative love"
                          style="z-index: 5; width: 60%; transform: translateX(80%);" alt="">
-                    <p class="font-caveat font-2x">Только ты и твоя
+                    <p class="font-caveat font-3x">Только ты и твоя
                         <br>улыбка!</p>
-                    <p class="font-raleway">
+                    <p class="font-raleway big">
                         Как же хорошо, когда можно подобрать
                         <br>полный образ в одном месте.
                     </p>
-                    <p class="font-raleway">
+                    <p class="font-raleway big">
                         Ведь в W салоне огромный выбор не только
                         <br>платьев, но и фаты и украшений для причёски.
                         <br>Все то, что поможет тебе сиять в этот
@@ -194,8 +194,8 @@
                     <img src="{{ asset('images/17.png') }}" style="width: 40%; z-index: 2;box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);" alt="">
                     <img src="{{ asset('svg/balloon.svg') }}" class="position-absolute balloon" style="bottom: 33%; right: 9%; width: 14%;" alt="">
                     <div class="d-md-flex d-block">
-                        <h3 class="font-caveat" style="width: 40%;padding: 12% 0 0 10%;">Счастье должно быть воvвсем: и в глазах,и в нарядах.</h3>
-                        <p class="font-raleway pad" style=" width: 65%; float: right;padding-top: 21%; text-align: left;">
+                        <h3 class="font-caveat font-biggest" style="width: 40%;padding: 12% 0 0 10%;">Счастье должно быть воvвсем: и в глазах,и в нарядах.</h3>
+                        <p class="font-raleway pad big" style=" width: 65%; float: right;padding-top: 21%; text-align: left;">
                             «W Salon» знает, что такое качество<br>, и предлагает покупателям только лучшее. Индивидуальность каждой невесты - вот самый главный принцип нашей работы. Искренность<br> в улыбке в момент, когда мы находим вместе то самое платье - наша величайшая награда.
                         </p>
                     </div>
@@ -241,7 +241,7 @@
                     </h3>
                 </div>
                 <div class="col-12 col-md-4 pt-md-5 pb-3 text-md-left text-right order-3 order-lg-3">
-                    <p class="font-raleway">
+                    <p class="font-raleway big">
                         Мы знаем что выбор свадебного
                         <br>платья не из легких и поэтому мы и
                         <br>наши дорогуши феечки выслушают
@@ -249,7 +249,7 @@
                         <br>ассортименте и выберут для тебя то
                         <br>самое платье.
                     </p>
-                    <p class="font-raleway">
+                    <p class="font-raleway big">
                         Доверься нам и не беспокойся ни о чем!
                     </p>
                 </div>
@@ -437,7 +437,7 @@
                                     </div>
                                     <div class="card-body text-center">
                                         <h3 class="font-caveat font-3x" id="favorite-brends">Daria karlozi</h3>
-                                        <p class="font-raleway">Collection 2019</p>
+                                        <p class="font-raleway big">Collection 2019</p>
                                     </div>
                                 </div>
                             </div>
@@ -461,7 +461,7 @@
                 <div class="col-12 col-md-4 text-center">
                     <h3 class="font-caveat font-3x">Daria karlozi</h3>
                     <img src="{{ asset('svg/hr.svg') }}" class="mb-4" alt="">
-                    <p class="font-raleway">
+                    <p class="font-raleway big">
                         Свадебные образы от «Daria Karlozi» легко узнать с первого взгляда! Во всем присутствует
                         классика во всех ее широких гранях. И именно эти «грани» делают каждое платье уникальным,
                         неповторим и весьма стильным.
@@ -470,7 +470,7 @@
                 <div class="col-12 col-md-4 text-center">
                     <h3 class="font-caveat font-3x">Oksana mukha</h3>
                     <img src="{{ asset('svg/hr.svg') }}" class="mb-4" alt="">
-                    <p class="font-raleway">
+                    <p class="font-raleway big">
                         В создании платьев используются отборные материалы мировых производителей — кружева сhantilly,
                         органза, атлас, натуральный шелк, оригинальные кристаллы Swarovski.
                         Именно такие детали делают платья “Oksana Mukha”
@@ -480,7 +480,7 @@
                 <div class="col-12 col-md-4 text-center">
                     <h3 class="font-caveat font-3x">Ida torez</h3>
                     <img src="{{ asset('svg/hr.svg') }}" class="mb-4" alt="">
-                    <p class="font-raleway">
+                    <p class="font-raleway big">
                         Каждая новая коллекция создается с учетом глобальных свадебных тенденций и региональных
                         традиций, чтобы удовлетворить вкусы невест всего мира. Уникальные наряды “Ida Torez” ждут тебя!
                     </p>
@@ -495,7 +495,7 @@
             <div class="row align-items-center mar-img">
                 <div class="col-12 col-md-5 offset-1">
                     <h2 class="font-caveat font-3x">Приходи на примерку и мы угостим вкусняшками :)</h2>
-                    <p class="font-raleway">
+                    <p class="font-raleway big">
                         Кофе - это не всё, чем может похвастаться
                         <br>наш кофе поинт. В уютной атмосфере вы
                         <br>можете проводить встречи и обсудить
@@ -527,7 +527,7 @@
                     <div class="owl-carousel" id="feedback">
                         <div class="item">
                             <h2 class="font-caveat font-3x">Лучший свадебный салон в городе</h2>
-                            <p class="font-raleway">
+                            <p class="font-raleway big">
                                 Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего н
                             </p>
                             <h3 class="font-raleway pb-2 pt-2" style="font-weight: 600; text-transform: uppercase; font-size:15px;">Айгуль Караева</h3>
@@ -535,7 +535,7 @@
                         </div>
                         <div class="item">
                             <h2 class="font-caveat font-3x">Лучший свадебный салон в городе</h2>
-                            <p class="font-raleway">
+                            <p class="font-raleway big">
                                 Кофе - это не всё, чем может похвастаться
                                 <br>наш кофе поинт. В уютной атмосфере вы
                                 <br>можете проводить встречи и обсудить
@@ -548,7 +548,7 @@
                         </div>
                         <div class="item">
                             <h2 class="font-caveat font-3x">Лучший свадебный салон в городе</h2>
-                            <p class="font-raleway">
+                            <p class="font-raleway big">
                                 Кофе - это не всё, чем может похвастаться
                                 <br>наш кофе поинт. В уютной атмосфере вы
                                 <br>можете проводить встречи и обсудить

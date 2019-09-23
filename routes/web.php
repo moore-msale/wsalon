@@ -30,5 +30,5 @@ Route::get('/catalog', 'DressController@catalog')->name('catalog');
 //Route::get('/catalog', function () {
 //    return view('dress-catalog',['dresses' => \App\Dress::all()]);
 //});
-
+Route::post('/message', 'MessageController@mail')->name('message');
 Route::get('/dress/{id}', 'DressController@index')->name('dress');
