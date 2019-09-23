@@ -1,5 +1,5 @@
 
-  
+
 <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <div class="container-fluid">
 {{--        <a class="navbar-brand" href="{{ url('/') }}">--}}
@@ -90,8 +90,8 @@
                     </a>
                     <img src="{{ asset('svg/arrow-btn.svg') }}" class="position-absolute arrow-btn" alt="">
                 </li>
-                <nav  class="navbar-nav pos-f-t position-absolute text-right" style="right: 0vh; top: 0vh; width: 22%; background: #3A3C51;">
-                    <ul id="navbarToggleExternalContent" class="collapse" style="list-style: none">
+                <nav  class="navbar-nav pos-f-t position-absolute text-right d-flex justify-content-center" style="right: 0; top: 0; width: 20%; background: #3A3C51;">
+                    <ul id="navbarToggleExternalContent" class="collapse p-0" style="list-style: none;">
                         <li>
                             <a href="{{ url('#navbarToggleExternalContent') }}"  data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <img src="{{ asset('svg/cross.svg') }}" alt="" class="mt-4 mb-5">
