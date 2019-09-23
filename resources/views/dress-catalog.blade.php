@@ -24,23 +24,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 mr-3">
-                    <a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">
-                        <img src="{{ asset('images/grid.png') }}" class="w-25 text-dark" alt="">
-                        &nbsp;
-                        <span class="font-raleway font-weight-bold">Список</span>
-                    </a>
+                {{--<div class="col-2 mr-3">--}}
+                    {{--<a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">--}}
+                        {{--<img src="{{ asset('images/grid.png') }}" class="w-25 text-dark" alt="">--}}
+                        {{--&nbsp;--}}
+                        {{--<span class="font-raleway font-weight-bold">Список</span>--}}
+                    {{--</a>--}}
 
 
-                </div>
-                <div class="col-2">
-                    <a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">
-                        <img src="{{ asset('images/scroll.png') }}" class="w-25 text-dark" alt="">
-                        &nbsp;
-                        <span class="font-raleway">Строка</span>
-                    </a>
+                {{--</div>--}}
+                {{--<div class="col-2">--}}
+                    {{--<a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">--}}
+                        {{--<img src="{{ asset('images/scroll.png') }}" class="w-25 text-dark" alt="">--}}
+                        {{--&nbsp;--}}
+                        {{--<span class="font-raleway">Строка</span>--}}
+                    {{--</a>--}}
 
-                </div>
+                {{--</div>--}}
             </div>
         </div>
     </section>
