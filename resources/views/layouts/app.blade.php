@@ -28,6 +28,7 @@
         </main>
     </div>
     @include('partials.footer')
+    @include('partials.modals.application')
     <script src="{{ asset('js/app.js') }}"></script>
 @stack('scripts')
     <script src="{{ asset('js/owl.carousel.js') }}"></script>

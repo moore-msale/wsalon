@@ -78,7 +78,7 @@
                     </a>
                 </li>
                 <li class="nav-item mr-md-5 pr-md-5 order-5 mt-5 mt-md-0 order-md-11">
-                    <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4" href="{{ url('/') }}">
+                    <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 application" href="{{ url('/') }}">
                         Записаться на примерку
                     </a>
                 </li>
@@ -121,7 +121,7 @@
                             </a>
                         </li>
                         <li class="nav-item mt-5 text-center mb-2">
-                            <a class="nav-link btn-sm btn-wedding text-light font-weight-bold shadow rounded-pill px-4" href="{{ url('/') }}">
+                            <a class="nav-link btn-sm btn-wedding text-light font-weight-bold shadow rounded-pill px-4 application" href="{{ url('/') }}">
                                 Записаться на примерку
                             </a>
                         </li>
