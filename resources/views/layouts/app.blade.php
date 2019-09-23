@@ -44,8 +44,8 @@
     <script>
         $('#dresses').owlCarousel({
             items: 4,
-            loop: true,
-            margin: 10,
+            loop:true,
+            margin:10,
             autoplay:true,
             navText: ["<img src='{{ asset('svg/arleft.svg')}}'>", "<img src='{{ asset('svg/arright.svg')}}'>"],
             nav: true,
@@ -59,12 +59,12 @@
                 },
                 700:{
                     items:3,
-                    nav:false
+                    nav:true
                 },
                 1000:{
                     items:4,
                     nav:true,
-                    loop:false
+                    loop:true
                 }
             }
         });
