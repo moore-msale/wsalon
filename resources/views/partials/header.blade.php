@@ -126,7 +126,7 @@
                             </a>
                         </li>
                         <li class="nav-item mt-5 text-center mb-2">
-                            <a class="nav-link btn-sm btn-wedding text-light font-weight-bold shadow rounded-pill px-4 application" href="{{ url('/') }}">
+                            <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 application" href="{{ url('/') }}">
                                 Записаться на примерку
                             </a>
                         </li>
