@@ -9,11 +9,14 @@
     </div>
 
     <div class="form-group">
-        <input type="phone" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4" id="exampleInputPhone1" placeholder="Ваш телефон">
+        <input type="tel" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4" id="exampleInputPhone1" placeholder="Ваш телефон">
     </div>
 
     <div class="form-group">
-        <input type="email" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваше имя">
+        <input type="email" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш email">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4 date-format" id="exampleInputDate1" placeholder="Дата примерки">
     </div>
 
     <div class="d-flex justify-content-end">
