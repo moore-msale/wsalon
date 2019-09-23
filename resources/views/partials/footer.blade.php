@@ -5,11 +5,11 @@
             <div class="col-lg-2 p-0 d-none d-md-block">
                 <img src="{{ asset('images/footer-img.png') }}" class="girl" width="100%" height="500px">
             </div>
-            <div class="col-lg-4 col-xl-3 col-12 px-0">
-                <div class="bg-dark position-absolute" style="transform: translate(-100%,0); background: #363749;">
-                    <i class="fab fa-instagram text-light"></i>
-                    <i class="fab fa-facebook-f text-light"></i>
-                </div>
+            <div class="col-lg-4 col-xl-4 col-12 px-0">
+                {{--<div class="bg-dark position-absolute" style="transform: translate(-100%,0); background: #363749;">--}}
+                    {{--<i class="fab fa-instagram text-light"></i>--}}
+                    {{--<i class="fab fa-facebook-f text-light"></i>--}}
+                {{--</div>--}}
                 @include('application.application')
             </div>
             <div class="col p-0 d-flex">
