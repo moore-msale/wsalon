@@ -22,31 +22,31 @@
                 <div class="col-4 position-relative">
                     <div class="dress-desc py-5 px-4 sticky-top w-100">
                         <h2 class="dress-header pb-4 font-weight-bold font-raleway">
-                            Название платья
+                            {{ $dress->title }}
                         </h2>
                         <p class="dress-point font-weight-light font-raleway mb-1" >
                             Дизайнер
                         </p>
                         <p class="dress-info font-weight-bold font-raleway">
-                            Daria Karlozi
+                            {{ $dress->author->name }}
                         </p>
                         <p class="dress-point pt-3  font-weight-light font-raleway mb-1">
                             Страна
                         </p>
                         <p class="dress-info font-weight-bold font-raleway">
-                            Испания
+                            {{ $dress->country }}
                         </p>
                         <p class="dress-point pt-3  font-weight-light font-raleway mb-1">
                             Размер
                         </p>
                         <p class="dress-info font-weight-bold font-raleway">
-                            34 - 46
+                            {{ $dress->size }}
                         </p>
                         <p class="dress-point pt-3  font-weight-light font-raleway mb-1">
                             Цвет
                         </p>
                         <p class="dress-info font-weight-bold font-raleway">
-                            Цвет слоновой кости
+                            {{ $dress->color }}
                         </p>
                         <div class="d-flex justify-content-center pt-3">
                             <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4" href="{{ url('/') }}">
