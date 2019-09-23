@@ -14,12 +14,12 @@
     <section>
         <div class="container-fluid p-5">
             <div class="row">
-                <div class="col-8">
+                <div class="col-lg-8 col-12">
                     @foreach($dress->images as $image)
                     <img class="img-fluid w-100 pb-4" src="{{ asset('storage/'.$image->name)  }}">
                     @endforeach
                 </div>
-                <div class="col-4 position-relative">
+                <div class="col-lg-4 col-12 position-relative">
                     <div class="dress-desc py-5 px-4 sticky-top w-100">
                         <h2 class="dress-header pb-4 font-weight-bold font-raleway">
                             {{ $dress->title }}
