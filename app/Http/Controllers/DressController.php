@@ -16,7 +16,11 @@ class DressController extends Controller
     public function catalog(Request $request)
     {
 //        dd($request->author);
-        if(isset($request->author))
+        if(isset($request->silhouette))
+        {
+            $dresses = Dress::where('silhouette_id', $request->silhouette)->get();
+        }
+        elseif(isset($request->author))
         {
             $dresses = Dress::where('author_id', $request->author)->get();
         }

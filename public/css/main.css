@@ -1,8 +1,12 @@
 .arrow-btn {
     width: 100px;
-    top: 20px;
+    top: 10px;
     left: -50px;
     z-index: -1;
+}
+.menu-burger
+{
+    cursor: pointer;
 }
 main {
     padding-top: 3% !important;
@@ -52,6 +56,27 @@ h2.biggest {
 }
 .nav-item {
     list-style: none;
+}
+#sync2 .owl-nav .owl-prev span, #sync2 .owl-nav .owl-next span
+{
+    display:none;
+}
+#sync2 .owl-nav .owl-prev
+{
+    width:50px;
+    height:17px;
+    background-image: url('/svg/ArrowLeft.svg');
+}
+#sync2 .owl-nav .owl-next
+{
+    transform: translateX(20px);
+    width:50px;
+    height:17px;
+    background-image: url('/svg/ArrowRight.svg');
+}
+#sync1 .owl-dots
+{
+    display: block!important;
 }
 
 .hover01 {
@@ -122,4 +147,46 @@ h2.biggest {
 }
 .menu-nav.show {
      height: 100vh!important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    right: -300px;
+    background-color: #3a3c51;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 120px;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+/*.sidenav a {*/
+    /*padding: 8px 8px 8px 32px;*/
+    /*text-decoration: none;*/
+    /*color:white;*/
+    /*font-size: 20px;*/
+    /*display: block;*/
+    /*transition: 0.3s;*/
+/*}*/
+
+/*.sidenav a:hover {*/
+    /*color: #f1f1f1;*/
+/*}*/
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }

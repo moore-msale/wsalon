@@ -8,12 +8,27 @@
 
                 </div>
             </div>
-            <div class="col-lg-4 col-xl-4 col-12 px-0">
+            <div class="col-lg-4 col-xl-4 col-12 px-0 position-relative">
                 {{--<div class="bg-dark position-absolute" style="transform: translate(-100%,0); background: #363749;">--}}
                     {{--<i class="fab fa-instagram text-light"></i>--}}
                     {{--<i class="fab fa-facebook-f text-light"></i>--}}
                 {{--</div>--}}
                 @include('application.application')
+                <div class="position-absolute" style="background-color: #2D2F41; top:10%; transform: translateX(-80px);">
+                    <div class="p-3" style="width: 80px;">
+                        <div class="text-center py-4">
+                            <a href="https://www.instagram.com/weddingsalonkg/">
+                    <i class="fab fa-instagram text-light fa-2x"></i>
+                            </a>
+                        </div>
+                        <div style="border-top:1px solid #d2d2d2;"></div>
+                    <div class="text-center py-4">
+                        <a href="https://www.facebook.com/wsalonkg/">
+                    <i class="fab fa-facebook-f text-light fa-2x"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
             </div>
             <div class="col p-0 d-flex">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.1484155786356!2d74.59046411545056!3d42.86971147915594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec95e35a68fa7%3A0x64a1e18aa91967c8!2sWsalon!5e0!3m2!1sru!2skg!4v1568719883625!5m2!1sru!2skg" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>

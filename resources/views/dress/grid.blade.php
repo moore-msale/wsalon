@@ -1,6 +1,6 @@
 
 @foreach($dresses as $dress)
-    <div class="col-sm-6 col-md-4 col-lg-4 item text-center pt-lg-4 pt-4 position-relative  " >
+    <div class="col-sm-6 col-md-4 col-lg-4 item text-center pt-lg-4 pt-4 position-relative" data-aos="fade-up">
         <a href="{{ route('dress',$dress->id) }}" title="{{ $dress->title }}" class="dressimage "  data-fancybox="gallery">
             <img class="img-fluid w-100" src="{{ asset('storage/'.$dress->image)  }}">
             <div class="position-absolute bg-white shadow p-3" style="bottom: 0; width: 92%">

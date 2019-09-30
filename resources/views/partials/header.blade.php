@@ -3,7 +3,7 @@
         {{--        <a class="navbar-brand" href="{{ url('/') }}">--}}
         {{--            {{ config('app.name', 'Laravel') }}--}}
         {{--        </a>--}}
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -89,135 +89,135 @@
                 </li>
 
 
-                <li class="nav-item position-relative d-none d-md-block order-md-12">
-                    <a class="nav-link " href="{{ url('#navbarToggleExternalContent') }}" data-toggle="collapse"
-                       data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                       aria-expanded="false" aria-label="Toggle navigation">
+                <li class="menu-burger nav-item position-relative d-none d-md-block order-md-12">
                         <img src="{{ asset('images/burger.png') }}" width="20" alt="">
-                    </a>
                     <img src="{{ asset('svg/arrow-btn.svg') }}" class="position-absolute arrow-btn" alt="">
                 </li>
-                <li class="nav-item">
-                    <a href="#menu"><img src="{{ asset('images/burger.png') }}" width="20" alt=""></a>
-                </li>
-                <nav id="menu">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/work">Our work</a></li>
-                        <li><span>About us</span>
-                            <ul>
-                                <li><a href="/about/history">History</a></li>
-                                <li><span>The team</span>
-                                    <ul>
-                                        <li><a href="/about/team/management">Management</a></li>
-                                        <li><a href="/about/team/sales">Sales</a></li>
-                                        <li><a href="/about/team/development">Development</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><span>Services</span>
-                            <ul>
-                                <li><a href="/services/design">Design</a></li>
-                                <li><a href="/services/development">Development</a></li>
-                                <li><a href="/services/marketing">Marketing</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <nav class="navbar-nav pos-f-t position-absolute text-right d-flex justify-content-center"
-                     style="right: 0; top: 0; width: 20%; background: #3A3C51;">
-                    <ul id="navbarToggleExternalContent" class="collapse p-0" style="list-style: none;">
-                <nav  class="navbar-nav pos-f-t position-absolute text-right d-flex justify-content-center" style="right: 0; top: 0; width: 20%; background: #3A3C51;">
-                    <ul id="navbarToggleExternalContent" class="collapse p-0 menu-nav" style="list-style: none;">
-                        <li>
-                            <a href="{{ url('#navbarToggleExternalContent') }}" data-toggle="collapse"
-                               data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                               aria-expanded="false" aria-label="Toggle navigation">
-                                <img src="{{ asset('svg/cross.svg') }}" alt="" class="mt-4 mb-5">
-                            </a>
-                        </li>
-                        <li class="w-100"></li>
-                        <img src="{{ asset('svg/white-logo.svg') }}" class="logo mb-5" alt="">
-
-                        <li class="nav-item text-left mb-2">
-                            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('/') }}">
-                                ГЛАВНАЯ
-                            </a>
-                        </li>
-                        <li class="nav-item text-left mb-2">
-                            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('/about') }}">
-                                О САЛОНЕ
-                            </a>
-                        </li>
-                        <li class="nav-item text-left mb-2">
-                            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('catalog') }}">
-                                СИЛУЭТЫ ПЛАТЬЕВ
-                            </a>
-                        </li>
-                        <li class="nav-item text-left mb-2">
-                            <a class="nav-link text-light font-weight-bold font-caveat big"
-                               href="{{ url('/#favorite-brends') }}">
-                                НАШИ ЛЮБИМЫЕ БРЭНДЫ
-                            </a>
-                        </li>
-                        <li class="nav-item mt-5 text-center mb-2">
-                            <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 application"
-                               href="{{ url('/') }}">
-                                Записаться на примерку
-                            </a>
-                        </li>
-                        <li class="nav-item text-center mb-2">
-                            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('/') }}">
-                                г. Бишкек, Московская 150
-                            </a>
-                        </li>
-                        <li class="nav-item text-center mb-4">
-                            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('/') }}">
-                                +996 770 001 188
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </ul>
+                {{--<li class="nav-item">--}}
+                    {{--<a href="#menu"><img src="{{ asset('images/burger.png') }}" width="20" alt=""></a>--}}
+                {{--</li>--}}
+                {{--<nav id="menu">--}}
+                    {{--<ul>--}}
+                        {{--<li><a href="/">Home</a></li>--}}
+                        {{--<li><a href="/work">Our work</a></li>--}}
+                        {{--<li><span>About us</span>--}}
+                            {{--<ul>--}}
+                                {{--<li><a href="/about/history">History</a></li>--}}
+                                {{--<li><span>The team</span>--}}
+                                    {{--<ul>--}}
+                                        {{--<li><a href="/about/team/management">Management</a></li>--}}
+                                        {{--<li><a href="/about/team/sales">Sales</a></li>--}}
+                                        {{--<li><a href="/about/team/development">Development</a></li>--}}
+                                    {{--</ul>--}}
+                                {{--</li>--}}
+                            {{--</ul>--}}
+                        {{--</li>--}}
+                        {{--<li><span>Services</span>--}}
+                            {{--<ul>--}}
+                                {{--<li><a href="/services/design">Design</a></li>--}}
+                                {{--<li><a href="/services/development">Development</a></li>--}}
+                                {{--<li><a href="/services/marketing">Marketing</a></li>--}}
+                            {{--</ul>--}}
+                        {{--</li>--}}
+                        {{--<li><a href="/contact">Contact</a></li>--}}
+                    {{--</ul>--}}
+                {{--</nav>--}}
         </div>
     </div>
 </nav>
+<div id="mySidenav" class="sidenav d-md-flex d-none">
+    <ul class="pl-4 menu-nav" style="list-style: none;">
+        <li class="w-100"></li>
+        <img src="{{ asset('svg/white-logo.svg') }}" class="logo mb-5" alt="">
+
+        <li class="nav-item text-left mb-2">
+            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('/') }}">
+                ГЛАВНАЯ
+            </a>
+        </li>
+        <li class="nav-item text-left mb-2">
+            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('/about') }}">
+                О САЛОНЕ
+            </a>
+        </li>
+        <li class="nav-item text-left mb-2">
+            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('catalog') }}">
+                СИЛУЭТЫ ПЛАТЬЕВ
+            </a>
+        </li>
+        <li class="nav-item text-left mb-2">
+            <a class="nav-link text-light font-weight-bold font-caveat big"
+               href="{{ url('/#favorite-brends') }}">
+                НАШИ ЛЮБИМЫЕ БРЭНДЫ
+            </a>
+        </li>
+        <li class="nav-item mt-5 text-center mb-2">
+            <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 application"
+               href="{{ url('/') }}">
+                Записаться на примерку
+            </a>
+        </li>
+        <li class="nav-item text-center mb-2">
+            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('/') }}">
+                г. Бишкек, Московская 150
+            </a>
+        </li>
+        <li class="nav-item text-center mb-4">
+            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('/') }}">
+                +996 770 001 188
+            </a>
+        </li>
+        <li class="nav-item text-center">
+            <a href="https://www.instagram.com/weddingsalonkg/">
+                <i class="fab fa-instagram text-light fa-2x mr-3"></i>
+            </a>
+            <a href="https://www.facebook.com/wsalonkg/">
+                <i class="fab fa-facebook-f text-light fa-2x ml-3"></i>
+            </a>
+        </li>
+    </ul>
+</div>
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/mmenu.css') }}">
 @endpush
 
 @push('scripts')
-    <script src="{{ asset('js/mmenu.js') }}"></script>
+    {{--<script>--}}
+        {{--document.addEventListener(--}}
+            {{--"DOMContentLoaded", () => {--}}
+                {{--new Mmenu( "#menu", {--}}
+                    {{--"extensions": [--}}
+                        {{--"pagedim-black",--}}
+                        {{--"position-right",--}}
+                        {{--"theme-dark"--}}
+                    {{--],--}}
+                    {{--"navbars": [--}}
+                        {{--{--}}
+                            {{--"position": "top",--}}
+                            {{--"content": [--}}
+                                {{--"prev",--}}
+                                {{--"title"--}}
+                            {{--]--}}
+                        {{--},--}}
+                        {{--{--}}
+                            {{--"position": "bottom",--}}
+                            {{--"content": [--}}
+                                {{--"<a class='fa fa-envelope' href='#/'></a>",--}}
+                                {{--"<a class='fa fa-twitter' href='#/'></a>",--}}
+                                {{--"<a class='fa fa-facebook' href='#/'></a>"--}}
+                            {{--]--}}
+                        {{--}--}}
+                    {{--]--}}
+                {{--});--}}
+            {{--}--}}
+        {{--);--}}
+    {{--</script>--}}
     <script>
-        document.addEventListener(
-            "DOMContentLoaded", () => {
-                new Mmenu( "#menu", {
-                    "extensions": [
-                        "pagedim-black",
-                        "position-right",
-                        "theme-dark"
-                    ],
-                    "navbars": [
-                        {
-                            "position": "top",
-                            "content": [
-                                "prev",
-                                "title"
-                            ]
-                        },
-                        {
-                            "position": "bottom",
-                            "content": [
-                                "<a class='fa fa-envelope' href='#/'></a>",
-                                "<a class='fa fa-twitter' href='#/'></a>",
-                                "<a class='fa fa-facebook' href='#/'></a>"
-                            ]
-                        }
-                    ]
-                });
-            }
-        );
+        $('.menu-burger').click( function () {
+            document.getElementById("mySidenav").style.right = "0px";
+        });
+
+        $('.sidenav').mouseleave( function () {
+            document.getElementById("mySidenav").style.right = "-300px";
+        });
     </script>
 @endpush

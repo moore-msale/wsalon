@@ -32,3 +32,6 @@ Route::get('/catalog', 'DressController@catalog')->name('catalog');
 //});
 Route::post('/message', 'MessageController@mail')->name('message');
 Route::get('/dress/{id}', 'DressController@index')->name('dress');
+Route::get('/feedback', function () {
+    return view('feedback');
+});

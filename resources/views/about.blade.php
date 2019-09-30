@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-12">
-                <p class="font-caveat font-3x  text-md-left text-center">
+                <p class="font-caveat font-3x  text-md-left text-center" data-aos="fade-down-right">
                     <img src="{{ asset('images/lil-flower.png') }}" class="img-fluid position-relative"
                          style="transform: translate(-80%, -80%);" alt="">
                     Твоя улыбка и счастливые глаза - наше вдохновение
@@ -15,7 +15,7 @@
 
             </div>
             <div class="col">
-                <img src="{{ asset('images/hearts-and-flower.png') }}" class="img-fluid position-relative"
+                <img src="{{ asset('images/hearts-and-flower.png') }}" data-aos="fade-down-left" class="img-fluid position-relative"
                      style="transform: translateY(-30%);" alt="">
             </div>
 
@@ -26,14 +26,14 @@
     <div class="container overflow-h">
         <div class="row">
             <div class="col-md-7 col-12">
-                <p class="font-raleway">
+                <p class="font-raleway" data-aos="fade-down-right">
                     Индивидуальность каждой невесты - вот самый главный принцип нашей работы.
                     <br>Искренность в улыбке в тот самый момент когда мы находим вместе то самое
                     <br>платье наша величайшая награда.
 
                 </p>
 
-                <p class="font-raleway">
+                <p class="font-raleway" data-aos="fade-up-right">
                     Трепетный выбор того самого свадебного платья о котором мы мечтали, которое
                     <br>представляли и фантазировали, начинается с самых маленьких деталей.
                     <br>Очаровательная вышивка, кружева что вскружили нам голову, силуэт, ткань. Это
@@ -48,26 +48,26 @@
                 </p>
 
                 <div class="text-right">
-                    <img src="{{ asset('images/lil-arrow-in-heart.png') }}" class="img-fluid"
+                    <img src="{{ asset('images/lil-arrow-in-heart.png') }}" data-aos="fade-down-left" class="img-fluid"
                          style=" width: 60px; height: auto;" alt="">
                 </div>
 
-                <p class="font-caveat font-2x text-center">
+                <p class="font-caveat font-2x text-center" data-aos="fade-right">
                     Никаких платьев за миллион, для нас это не критерий.
                     <br>Только ты, твоя улыбка, только хардкор.
-                    <img src="{{ asset('images/oliva.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('images/oliva.png') }}" data-aos="fade-up-right" class="img-fluid" alt="">
                 </p>
             </div>
 
             <div class="col-md-5 col-12 py-3">
-                <p class="font-caveat font-2x position-absolute about-us-text" style="transform: translate(90%,40%);">
+                <p class="font-caveat font-2x position-absolute about-us-text" data-aos="fade-down-right" style="transform: translate(90%,40%);">
                     Индивидуальность
                     <br>каждой невесты -
                     <br>вот самый главный
                     <br>принцип нашей
                     <br>работе
                 </p>
-                <img src="{{ asset('images/flower-frame.png') }}" class="img-fluid position-relative about-us-translate"
+                <img src="{{ asset('images/flower-frame.png') }}" data-aos="fade-down-right" class="img-fluid position-relative about-us-translate"
                      style="transform: translate(10%,0)" alt="">
 
             </div>
@@ -80,7 +80,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="font-raleway">
+                <p class="font-raleway" data-aos="fade-right">
                     Свадьба о влюбленных и то как она должна выглядеть включая ваше представление о свадебном платье
                     очень лично для многих молодожен
                     и порой планы и мечты не совпадают с родительскими амбициями и суевериям. Но мы живём в
@@ -102,7 +102,7 @@
     <div class="container overflow-h">
         <div class="row">
             <div class="col-md-6 col-12 text-center pb-4">
-                <img src="{{ asset('images/circle-flower.png') }}" class="img-fluid w-75 position-relative" alt="">
+                <img src="{{ asset('images/circle-flower.png') }}" data-aos="fade-down" class="img-fluid w-75 position-relative" alt="">
                 <p class="font-caveat position-absolute about-us-frame" style="transform: translate(50%,-145%); font-size: 24px;">
                     В W салоне каждая невеста
                     <br>преображается, словно Золушка из
@@ -114,7 +114,7 @@
             </div>
 
             <div class="col-md-6 col-12">
-                <p class="font-raleway">
+                <p class="font-raleway" data-aos="fade-down-left">
                     В W салоне каждая невеста преображается, словно Золушка из
                     <br>сказки. Ну а после полуночи волшебство не заканчивается, ведь
                     <br>платье остаётся с тобой навсегда. Именно поэтому мы хотим, чтобы
@@ -127,7 +127,7 @@
                     <br>даже через много много лет.
                 </p>
 
-                <p class="font-raleway">
+                <p class="font-raleway" data-aos="fade-up-left">
                     Тёплый и уютный W салон встречает тебя каждый день с 11 до 20.
                     <br>Поэтому можешь удобно спланировать свою подготовку ко дню
                     <br>ИКС и придти к нам в гости даже в воскресенье. Мы постараемся
@@ -145,17 +145,17 @@
         <div class="row">
             <div class="col-md-6 col-12">
 
-                <h4 class="font-raleway">Ну что, до встречи?</h4>
+                <h4 class="font-raleway" data-aos="fade-down-right">Ну что, до встречи?</h4>
 
-                <h2 class="font-caveat font-3x">p.s.</h2>
+                <h2 class="font-caveat font-3x" data-aos="fade-down-right">p.s.</h2>
 
-                <p class="font-raleway big">
+                <p class="font-raleway big" data-aos="fade-down-left">
                     Чтобы погрузится в выбор платьев и ничего не могло отвлечь тебя,
                     <br>записывайся к нам на примерку заранее.
                 </p>
             </div>
             <div class="col-md-6 col-12 text-center mb-4">
-                <img src="{{ asset('images/flower-heart.png') }}" class="img-fluid w-50" alt="">
+                <img src="{{ asset('images/flower-heart.png') }}" data-aos="fade-down-left" class="img-fluid w-50" alt="">
             </div>
         </div>
 

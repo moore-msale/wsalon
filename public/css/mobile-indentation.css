@@ -1,7 +1,25 @@
 /* 300px - 500px */
 @media screen and (min-width: 300px) and (max-width: 500px) {
-    .only-you {
-
+    .font-caveat
+    {
+        line-height: 100%;
+    }
+    .img-feed
+    {
+        width:135px!important;
+        height:140px!important;
+    }
+    .car-items
+    {
+        width:135px!important;
+    }
+    .img-mobile
+    {
+        bottom: 75% !important;
+    }
+    #sync1 .owl-dots
+    {
+        display: none!important;
     }
     .right-3 {
         right: 3%!important;
@@ -37,6 +55,7 @@
 
     }
     .pos-ab-mobile {
+        top:-30%!important;
         right: -20%!important;
     }
     .cholpon {
@@ -61,10 +80,10 @@
         transform: translate(1%,0)!important;
     }
     .about-us-text {
-        transform: translate(49%,23%)!important;
+        transform: translate(43%,56%)!important;
     }
     .about-us-frame {
-        transform: translate(32%,-123%)!important;
+        transform: translate(32%,-170%)!important;
         font-size: 18px!important;
     }
     .effect-2 {
@@ -143,11 +162,13 @@
     }
     #dresses .owl-prev {
         left: 12%;
-        bottom: -65%!important;
+        top: 95%!important;
+        height:70px;
     }
     #dresses .owl-next {
         right: 10%;
-        bottom: -65%!important;
+        top: 95%!important;
+        height:70px;
     }
 
 }
