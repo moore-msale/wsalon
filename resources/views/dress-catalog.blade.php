@@ -12,7 +12,7 @@
                 <div class="col-md-3 col-12">
                     <div class="dropdown">
                         <button class="btn dropdown-toggle font-raleway"
-                                style="font-size: 16px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA;"
+                                style="font-size: 11px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA;"
                                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
                             Сортировка по авторам
@@ -28,7 +28,7 @@
                 <div class="col-md-3 col-12">
                     <div class="dropdown">
                         <button class="btn dropdown-toggle font-raleway"
-                                style="font-size: 16px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA;"
+                                style="font-size: 11px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA;"
                                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
                             Сортировка по силуэтам
