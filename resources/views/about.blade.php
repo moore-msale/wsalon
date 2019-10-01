@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-8 col-12">
                 <p class="font-caveat font-3x  text-md-left text-center" data-aos="fade-down-right">
-                    <img src="{{ asset('images/lil-flower.png') }}" class="img-fluid position-relative"
+                    <img src="{{ asset('svg/flaw.svg') }}" class="img-fluid position-relative"
                          style="transform: translate(-80%, -80%);" alt="">
                     Твоя улыбка и счастливые глаза - наше вдохновение
                 </p>
@@ -15,7 +15,7 @@
 
             </div>
             <div class="col">
-                <img src="{{ asset('images/hearts-and-flower.png') }}" data-aos="fade-down-left" class="img-fluid position-relative"
+                <img src="{{ asset('svg/abouthearts.svg') }}" data-aos="fade-down-left" class="img-fluid position-relative"
                      style="transform: translateY(-30%);" alt="">
             </div>
 
@@ -48,14 +48,14 @@
                 </p>
 
                 <div class="text-right">
-                    <img src="{{ asset('images/lil-arrow-in-heart.png') }}" data-aos="fade-down-left" class="img-fluid"
+                    <img src="{{ asset('svg/arrowinheart.svg') }}" data-aos="fade-down-left" class="img-fluid"
                          style=" width: 60px; height: auto;" alt="">
                 </div>
 
                 <p class="font-caveat font-2x text-center" data-aos="fade-right">
                     Никаких платьев за миллион, для нас это не критерий.
                     <br>Только ты, твоя улыбка, только хардкор.
-                    <img src="{{ asset('images/oliva.png') }}" data-aos="fade-up-right" class="img-fluid" alt="">
+                    <img src="{{ asset('svg/oliva.svg') }}" data-aos="fade-up-right" class="img-fluid" alt="">
                 </p>
             </div>
 
@@ -155,7 +155,7 @@
                 </p>
             </div>
             <div class="col-md-6 col-12 text-center mb-4">
-                <img src="{{ asset('images/flower-heart.png') }}" data-aos="fade-down-left" class="img-fluid w-50" alt="">
+                <img src="{{ asset('svg/branchheart.svg') }}" data-aos="fade-down-left" class="img-fluid w-50" alt="">
             </div>
         </div>
 

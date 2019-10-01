@@ -5,18 +5,18 @@
         <br>менеджер перезвонит вам для подтверждения
     </p>
     <div class="form-group">
-        <input type="text" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4" id="exampleInputName" placeholder="Ваше имя">
+        <input type="text" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4 text-light" id="exampleInputName" placeholder="Ваше имя">
     </div>
 
     <div class="form-group">
-        <input type="tel" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4" id="exampleInputPhone" placeholder="Ваш телефон">
+        <input type="tel" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4 text-light" id="exampleInputPhone" placeholder="Ваш телефон">
     </div>
 
     <div class="form-group">
-        <input type="email" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Ваш email">
+        <input type="email" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4 text-light" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Ваш email">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4 date-format" id="exampleInputDate" placeholder="Дата примерки">
+        <input type="text" class="form-control border-top-0 border-right-0 border-left-0 bg-transparent rounded-0 border-bottom border-secondary mb-4 pt-4 date-format text-light" id="exampleInputDate" placeholder="Дата примерки">
     </div>
 
     <div class="d-flex justify-content-end">

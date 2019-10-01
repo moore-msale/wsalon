@@ -4,7 +4,7 @@
 
 @endpush
 @section('content')
-    <section class="mt-5 border-bottom border-top border-secondary">
+    <section class="mt-5 border-bottom border-top border-light">
         <div class="container ">
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-12">

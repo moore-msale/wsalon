@@ -1,17 +1,30 @@
 /* 300px - 500px */
 @media screen and (min-width: 300px) and (max-width: 500px) {
+
+    .mobile-pad
+    {
+        padding: 12% 0 0 10%!important;
+    }
+    .oliva
+    {
+        width:50%!important;
+    }
+    .texter
+    {
+        font-size: 90%!important;
+    }
     .font-caveat
     {
         line-height: 100%;
     }
     .img-feed
     {
-        width:135px!important;
-        height:140px!important;
+        width:100%!important;
+        height:27vh!important;
     }
     .car-items
     {
-        width:135px!important;
+        width:54%!important;
     }
     .img-mobile
     {
@@ -50,7 +63,7 @@
         display:  none!important;
     }
     .display-flex {
-        display:  flex;
+        display:  none;
         justify-content: center;
 
     }
@@ -119,7 +132,7 @@
         transform: translate(99%,-8%)!important;
     }
     .name-arr {
-        transform: translate(34%, 38%)!important;
+        transform: translate(10%, 38%)!important;
         width: 139px!important;
         height: 142px!important;
     }

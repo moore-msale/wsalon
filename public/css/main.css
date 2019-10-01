@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "TT Lovelies Script";
+    src: local('TT-Lovelies-Script'), local('TT Lovelies Script'),
+    url('/fonts/TTLoveliesScript.otf') format('opentype');
+}
+.TTLove
+{
+    font-family: "TT Lovelies Script";
+}
 .arrow-btn {
     width: 100px;
     top: 10px;
@@ -63,15 +72,15 @@ h2.biggest {
 }
 #sync2 .owl-nav .owl-prev
 {
-    width:50px;
-    height:17px;
+    width:51px;
+    height:16.5px;
     background-image: url('/svg/ArrowLeft.svg');
 }
 #sync2 .owl-nav .owl-next
 {
     transform: translateX(20px);
-    width:50px;
-    height:17px;
+    width:51px;
+    height:16.5px;
     background-image: url('/svg/ArrowRight.svg');
 }
 #sync1 .owl-dots
@@ -88,6 +97,14 @@ h2.biggest {
 .hover01:hover {
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
+}
+.hover01:hover .card .card-body .silhouette-text
+{
+    animation: neon .08s ease-in-out infinite alternate;
+}
+.hover01:hover .card .position-relative .main-img, .hover01:hover .card .position-relative .position-absolute
+{
+    animation: scaler 1s ease-in-out infinite alternate;
 }
 .p-32 {
     padding-top: 32%;
@@ -189,4 +206,35 @@ h2.biggest {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+
+
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+        0 0 30px rgba(202, 228, 225, 0.34),
+        0 0 12px rgba(30, 132, 242, 0.52),
+        0 0 21px rgba(30, 132, 242, 0.92),
+        0 0 34px rgba(30, 132, 242, 0.78),
+        0 0 54px rgba(30, 132, 242, 0.92);
+    }
+    to {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+        0 0 30px rgba(202, 228, 225, 0.42),
+        0 0 12px rgba(30, 132, 242, 0.58),
+        0 0 22px rgba(30, 132, 242, 0.84),
+        0 0 38px rgba(30, 132, 242, 0.88),
+        0 0 60px rgba(30, 132, 242, 1);
+    }
+}
+
+@keyframes scaler {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
 }

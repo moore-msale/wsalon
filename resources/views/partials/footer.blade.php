@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col p-0 d-flex">
+            <div class="col-lg col-12 p-0 d-flex">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.1484155786356!2d74.59046411545056!3d42.86971147915594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec95e35a68fa7%3A0x64a1e18aa91967c8!2sWsalon!5e0!3m2!1sru!2skg!4v1568719883625!5m2!1sru!2skg" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </div>
@@ -40,8 +40,8 @@
 <section class="bg-dark">
     <div class="container">
         <div class="row justify-content-between align-items-center text-light py-4">
-            <div class="col-md-2 col-12">
-                <img src="{{ asset('svg/white-logo.svg') }}" class="w-100" alt="">
+            <div class="col-md-2 col-12 text-center">
+                <img src="{{ asset('svg/white-logo.svg') }}" class="w-75" alt="">
             </div>
 
             <div class="col-md-2 col-12 copy">

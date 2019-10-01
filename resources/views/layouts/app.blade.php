@@ -174,13 +174,13 @@
 
             sync1.owlCarousel({
                 items: 1,
-                slideSpeed: 1000,
+                slideSpeed: 500,
                 nav: false,
                 autoplay: false,
-                animateOut: 'fadeOut',
+                // animateOut: 'fadeOut',
                 dots: true,
-                loop: true,
-                responsiveRefreshRate: 200,
+                // loop: true,
+                responsiveRefreshRate: 500,
                 navText: ['<svg width="0%" height="0%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="0%" height="0%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
             }).on('changed.owl.carousel', syncPosition);
 
@@ -192,11 +192,11 @@
                     items: slidesPerPage,
                     dots: true,
                     nav: true,
-                    animateOut: 'fadeOut',
-                    smartSpeed: 200,
-                    slideSpeed: 1000,
+                    // animateOut: 'fadeOut',
+                    smartSpeed: 500,
+                    slideSpeed: 500,
                     slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
-                    responsiveRefreshRate: 100
+                    responsiveRefreshRate: 500
                 }).on('changed.owl.carousel', syncPosition2);
 
             function syncPosition(el) {
@@ -243,7 +243,7 @@
             sync2.on("click", ".owl-item", function(e) {
                 e.preventDefault();
                 var number = $(this).index();
-                sync1.data('owl.carousel').to(number, 300, true);
+                sync1.data('owl.carousel').to(number, 100, true);
             });
         });
     </script>
