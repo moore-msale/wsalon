@@ -6,16 +6,20 @@
                 display: none !important;
             }
         }
+        .section-block
+        {
+            margin-bottom:80px;
+        }
     </style>
 @endpush
 @section('content')
-    <section class="mt-md-4">
+    <section class="mt-md-4 section-block">
         <div class="container overflow-h">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 p-0 mt-md-0 mt-4 translate-none" style="transform: translate(-18%, -2%);">
                     <div class="d-flex align-items-end">
                         <div class="col-6 p-1 translateY-none" style="transform: translateY(-50px);">
-                            <div class="card">
+                            <div class="card shadow-none">
                                 <img src="{{ asset('images/image-2.png') }}" class="card-img" data-aos="fade-down-right" alt="">
                                 <div
                                     class="card-img-overlay d-flex justify-content-center align-items-center text-center    text-white">
@@ -62,7 +66,7 @@
             </div>
         </div>
     </section>
-    <section class="overflow-h">
+    <section class="overflow-h section-block">
         <div class="container mt-3 mb-5 pb-5">
             <div class="row">
                 <div class="col-12 col-md-4 pr-0">
@@ -109,7 +113,7 @@
         </div>
     </section>
 
-    <section class="overflow-h">
+    <section class="overflow-h section-block">
         <div class="container mt-5 py-4">
             <div class="row">
                 <div class="col-12 col-md-6 p-0 position-relative">
@@ -195,7 +199,7 @@
     </section>
 
     {{--Счастье должно быть во всем--}}
-    <section class="overflow-h">
+    <section class="overflow-h section-block">
         <div class="container py-5 my-5">
             <div class="row d-flex justify-content-between">
                 <div class="col-12 col-md-7 position-relative">
@@ -226,7 +230,7 @@
         </div>
     </section>
     <!-- Наши девочки помогут вам -->
-    <section class="overflow-h">
+    <section class="overflow-h section-block">
         <div class="container">
             <div class="row">
 
@@ -290,7 +294,7 @@
             </div>
         </div>
     </section>
-    <section class="overflow-h">
+    <section class="overflow-h section-block">
         <div class="container py-5 position-relative">
             <img src="{{ asset('svg/bush.svg') }}" class="img-fluid" style="position: absolute; top:30%; left:-11%; width:11%;" alt="">
             <img src="{{ asset('svg/branch.svg') }}" class="img-fluid" style="position: absolute; top:40%; right:-10%; width:11%;" alt="">
@@ -299,7 +303,7 @@
                 $k = 1;
                 ?>
                 @foreach(\App\Silhouette::all() as $silhouette)
-                    <div class="col-12 col-md-4 my-3 hover01">
+                    <div class="col-12 col-md-4 my-3 hover01" data-aos="fade-down">
                         <a href="{{ route('catalog',['silhouette' => $silhouette->id]) }}" style="text-decoration: none;">
                         <div class="card border-0 rounded-0"
                              style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 500px; max-height: 650px;">
@@ -377,7 +381,7 @@
         </div>
     </section>
 
-    <section class=" overflow-h">
+    <section class=" overflow-h section-block">
 
         <div class="container py-5 position-relative">
             <img src="{{ asset('svg/OBJECTS.svg') }}" class="position-absolute right-3" alt="" style="width: 15%; right: -10%; top: -5%;">
@@ -390,7 +394,7 @@
                 <div class="col-12">
                     <div id="dresses" class="owl-carousel owl-theme">
                         @foreach(\App\Author::all() as $author)
-                            <div class="item hover01 p-1">
+                            <div class="item hover01 p-1" data-aos="fade-down">
                                 <a href="{{ route('catalog',['author' => $author->id]) }}" style="text-decoration: none; color:black;">
                                 <div class="card border-0">
                                     <div class="card-img-top">
@@ -411,7 +415,7 @@
         </div>
     </section>
 
-    <section class="position-relative overflow-h">
+    <section class="position-relative overflow-h section-block">
         <img src="{{ asset('svg/your_love.svg') }}" data-aos="fade-down-right" class="position-absolute" alt="" style="width: 20%; left: 0%; top: -10%;">
 
         <div class="container">
@@ -422,9 +426,9 @@
             </div>
             <div class="row">
                 @foreach(\App\Brand::all() as $brand)
-                <div class="col-12 col-md-4 text-center" data-aos="fade-down">
+                <div class="col-12 col-md-4 text-center brands" data-aos="fade-down">
                     <a href="{{ $brand->url }}" style="color:#000000; text-decoration: none;">
-                    <h3 class="font-caveat font-3x">{{ $brand->name }}</h3>
+                    <h3 class="font-caveat font-3x brands-text">{{ $brand->name }}</h3>
                     <img src="{{ asset('svg/hr.svg') }}" class="mb-4" alt="">
                     <p class="font-raleway big">
                         {{$brand->description}}
@@ -436,7 +440,7 @@
         </div>
     </section>
 
-    <section class=" overflow-h">
+    <section class=" overflow-h section-block">
         <div class="container py-5 position-relative ">
             <img src="{{ asset('svg/coffeeMaker.svg') }}" data-aos="fade-down-right" class="coffeeMaker position-absolute" alt="" style="width: 15%; left: -10%; top: 1%;">
             <div class="row align-items-center mar-img">
@@ -463,7 +467,7 @@
     </section>
 
     {{-- Лучший свадебный салон в городе --}}
-    <section class="overflow-h">
+    <section class="overflow-h section-block">
         <div class="container-fluid py-5">
             <div class="row position-relative">
                 <img src="{{ asset('svg/letter.svg') }}" class="img-fluid position-absolute pos-img3 d-lg-block d-none" alt="" style="left: 0; bottom: 10%;">
@@ -479,7 +483,7 @@
                                         <img class="img-fluid" style="transform: translateY(-10%)" src="{{ asset('images/feedback.png') }}" alt="">
                                         <div class="position-absolute car-items" style="top: 14.2%; left:30.5%; width:240px; height:159px;">
                                         <div id="sync1" class="owl-carousel owl-theme">
-                                            @foreach(\App\Feed::all() as $feed)
+                                            @foreach(\App\Feed::where('active',1)->get() as $feed)
                                                 <a href="/feedback" style="text-decoration: none;">
                                             <div class="item">
                                                 <div class="img-feed" style="width:240px; height:250px; background-image: url({{ asset('storage/'.str_replace('\\', '/', $feed->image)) }}); background-size: cover; background-position: center;"></div>
@@ -493,7 +497,7 @@
                                 </div>
                                 <div class="col-lg-6 col-12" data-aos="fade-up">
                                     <div id="sync2" class="owl-carousel">
-                                        @foreach(\App\Feed::all() as $feed)
+                                        @foreach(\App\Feed::where('active',1)->get() as $feed)
                                         <div class="item">
                                             <h2 class="font-caveat font-3x" style="color:#000000;">{{ $feed->title }}</h2>
                                             <p class="font-raleway" style="color:#000000;">
@@ -503,6 +507,13 @@
                                         </div>
 
                                         @endforeach
+                                    </div>
+                                    <div class="text-right">
+                                    <a href="/feedback" data-aos="zoom-in"
+                                       class="btn btn-wedding font-raleway font-weight-bold text-dark rounded-pill px-4 mr-auto">
+                                        Все отзывы
+                                    </a>
+
                                     </div>
                                     
                                 </div>
@@ -543,7 +554,7 @@
             </div>
     </section>
     <!--Свадебное платье главный атребут-->
-    <section class="overflow-h">
+    <section class="overflow-h section-block">
         <div class="container py-4">
             <div class="row">
 

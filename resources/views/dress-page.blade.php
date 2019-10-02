@@ -5,7 +5,7 @@
         <div class="container ">
             <div class="row justify-content-center">
                 <div class="col-4 text-center">
-                    <h2 class="font-caveat font-3x">Название</h2>
+                    <h2 class="font-caveat font-3x">{{ $dress->title }}</h2>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                             {{ $dress->color }}
                         </p>
                         <div class="d-flex justify-content-center pt-3">
-                            <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4" href="{{ url('/') }}">
+                            <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4"  data-toggle="modal" data-target="#bidModal">
                                 Записаться на примерку
                             </a>
                         </div>
@@ -60,5 +60,5 @@
         </div>
     </section>
 
-
+@include('partials.modals.bid')
 @endsection

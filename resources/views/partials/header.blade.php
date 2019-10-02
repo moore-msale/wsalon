@@ -1,12 +1,20 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <div class="container-fluid">
-        {{--        <a class="navbar-brand" href="{{ url('/') }}">--}}
-        {{--            {{ config('app.name', 'Laravel') }}--}}
-        {{--        </a>--}}
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-            <span class="navbar-toggler-icon"></span>
+        <div class="d-flex">
+            <div class="d-lg-none d-block">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img class="img-fluid w-75" src="{{ asset('images/logo.png') }}" alt="">
+                </a>
+            </div>
+        <button class="text-white navbar-toggler ml-auto menushka" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+            <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </button>
+        </div>
                 <li class="nav-item mr-md-4 d-none d-md-block">
                     <a class="nav-link text-dark font-weight-bold font-caveat biggest text-uppercase" href="{{ url('/') }}">
                     <img src="{{ asset('images/logo.png') }}" class="logo" alt="">
@@ -49,7 +57,7 @@
                 {{--                        </div>--}}
                 {{--                    </li>--}}
                 {{--                @endguest--}}
-                <img src="{{ asset('images/logo.png') }}" class="logo d-md-none" alt="">
+                {{--<img src="{{ asset('images/logo.png') }}" class="logo d-md-none" alt="">--}}
 
                 <li class="nav-item mr-md-4 d-md-none order-1">
                     <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
@@ -71,7 +79,7 @@
                         НАШИ ЛЮБИМЫЕ БРЭНДЫ
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 order-6">
+                <li class="nav-item mr-md-4 order-6 mt-lg-0 mt-3">
                     <a class="nav-link text-dark font-weight-bold font-caveat biggest text-uppercase" href="{{ url('/') }}">
                         г. Бишкек, Московская 150
                     </a>
@@ -81,7 +89,7 @@
                         +996 770 001 188
                     </a>
                 </li>
-                <li class="nav-item mr-md-5 pr-md-5 order-5 mt-5 mt-md-0 order-md-11">
+                <li class="nav-item mr-md-5 pr-md-5 order-5 mt-3 mt-md-0 order-md-11">
                     <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 application"
                        href="{{ url('/') }}">
                         Записаться на примерку
@@ -122,6 +130,7 @@
                         {{--<li><a href="/contact">Contact</a></li>--}}
                     {{--</ul>--}}
                 {{--</nav>--}}
+            </ul>
         </div>
     </div>
 </nav>
@@ -131,22 +140,22 @@
         <img src="{{ asset('svg/white-logo.svg') }}" class="logo mb-5" alt="">
 
         <li class="nav-item text-left mb-2">
-            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('/') }}">
+            <a class="nav-link text-light font-weight-bold font-caveat big points" href="{{ url('/') }}">
                 ГЛАВНАЯ
             </a>
         </li>
         <li class="nav-item text-left mb-2">
-            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('/about') }}">
+            <a class="nav-link text-light font-weight-bold font-caveat big points" href="{{ url('/about') }}">
                 О САЛОНЕ
             </a>
         </li>
         <li class="nav-item text-left mb-2">
-            <a class="nav-link text-light font-weight-bold font-caveat big" href="{{ url('catalog') }}">
+            <a class="nav-link text-light font-weight-bold font-caveat big points" href="{{ url('catalog') }}">
                 СИЛУЭТЫ ПЛАТЬЕВ
             </a>
         </li>
         <li class="nav-item text-left mb-2">
-            <a class="nav-link text-light font-weight-bold font-caveat big"
+            <a class="nav-link text-light font-weight-bold font-caveat big points"
                href="{{ url('/#favorite-brends') }}">
                 НАШИ ЛЮБИМЫЕ БРЭНДЫ
             </a>
