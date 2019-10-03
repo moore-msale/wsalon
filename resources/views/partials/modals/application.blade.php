@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="d-flex justify-content-end">
-                        <a class="btn rounded-pill text-dark border-0 mt-4 bid" data-id="2" style="box-shadow: 0px 4px 50px rgba(217, 218, 218, 0.5);background: #C1CEBE;">Отправить заявку</a>
+                        <a class="btn btn-wedding rounded-pill text-dark border-0 mt-4 bid font-weight-bold" data-id="2">Отправить заявку</a>
                     </div>
 
                 </form>

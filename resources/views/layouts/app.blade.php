@@ -48,11 +48,12 @@
     <div id="app">
         @include('partials.header')
 
-        <main>
+        <main id="cont">
             @yield('content')
         </main>
-    </div>
+
     @include('partials.footer')
+    </div>
     @include('partials.modals.application')
 
     <script src="{{ asset('js/app.js') }}"></script>
@@ -64,6 +65,17 @@
 <script>
     $(document).ready(function() {
         $('.preloader').fadeOut('slow').delay(400);
+    });
+</script>
+<script>
+    $('.menu-burger').click( function () {
+        document.getElementById("mySidenav").style.right = "0px";
+        // document.getElementById("app").style.transform = "translate(-300px)";
+    });
+
+    $('.sidenav').mouseleave( function () {
+        document.getElementById("mySidenav").style.right = "-300px";
+        // document.getElementById("app").style.transform = "none";
     });
 </script>
     <script>
@@ -310,7 +322,7 @@
 
                 var height = 50;
                 var scrollTop = $(window).scrollTop();
-
+                // $('.sidenav').style.top = scrollTop + 'px';
                 if (scrollTop >= height - 5) {
                     $('.menuse').addClass('boxer');
                 } else {

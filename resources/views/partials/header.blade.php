@@ -231,13 +231,5 @@
             {{--}--}}
         {{--);--}}
     {{--</script>--}}
-    <script>
-        $('.menu-burger').click( function () {
-            document.getElementById("mySidenav").style.right = "0px";
-        });
 
-        $('.sidenav').mouseleave( function () {
-            document.getElementById("mySidenav").style.right = "-300px";
-        });
-    </script>
 @endpush
