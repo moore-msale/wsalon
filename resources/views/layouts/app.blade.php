@@ -27,10 +27,24 @@
         {
             overflow-x: hidden;
         }
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            /*background-color:grey;*/
+            background-image: url({{ asset('images/logo.png') }});
+            background-repeat: no-repeat;
+            background-color: #FFF;
+            background-position: center;
+        }
     </style>
     @stack('styles')
 </head>
 <body class="bg-white">
+<div class="preloader"></div>
     <div id="app">
         @include('partials.header')
 
@@ -47,6 +61,11 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.preloader').fadeOut('slow').delay(400);
+    });
+</script>
     <script>
         AOS.init();
     </script>
@@ -273,6 +292,33 @@
         });
 
 
+    </script>
+    <script>
+
+        $(document).ready(function() {
+            let lastScrollTop = $(window).scrollTop();
+
+            $(window).scroll(function() {
+                var st = $(this).scrollTop();
+                if (st > lastScrollTop){
+                    // downscroll code
+
+                } else {
+                    // upscroll code
+                }
+                lastScrollTop = st;
+
+                var height = 50;
+                var scrollTop = $(window).scrollTop();
+
+                if (scrollTop >= height - 5) {
+                    $('.menuse').addClass('boxer');
+                } else {
+                    $('.menuse').removeClass('boxer');
+                }
+
+            });
+        });
     </script>
     @stack('scripts')
 </body>

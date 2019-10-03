@@ -7,11 +7,11 @@
     <section class="mt-5 border-bottom border-top border-light">
         <div class="container ">
             <div class="row justify-content-between">
-                <div class="col-lg-5 col-12">
-                    <h2 class="font-caveat font-3x text-center">Отзывы наших клиентов</h2>
+                <div class="col-lg-5 col-12 pt-lg-0 pt-4">
+                    <h2 class="font-caveat font-3x text-center w-100">Отзывы наших клиентов</h2>
                 </div>
-                <div class="col-lg-7 col-12 d-flex align-items-center">
-                    <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 ml-auto"  data-toggle="modal" data-target="#feedModal"
+                <div class="col-lg-3 col-12 d-flex align-items-center py-lg-0 py-4">
+                    <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 mx-auto"  data-toggle="modal" data-target="#feedModal"
                        href="{{ url('/') }}">
                         Оставить отзыв
                     </a>
@@ -23,19 +23,42 @@
 
 <div class="container-fluid">
     <div class="row p-lg-5 p-0">
+        <?php
+            $i = 1;
+        ?>
         @foreach(\App\Feed::where('active',1)->get() as $feed)
-        <div class="col-lg-4 col-12 p-4" data-aos="fade-up">
-            <div class="p-4 shadow" style="cursor:pointer;" data-toggle="modal" data-target="#feedbackModal-{{ $feed->id }}">
-            <div class="d-flex align-items-end shadow" style="height:380px; background-image: url({{ asset('storage/'.str_replace('\\', '/', $feed->image)) }}); background-size: cover; background-position: center;">
+        <div class="col-lg-4 col-12 p-4" data-aos="fade-up"
+        @if($i == 1)
+            style="transform: rotate3d(31,-23,4,-14deg);"
+        @elseif($i == 2)
+             style="transform: rotate3d(56,-8,-7,-19deg);"
+        @elseif($i == 3)
+             style="transform: rotate3d(56,-8,-7,-19deg);"
+        @elseif($i == 4)
+             style="transform: rotate3d(-9,-39,6,-17deg);"
+        @elseif($i == 5)
+             style="transform: rotate3d(-20,-67,6,17deg);"
+        @endif
+        >
+            <div class="p-4 shadow" style="cursor:pointer; background-color: #E4E4DE;" data-toggle="modal" data-target="#feedbackModal-{{ $feed->id }}">
+            <div class="d-flex align-items-end" style="height:380px; background-image: url({{ asset('storage/'.str_replace('\\', '/', $feed->image)) }}); background-size: cover; background-position: center;">
 
             </div>
-            <div class="w-100 bg-white pt-3">
-                <h4 style="color:#3a3c51">
+            <div class="w-100 pt-4 pb-3">
+                <h4 class="font-caveat font-2x" style="color:#3a3c51;">
                     {{ $feed->name }}
                 </h4>
             </div>
             </div>
         </div>
+            <?php
+                $i = $i + 1;
+
+                if($i > 5)
+                    {
+                        $i = 1;
+                    }
+            ?>
         @endforeach
     </div>
 </div>

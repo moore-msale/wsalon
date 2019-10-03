@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top menuse" style="box-shadow: none;" >
     <div class="container-fluid">
         <div class="d-flex">
             <div class="d-lg-none d-block">
@@ -79,17 +79,22 @@
                         НАШИ ЛЮБИМЫЕ БРЭНДЫ
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 order-6 mt-lg-0 mt-3">
-                    <a class="nav-link text-dark font-weight-bold font-caveat biggest text-uppercase" href="{{ url('/') }}">
+                <li class="nav-item mr-md-4 d-md-none order-5">
+                    <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/feedback') }}">
+                        ОТЗЫВЫ
+                    </a>
+                </li>
+                <li class="nav-item mr-md-4 order-7 mt-lg-0 mt-3">
+                    <a class="nav-link text-dark font-weight-bold font-caveat biggest text-uppercase" href="{{ url('https://2gis.kg/bishkek/firm/70000001022006342?m=74.592637%2C42.86968%2F18') }}">
                         г. Бишкек, Московская 150
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 order-7">
-                    <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{{ url('/') }}">
+                <li class="nav-item mr-md-4 order-8">
+                    <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{{ url('tel: +996 770 001 188') }}">
                         +996 770 001 188
                     </a>
                 </li>
-                <li class="nav-item mr-md-5 pr-md-5 order-5 mt-3 mt-md-0 order-md-11">
+                <li class="nav-item mr-md-5 pr-md-5 order-6 mt-3 mt-md-0 order-md-11">
                     <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 application"
                        href="{{ url('/') }}">
                         Записаться на примерку
@@ -160,6 +165,12 @@
                 НАШИ ЛЮБИМЫЕ БРЭНДЫ
             </a>
         </li>
+        <li class="nav-item text-left mb-2">
+            <a class="nav-link text-light font-weight-bold font-caveat big points"
+               href="{{ url('/feedback') }}">
+                ОТЗЫВЫ
+            </a>
+        </li>
         <li class="nav-item mt-5 text-center mb-2">
             <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 application"
                href="{{ url('/') }}">
@@ -167,12 +178,12 @@
             </a>
         </li>
         <li class="nav-item text-center mb-2">
-            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('/') }}">
+            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('https://2gis.kg/bishkek/firm/70000001022006342?m=74.592637%2C42.86968%2F18') }}">
                 г. Бишкек, Московская 150
             </a>
         </li>
         <li class="nav-item text-center mb-4">
-            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('/') }}">
+            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('tel: +996 770 001 188') }}">
                 +996 770 001 188
             </a>
         </li>

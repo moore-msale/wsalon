@@ -5,11 +5,12 @@
             br {
                 display: none !important;
             }
+            .section-block
+            {
+                margin-bottom:80px;
+            }
         }
-        .section-block
-        {
-            margin-bottom:80px;
-        }
+
     </style>
 @endpush
 @section('content')
@@ -393,16 +394,16 @@
             <div class="row">
                 <div class="col-12">
                     <div id="dresses" class="owl-carousel owl-theme">
-                        @foreach(\App\Author::all() as $author)
-                            <div class="item hover01 p-1" data-aos="fade-down">
-                                <a href="{{ route('catalog',['author' => $author->id]) }}" style="text-decoration: none; color:black;">
+                        @foreach(\App\Dress::where('top',1)->get() as $author)
+                            <div class="item authors p-1" data-aos="fade-down">
+                                <a href="{{ route('dress', $author->id) }}" style="text-decoration: none; color:black;">
                                 <div class="card border-0">
                                     <div class="card-img-top">
                                         <img style="height:390px;" src="{{ asset('storage/'.$author->image) }}" class="img-fluid d-lg-block d-none" alt="">
                                         <img style="height:500px;" src="{{ asset('storage/'.$author->image) }}" class="img-fluid d-lg-none d-block" alt="">
                                     </div>
                                     <div class="card-body text-center">
-                                        <h3 class="font-caveat font-3x" id="favorite-brends">{{ $author->name }}</h3>
+                                        <h3 class="font-caveat font-3x" id="favorite-brends">{{ $author->author->name }}</h3>
                                         <p class="font-raleway big">Collection 2019</p>
                                     </div>
                                 </div>

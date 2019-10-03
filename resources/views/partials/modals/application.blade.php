@@ -7,8 +7,8 @@
                 <button type="button" class="close position-absolute text-white" style="top: 1%; right: 2%;" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <form style="padding: 4rem;border: 30px solid #3A3C51; background: #363749;">
-                    <h3 class="font-caveat font-3x text-light mb-3">Оставить заявку</h3>
+                <form style="padding: 3rem;border: 30px solid #3A3C51; background: #363749;">
+                    <h3 class="font-caveat text-light mb-3" style="font-size:260%;">Запишитесь на примерку</h3>
                     <p class="font-raleway text-light mb-3 small">
                         Оставьте свою заявку на примерку платья, наш
                         <br>менеджер перезвонит вам для подтверждения
