@@ -39,19 +39,19 @@
 
 <section class="bg-dark">
     <div class="container">
-        <div class="moore pt-5">
-            <a href="https://to-moore.com/" style="
-    padding-right: 1%;
-">
-                <img src="https://to-moore.com/whitemoore.png" width="120" height="auto" alt="Moore studio" style="padding-right: 1%;" >
-            </a>
-            <div class=""><a href="https://to-moore.com/" style="color:white!important;">Разработано и поддерживается<br> компанией MOORE STUDIO</a></div>
-        </div>
+
         <div class="row justify-content-between align-items-center text-light py-4">
             <div class="col-md-2 col-12 text-center">
-                <img src="{{ asset('svg/white-logo.svg') }}" class="w-75" alt="">
+                <img src="{{ asset('svg/white-logo.svg') }}" class="w-100" alt="">
             </div>
-
+            <div class="moore pt-5 col-md-8">
+                <a href="https://to-moore.com/" style="
+    padding-right: 1%;
+">
+                    <img src="https://to-moore.com/whitemoore.png" width="120" height="auto" alt="Moore studio" style="padding-right: 1%;" >
+                </a>
+                <div class=""><a href="https://to-moore.com/" style="color:white!important;">Разработано и поддерживается<br> компанией MOORE STUDIO</a></div>
+            </div>
             <div class="col-md-2 col-12 copy">
                 <p class="m-0">@Copyright 2019</p>
             </div>

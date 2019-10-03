@@ -45,6 +45,7 @@
 </head>
 <body class="bg-white">
 <div class="preloader"></div>
+<div class="backdrop" style="position: fixed; top:0%; left:0%; width:100%; height:100%; z-index:999; display: none; background-color:#dedede; opacity:0.4;"></div>
     <div id="app">
         @include('partials.header')
 
@@ -71,12 +72,20 @@
     $('.menu-burger').click( function () {
         document.getElementById("mySidenav").style.right = "0px";
         // document.getElementById("app").style.transform = "translate(-300px)";
+        $('.backdrop').show(100);
     });
 
-    $('.sidenav').mouseleave( function () {
+    $('.backdrop').click( function () {
         document.getElementById("mySidenav").style.right = "-300px";
+        $('.backdrop').hide(100);
         // document.getElementById("app").style.transform = "none";
     });
+    $('.closebtn').click( function () {
+        document.getElementById("mySidenav").style.right = "-300px";
+        $('.backdrop').hide(100);
+        // document.getElementById("app").style.transform = "none";
+    });
+
 </script>
     <script>
         AOS.init();

@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-lg-4 col-12 position-relative">
                     <div class="dress-desc py-5 px-5 sticky-top w-100">
-                        <h2 class="dress-header pb-4 font-weight-bold font-raleway">
+                        <h2 class="dress-header pb-4 font-caveat font-3x">
                             {{ $dress->title }}
                         </h2>
                         <p class="dress-point font-weight-light font-raleway mb-1" >

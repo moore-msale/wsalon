@@ -36,7 +36,7 @@
             <img class="img-fluid w-100" src="{{ asset('storage/'.$dress->image)  }}">
             </div>
             <div class="position-absolute bg-white shadow p-3" style="bottom: 0; width: 92%; z-index:100;">
-                <h4 class="ml-2 text-left" style="color: #3A3C51; ">{{ $dress->title }}</h4>
+                <h4 class="ml-1 text-left font-caveat font-2x" style="color: #3A3C51; ">{{ $dress->title }}</h4>
                 <div  class="d-flex text-left">
                     <div class="mr-3 ml-2">
                         <p class="font-raleway mb-0" style="color: #3A3C51; font-size: 0.8rem;">Дизайнер</p>

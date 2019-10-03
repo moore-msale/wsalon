@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top menuse" style="box-shadow: none;" >
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top menuse" style="box-shadow: none; z-index:998!important;" >
     <div class="container-fluid">
         <div class="d-flex">
             <div class="d-lg-none d-block">
@@ -140,6 +140,7 @@
     </div>
 </nav>
 <div id="mySidenav" class="sidenav d-md-flex d-none">
+    <a href="javascript:void(0)" class="closebtn text-white">×</a>
     <ul class="pl-4 menu-nav" style="list-style: none;">
         <li class="w-100"></li>
         <img src="{{ asset('svg/white-logo.svg') }}" class="logo mb-5" alt="">
