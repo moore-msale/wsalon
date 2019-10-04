@@ -20,35 +20,56 @@
                     @endforeach
                 </div>
                 <div class="col-lg-4 col-12 position-relative">
-                    <div class="dress-desc py-5 px-5 sticky-top w-100">
-                        <h2 class="dress-header pb-4 font-caveat font-3x">
+                    <div class="dress-desc px-5 sticky-top w-100" style="padding-top:15%; padding-bottom:15%;">
+
+                        <h2 class="dress-header pb-4 font-raleway font-weight-bold font-2x text-white text-center">
                             {{ $dress->title }}
                         </h2>
-                        <p class="dress-point font-weight-light font-raleway mb-1" >
-                            Дизайнер
-                        </p>
-                        <p class="dress-info font-weight-bold font-raleway">
-                            {{ $dress->author->name }}
-                        </p>
-                        <p class="dress-point pt-3  font-weight-light font-raleway mb-1">
-                            Страна
-                        </p>
-                        <p class="dress-info font-weight-bold font-raleway">
-                            {{ $dress->country }}
-                        </p>
-                        <p class="dress-point pt-3  font-weight-light font-raleway mb-1">
-                            Размер
-                        </p>
-                        <p class="dress-info font-weight-bold font-raleway">
-                            {{ $dress->size }}
-                        </p>
-                        <p class="dress-point pt-3  font-weight-light font-raleway mb-1">
-                            Цвет
-                        </p>
-                        <p class="dress-info font-weight-bold font-raleway">
-                            {{ $dress->color }}
-                        </p>
-                        <div class="d-flex justify-content-center pt-3">
+                        <div class="d-flex align-items-center">
+                            <p class="dress-point font-weight-light font-raleway mb-1 text-white w-25">
+                                Дизайнер
+                            </p>
+                            <div class="w-75 px-4 py-2 dress-block">
+                            <p class="dress-info font-weight-normal font-raleway mb-1 text-white">
+                                {{ $dress->author->name }}
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <p class="dress-point font-weight-light font-raleway mb-1 text-white w-25">
+                                Страна
+                            </p>
+                            <div class="w-75 px-4 py-2 dress-block">
+                            <p class="dress-info font-weight-normal font-raleway mb-1 text-white">
+                                {{ $dress->country }}
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <p class="dress-point font-weight-light font-raleway mb-1 text-white w-25">
+                                Размер
+                            </p>
+                            <div class="w-75 px-4 py-2 dress-block">
+                                <p class="dress-info font-weight-normal font-raleway mb-1 text-white">
+                                    {{ $dress->size }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <p class="dress-point font-weight-light font-raleway mb-1 text-white w-25">
+                                Цвет
+                            </p>
+                            <div class="w-75 px-4 py-2 dress-block">
+                                <p class="dress-info font-weight-normal font-raleway mb-1 text-white">
+                                    {{ $dress->color }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center pt-5">
                             <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4"  data-toggle="modal" data-target="#bidModal">
                                 Записаться на примерку
                             </a>
