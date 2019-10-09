@@ -40,6 +40,12 @@
             background-color: #FFF;
             background-position: center;
         }
+        @media screen and (min-width: 300px) and (max-width: 700px) {
+            .preloader
+            {
+                background-size:80%;
+            }
+        }
     </style>
     @stack('styles')
 </head>
@@ -50,7 +56,9 @@
         @include('partials.header')
 
         <main id="cont">
+            <div class="pt-3">
             @yield('content')
+            </div>
         </main>
 
     @include('partials.footer')
@@ -157,7 +165,7 @@
                 },
                 success: data => {
                     $('#applicationModal').modal('hide');
-                    swal("Заявка отправлена","Мы скоро свяжемся с вами!","success");
+                    swal("","Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.","success");
                     $('#name-' + id).val('');
                     $('#phone-' + id).val('');
                     $('#email-' + id).val('');
@@ -192,7 +200,7 @@
                 },
                 success: data => {
                     $('#bidModal').modal('hide');
-                    swal("Заявка отправлена","Мы скоро свяжемся с вами!","success");
+                    swal("","Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.","success");
                     $('#name').val('');
                     $('#phone').val('');
                     $('#email').val('');

@@ -3,8 +3,13 @@
 @section('content')
     <section class="mt-5 border-bottom border-top border-light">
         <div class="container ">
-            <div class="row justify-content-center">
-                <div class="col-4 text-center">
+            <div class="row justify-content-center position-relative">
+                <a href="/catalog" class="position-absolute d-lg-block d-none" style="top:15%; left:-15%; color: black;">
+                    <div class="scaler">
+                    <img style="width:100px; height:20px;" src="{{asset('/svg/arleft.svg')}}" alt=""><span class="font-caveat biggest">Вернуться в каталог</span>
+                    </div>
+                </a>
+                <div class="col-lg-4 col-8 text-center">
                     <h2 class="font-caveat font-3x">{{ $dress->title }}</h2>
                 </div>
             </div>
@@ -12,7 +17,7 @@
     </section>
 
     <section>
-        <div class="container-fluid p-5">
+        <div class="container-fluid p-lg-5 p-3  ">
             <div class="row">
                 <div class="col-lg-8 col-12">
                     @foreach($dress->images as $image)
@@ -20,7 +25,7 @@
                     @endforeach
                 </div>
                 <div class="col-lg-4 col-12 position-relative">
-                    <div class="dress-desc px-5 sticky-top w-100" style="padding-top:15%; padding-bottom:15%;">
+                    <div class="dress-desc px-lg-5 px-4 sticky-top w-100" style="padding-top:15%; padding-bottom:15%;">
 
                         <h2 class="dress-header pb-4 font-raleway font-weight-bold font-2x text-white text-center">
                             {{ $dress->title }}
@@ -69,7 +74,17 @@
                             </div>
                         </div>
 
-                        <div class="d-flex justify-content-center pt-5">
+                        @if(isset($dress->price))
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="px-4 py-2 text-center w-100">
+                                <p class="font-weight-normal font-caveat mb-1 text-white font-3x">
+                                    ${{ $dress->price }} USD
+                                </p>
+                            </div>
+                        </div>
+                        @endif
+
+                        <div class="d-flex justify-content-center pt-3">
                             <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4"  data-toggle="modal" data-target="#bidModal">
                                 Записаться на примерку
                             </a>

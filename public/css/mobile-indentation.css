@@ -1,6 +1,9 @@
 /* 300px - 500px */
-@media screen and (min-width: 300px) and (max-width: 500px) {
-
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    .call-us
+    {
+        border-left: 0px;
+    }
     .mobile-pad
     {
         padding: 12% 0 0 10%!important;
@@ -115,7 +118,7 @@
     }
     .font-3x {
         font-size: 282%!important;
-        width: 90%;
+        width: 100%;
     }
     .coffeeMaker {
         width: 13%!important;
@@ -182,6 +185,10 @@
         right: 10%;
         top: 95%!important;
         height:70px;
+    }
+    .img-layer1
+    {
+        width:84%!important;
     }
 
 }

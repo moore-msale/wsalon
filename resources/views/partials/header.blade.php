@@ -71,7 +71,7 @@
                 </li>
                 <li class="nav-item mr-md-4 d-md-none order-3">
                     <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('catalog') }}">
-                        СИЛУЭТЫ ПЛАТЬЕВ
+                        ЛЮБИМЫЕ ПЛАТЬЯ
                     </a>
                 </li>
                 <li class="nav-item mr-md-4 d-md-none order-4">
@@ -85,13 +85,24 @@
                     </a>
                 </li>
                 <li class="nav-item mr-md-4 order-7 mt-lg-0 mt-3">
-                    <a class="nav-link text-dark font-weight-bold font-caveat biggest text-uppercase" href="{{ url('https://2gis.kg/bishkek/firm/70000001022006342?m=74.592637%2C42.86968%2F18') }}">
+                    <a class="nav-link text-dark font-weight-bold font-caveat biggest text-uppercase" href="{{ url('https://2gis.kg/bishkek/firm/70000001022006342?m=74.592637%2C42.86968%2F18') }}" target="_blank">
                         г. Бишкек, Московская 150
                     </a>
                 </li>
                 <li class="nav-item mr-md-4 order-8">
                     <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{{ url('tel: +996 770 001 188') }}">
                         +996 770 001 188
+                    </a>
+                </li>
+                <li class="nav-item mr-md-4 order-8">
+                    <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="https://www.instagram.com/weddingsalonkg/" target="_blank">
+                        <div class="instagram">
+                            <div class="logo2">
+                                <div class="logo_border"></div>
+                                <div class="logo_circle"></div>
+                                <div class="logo_light"></div>
+                            </div>
+                        </div>
                     </a>
                 </li>
                 <li class="nav-item mr-md-5 pr-md-5 order-6 mt-3 mt-md-0 order-md-11">
@@ -157,7 +168,7 @@
         </li>
         <li class="nav-item text-left mb-2">
             <a class="nav-link text-light font-weight-bold font-caveat big points" href="{{ url('catalog') }}">
-                СИЛУЭТЫ ПЛАТЬЕВ
+                ЛЮБИМЫЕ ПЛАТЬЯ
             </a>
         </li>
         <li class="nav-item text-left mb-2">

@@ -98,7 +98,7 @@
                     <img src="{{ asset('images/machine.png') }}" data-aos="zoom-out-down" class="img-fluid" alt="">
                 </div>
                 <div class="col-4"></div>
-                <div class="col-4 position-relative">
+                <div class="col-lg-4 col-6 position-relative">
                     <img src="{{ asset('svg/eaves.svg') }}" data-aos="fade-left" class="position-absolute img-layers"
                          style="bottom: -10%; left: -20%; width: 15%;" alt="">
                     <img src="{{ asset('svg/eaves2.svg') }}" data-aos="fade-right" class="position-absolute img-layers"
@@ -428,7 +428,7 @@
             <div class="row">
                 @foreach(\App\Brand::all() as $brand)
                 <div class="col-12 col-md-4 text-center brands" data-aos="fade-down">
-                    <a href="{{ $brand->url }}" style="color:#000000; text-decoration: none;">
+                    <a href="{{ $brand->url }}" style="color:#000000; text-decoration: none;" target="_blank">
                     <h3 class="font-caveat font-3x brands-text">{{ $brand->name }}</h3>
                     <img src="{{ asset('svg/hr.svg') }}" class="mb-4" alt="">
                     <p class="font-raleway big">
@@ -485,11 +485,9 @@
                                         <div class="position-absolute car-items" style="top: 14.2%; left:30.5%; width:240px; height:159px;">
                                         <div id="sync1" class="owl-carousel owl-theme">
                                             @foreach(\App\Feed::where('active',1)->get() as $feed)
-                                                <a href="/feedback" style="text-decoration: none;">
                                             <div class="item">
                                                 <div class="img-feed" style="width:240px; height:250px; background-image: url({{ asset('storage/'.str_replace('\\', '/', $feed->image)) }}); background-size: cover; background-position: center;"></div>
                                             </div>
-                                                </a>
                                             @endforeach
                                         </div>
                                         </div>
