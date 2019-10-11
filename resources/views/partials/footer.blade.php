@@ -2,7 +2,7 @@
 <section class="mt-2" style="margin-top: -100px;" id="contacts-form">
     <div class="container-fluid">
         <div class="row align-items-end">
-            <div class="col-lg-2 p-0 d-none d-md-block position-relative">
+            <div class="col-lg-2 p-0 d-none d-xl-block position-relative">
                 <img src="{{ asset('images/footer-img.png') }}" class="girl" width="100%" height="500px">
                 <div>
 
@@ -39,7 +39,6 @@
 
 <section class="bg-dark">
     <div class="container">
-
         <div class="row justify-content-between align-items-center text-light py-4">
             <div class="col-md-2 col-12 text-center">
                 <img src="{{ asset('svg/white-logo.svg') }}" class="w-100" alt="">

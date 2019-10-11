@@ -17,7 +17,7 @@
     <section class="mt-md-4 section-block">
         <div class="container overflow-h">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-6 p-0 mt-md-0 mt-4 translate-none" style="transform: translate(-18%, -2%);">
+                <div class="col-12 col-lg-6 p-0 mt-md-0 mt-4 translate-none translateXY-none" style="transform: translate(-18%, -2%);">
                     <div class="d-flex align-items-end">
                         <div class="col-6 p-1 translateY-none" style="transform: translateY(-50px);">
                             <div class="card shadow-none">
@@ -45,8 +45,8 @@
                             <img src="{{ asset('images/image-4.png') }}" class="img-fluid"  data-aos="fade-up-left" alt="">
                             <img src="{{ asset('svg/flo.svg') }}" class="position-absolute main-section-img-2" style="width: 90%;right:-19%; bottom: 26%;" alt="">
                         </div>
-                        <img src="{{ asset('images/flowers.png') }}" class="position-absolute main-section-img-1" data-aos="fade-left" style="width: 40%; right: -21%; bottom: 40%; z-index: 0;" alt="">
-                        <img src="{{ asset('svg/flour.svg') }}" class="position-absolute main-section-img-2" style="width: 10%; right: -20%; top: 0;" alt="">
+                        <img src="{{ asset('images/flowers.png') }}" class="circle-flower position-absolute main-section-img-1" data-aos="fade-left" style="width: 40%; right: -21%; bottom: 40%; z-index: 0;" alt="">
+                        <img src="{{ asset('svg/flour.svg') }}" class="free-flo position-absolute main-section-img-2" style="width: 10%; right: -20%; top: 0;" alt="">
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 text-center">
@@ -70,7 +70,7 @@
     <section class="overflow-h section-block">
         <div class="container mt-3 mb-5 pb-5">
             <div class="row">
-                <div class="col-12 col-md-4 pr-0">
+                <div class="col-12 col-md-6  col-xl-4 pr-0">
                     <p class="font-caveat font-3x" data-aos="fade-right" style="line-height: 110%; letter-spacing: 0.02em;">
                         W салон - это в первую
                         <br>очередь история
@@ -84,21 +84,21 @@
                 <div class="col-12 col-md-4 p-0 effect-2" style="transform: translate(-15%, -15%);">
                     <img src="{{ asset('images/effect-2.png') }}" data-aos="zoom-in" class="img-fluid" alt="">
                 </div>
-                <div class="col-12 col-md-4 pl-0 text-md-left text-center m25">
+                <div class="col-6 col-xl-4 col-md-4 pl-0 text-sm-right text-center m25  text-xl-left choice-text ">
                     <p class="font-raleway big" data-aos="fade-left">
                         Трепетный выбор платья, о котором
                         <br>мы мечтали, которое представляли
-                        <br>и фантазировали, начинается с
+                        <br>и фантазировали, начинается <с></с>
                         <br>самых маленьких деталей.
                     </p>
                 </div>
             </div>
             <div class="row align-items-end wish" style="margin-top: -25%;">
-                <div class="col-3 ml-auto d-none d-md-block">
+                <div class="col-3 ml-auto d-none d-lg-block">
                     <img src="{{ asset('images/machine.png') }}" data-aos="zoom-out-down" class="img-fluid" alt="">
                 </div>
                 <div class="col-4"></div>
-                <div class="col-lg-4 col-6 position-relative">
+                <div class="col-lg-4 col-6 position-relative water d-none d-sm-block">
                     <img src="{{ asset('svg/eaves.svg') }}" data-aos="fade-left" class="position-absolute img-layers"
                          style="bottom: -10%; left: -20%; width: 15%;" alt="">
                     <img src="{{ asset('svg/eaves2.svg') }}" data-aos="fade-right" class="position-absolute img-layers"
@@ -114,12 +114,12 @@
         </div>
     </section>
 
-    <section class="overflow-h section-block">
+    <section class="overflow-h section-block section-block2">
         <div class="container mt-5 py-4">
             <div class="row">
-                <div class="col-12 col-md-6 p-0 position-relative">
-                    <div style="transform: translateX(-20%);">
-                        <div class="position-absolute pos-ab-mobile" style="width: 70%; right: -50%; top: -35%; z-index: 2;">
+                <div class="col-10 col-xl-6 p-0 position-relative mt-your-smile">
+                    <div style="transform: translateX(-20%);" class="smile">
+                        <div class="position-absolute pos-ab-mobile " style="width: 70%; right: -50%; top: -35%; z-index: 2;">
                             <img src="{{ asset('images/circle.png') }}" data-aos="zoom-in" class="img-fluid" style="" alt="">
                             <p class="font-caveat font-2x text-center position-absolute" data-aos="zoom-in-down"
                                style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-4deg);">
@@ -137,9 +137,9 @@
                         <img src="{{ asset('images/image-5.png') }}" data-aos="fade-right" class="" style="width: 120%;" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex align-items-end pt-lg-0 pt-5">
+                <div class="col-12 col-md-6 d-flex align-items-end pt-md-0 pt-5">
                     <div class="row">
-                    <div class="col-lg-5 col-5 pt-lg-5 pt-0 mt-lg-4 mt-0">
+                    <div class="col-lg-6 col-md-12 col-5 pt-xl-5 pt-0 mt-xl-4 mt-0 r-72">
                         <p class="font-raleway text-right big texter" data-aos="fade-down">
                             В W салоне каждая невеста
                             <br>преображается, словно
@@ -150,7 +150,7 @@
                             <br>навсегда.
                         </p>
                     </div>
-                    <div class="col-lg-7 col-7  position-relative">
+                    <div class="col-lg-6 col-md-12  col-7  position-relative">
                         <div class="position-absolute"
                              style="border: 2px dashed #fff; width: 80%; height: 90%; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-2deg); z-index:2;"></div>
                         <img src="{{ asset('images/image-6.png') }}" data-aos="fade-left" class="img-fluid " alt="">
@@ -186,13 +186,13 @@
                          style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;" alt="">
                     <img src="{{ asset('images/image-7.png') }}" data-aos="fade-down-left" class="img-fluid w-75 position-relative"
                          style="z-index: 3; transform: translateX(-10%);" alt="">
-                    <img src="{{ asset('images/image-8.png') }}" data-aos="fade-down-left" class="img-fluid w-75 position-relativ"
+                    <img src="{{ asset('images/image-8.png') }}" data-aos="d-lg-block d-none fade-down-left" class="img-fluid w-75 position-relativ"
                          style="z-index: 2; transform: translate(45%, -87%);" alt="">
                     <img src="{{ asset('images/image-9.png') }}" data-aos="fade-up-right" class="img-fluid w-75 position-relative"
                          style="z-index: 1; margin: -100% 0 -20% 0;" alt="">
                     <p class="position-absolute font-alex font-4x right-3"
                        style="color: #C1CEBE; bottom: 10%; right: -5%; z-index: 5;" data-aos="fade-left">Wedding Salon</p>
-                    <img src="{{ asset('svg/rectangles.svg') }}" data-aos="zoom-in" class="position-absolute d-md-block d-none"
+                    <img src="{{ asset('svg/rectangles.svg') }}" data-aos="zoom-in" class="l-0 position-absolute d-md-block d-none"
                          style="bottom: 10%; left: 30%;" alt="">
                 </div>
             </div>
@@ -203,15 +203,15 @@
     <section class="overflow-h section-block">
         <div class="container py-5 my-5">
             <div class="row d-flex justify-content-between">
-                <div class="col-12 col-md-7 position-relative">
+                <div class="col-12 col-md-8 position-relative">
                     <img src="{{ asset('svg/flavor.svg') }}" class="position-absolute flavor" data-aos="fade-right" style="top: -15%; left: -6%; z-index: -1; width: 15%;" alt="">
                     <img src="{{ asset('images/16.png') }}" class="position-absolute img-mobile" data-aos="zoom-in" style="width: 65%; bottom: 50%; left: 30%; z-index: -1;transform: rotate(3.55deg);" alt="">
 
                     <img src="{{ asset('images/17.png') }}" data-aos="fade-right" style="width: 40%; z-index: 2;box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);" alt="">
-                    <img src="{{ asset('svg/balloon.svg') }}" class="position-absolute balloon" style="bottom: 37%; right: 9%; width: 14%;" alt="">
+                    <img src="{{ asset('svg/balloon.svg') }}" class="heart-balloons position-absolute balloon" style="bottom: 37%; right: 9%; width: 14%;" alt="">
                     <div class="d-md-flex d-block">
-                        <h3 class="font-caveat font-2x mobile-pad" data-aos="fade-right" style="width: 70%;padding: 12% 0 0 10%;">Счастье должно быть во всем: и в глазах,и в нарядах.</h3>
-                        <p class="font-raleway pad big" data-aos="fade-up" style=" width: 100%; float: right;padding-top: 29%; text-align: left;">
+                        <h3 class="font-caveat font-2x mobile-pad happy-title" data-aos="fade-right" style="width: 70%;padding: 12% 0 0 10%;">Счастье должно быть во всем: и в глазах,и в нарядах.</h3>
+                        <p class="font-raleway pad big pt-34" data-aos="fade-up" style=" width: 100%; float: right;padding-top: 29%; text-align: left;">
                             «W Salon» знает, что такое качество, и предлагает покупателям только лучшее. Индивидуальность каждой невесты - вот самый главный принцип нашей работы. Искренность в улыбке в момент, когда мы находим вместе то самое платье - наша величайшая награда.
                         </p>
                     </div>
@@ -238,9 +238,9 @@
                 <div class="col-12 col-md-4 pt-4 order-2 order-lg-1">
                     <h3 class="font-caveat font-3x text-left position-relative pb-lg-0 pb-5" data-aos="fade-down-right" style="z-index: 5;">Привет,<br> я - Юля
                     </h3>
-                    <img src="{{ asset('images/ulia.png') }}" data-aos="fade-down-right" class="img-fluid rounded-circle position-relative w-75"
+                    <img src="{{ asset('images/ulia.png') }}" data-aos="fade-down-right" class=" img-fluid rounded-circle position-relative w-75"
                          style="z-index: 1; transform: translate(35%,-17%); border: 5px solid #D97AA2;" alt="">
-                    <img src="{{ asset('images/arrow.png') }}" class="img-fluid position-relative ulia"
+                    <img src="{{ asset('images/arrow.png') }}" class="staff1-arr img-fluid position-relative ulia"
                          style="z-index: 2; transform: translate(40%,-360%); width: 87px; height: 68px;" alt="">
                 </div>
 
@@ -249,7 +249,7 @@
 
                     <img src="{{ asset('images/cholpon.png') }}" data-aos="fade-up-left" class="img-fluid rounded-circle position-relative w-75"
                          style="z-index: 1; transform: translate(15%, 20%); border: 5px solid #D97AA2;" alt="">
-                    <img src="{{ asset('images/swirling-arrow.png') }}" class="img-fluid position-relative name-arr"
+                    <img src="{{ asset('images/swirling-arrow.png') }}" class="staff2-arr img-fluid position-relative name-arr"
                          style="z-index: 2; transform: translate(190%, -20%); width: 122px; height: 119px" alt="">
 
                     <h3 class="font-caveat font-3x align-self-end text-center cholpon" data-aos="fade-up-left" style="transform: translate(70%,-150%)">
@@ -304,7 +304,7 @@
                 $k = 1;
                 ?>
                 @foreach(\App\Silhouette::all() as $silhouette)
-                    <div class="col-12 col-md-4 my-3 hover01" data-aos="fade-down">
+                    <div class="col-12 col-md-6 col-lg-4 my-3 hover01" data-aos="fade-down">
                         <a href="{{ route('catalog',['silhouette' => $silhouette->id]) }}" style="text-decoration: none;">
                         <div class="card border-0 rounded-0"
                              style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 500px; max-height: 650px;">
@@ -385,7 +385,7 @@
     <section class=" overflow-h section-block">
 
         <div class="container py-5 position-relative">
-            <img src="{{ asset('svg/OBJECTS.svg') }}" class="position-absolute right-3" alt="" style="width: 15%; right: -10%; top: -5%;">
+            <img src="{{ asset('svg/OBJECTS.svg') }}" class="love-note position-absolute right-3" alt="" style="width: 15%; right: -10%; top: -5%;">
             <div class="row">
                 <div class="col-12">
                     <h2 class="font-caveat font-4x text-center" data-aos="fade-down">Топовые платья</h2>
@@ -463,7 +463,7 @@
             </div>
             <img src="{{ asset('svg/love_2.svg') }}" data-aos="fade-down-left" class="position-absolute pos-img display-none" alt="" style="width: 15%; right: 55%; bottom: 1%;">
 
-            <img src="{{ asset('svg/kit.svg') }}" data-aos="fade-down-left" class="position-absolute right-3" alt="" style="width: 27%; right: -10%; bottom: 1%;">
+            <img src="{{ asset('svg/kit.svg') }}" data-aos="fade-down-left" class="kit position-absolute right-3" alt="" style="width: 27%; right: -10%; bottom: 1%;">
         </div>
     </section>
 
@@ -514,7 +514,7 @@
                                     </a>
 
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>

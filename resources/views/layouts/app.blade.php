@@ -25,7 +25,7 @@
     <style>
         body
         {
-            overflow-x: hidden;
+            overflow-x: hidden !important;
         }
         .preloader {
             position: fixed;
@@ -133,10 +133,16 @@
                     nav:true
                 },
                 700:{
-                    items:3,
+                    items:2,
                     nav:true
                 },
                 1000:{
+                    items:3,
+                    nav:true,
+                    loop:true
+                },
+
+                1200:{
                     items:4,
                     nav:true,
                     loop:true

@@ -75,7 +75,7 @@
         right: -20%!important;
     }
     .cholpon {
-        transform: translate(20%,-103%)!important;
+        transform: translate(20%,-103%);
     }
     .main-section-img-1 {
         right: 3%!important;
@@ -157,8 +157,8 @@
         left: 0%!important;
     }
     .balloon {
-        bottom: 50%!important;
-        right: 21%!important;
+        bottom: 50%;
+        right: 21%;
     }
     .our-wedding {
         top: 3%!important;
@@ -206,5 +206,136 @@
     .about-us-frame {
         transform: translate(32%,-123%)!important;
         font-size: 20px!important
+    }
+}
+@media only screen and (max-width: 1050px) and (min-width: 900px) {
+    /* Welcome page styles */
+    .choice-text {
+        margin-left: 12%!important;
+        margin-bottom: 1%!important;
+    }
+    .mt-your-smile {
+        margin-top: 8%;
+        order: 12;
+    }
+    .happy-title {
+        padding: 20% 3% 0 10%!important;
+    }
+    .heart-balloons {
+        bottom: 41%!important;
+    }
+    .staff1-arr {
+        transform: translate(26%,-272%)!important;
+    }
+    .staff2-arr {
+        transform: translate(135%, -20%)!important;
+    }
+    .love-note {
+        right: -1%!important;
+    }
+    #dresses .owl-nav .owl-prev {
+        left: -4%;
+    }
+    #dresses .owl-nav .owl-next {
+        right: -4%;
+    }
+    .coffeeMaker {
+        width: 8%!important;
+        left: -2%!important;
+    }
+    .kit {
+        width: 20%!important;
+        right: -1%!important;
+        bottom: -7%!important;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 700px) {
+    /* Welcome page styles */
+    .translateXY-none {
+        transform: translate(0, 0)!important;
+    }
+    .circle-flower{
+        width: 22%!important;
+        right: -3%!important;
+        top: 0%!important;
+    }
+    .free-flo {
+        right: 11%!important;
+        top: -26px!important;
+    }
+    .choice-text {
+        margin-left: 12%!important;
+        margin-bottom: 1%!important;
+        margin-top: 5%!important;
+    }
+    .mt-your-smile {
+        margin-top: 8%;
+        order: 12;
+    }
+    .happy-title {
+        padding: 29% 4% 0 10%!important;
+    }
+    .heart-balloons {
+        bottom: 51%!important;
+    }
+    .staff1-arr {
+        transform: translate(26%,-272%)!important;
+    }
+    .staff2-arr {
+        transform: translate(81%, 7%)!important;
+    }
+    .pt-34 {
+        padding-top: 34%!important;
+    }
+    .love-note {
+        right: -1%!important;
+    }
+    #dresses .owl-nav .owl-prev {
+        left: -4%;
+    }
+    #dresses .owl-nav .owl-next {
+        right: -4%;
+    }
+    .coffeeMaker {
+        width: 8%!important;
+        left: -2%!important;
+    }
+    .kit {
+        width: 20%!important;
+        right: -1%!important;
+        bottom: -7%!important;
+    }
+    .water {
+        transform: translate(26%, -24%)!important;
+    }
+    .r-72 {
+        position: absolute;
+        right: -72%;
+    }
+    .smile {
+        transform: translateX(-24%);
+    }
+    .l-0 {
+        left: 0!important;
+    }
+
+    .main-section-img-2 {
+        right: 5%!important;
+        bottom: 8% !important
+    }
+}
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+    .section-block2 {
+        margin-bottom: -7% !important;
+    }
+    .cholpon {
+        transform: translate(5%,-188%)!important;
+    }
+    .happy-title {
+        padding: 7% 0 0 10%!important
+    }
+    .balloon {
+        bottom: 67% !important;
     }
 }

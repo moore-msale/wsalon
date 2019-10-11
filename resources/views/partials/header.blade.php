@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top menuse" style="box-shadow: none; z-index:998!important;" >
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top menuse" style="box-shadow: none; z-index:998!important;" >
     <div class="container-fluid">
-        <div class="d-flex">
-            <div class="d-lg-none d-block">
+        <div class="d-flex w-100 d-lg-none">
+            <div class="">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img class="img-fluid w-75" src="{{ asset('images/logo.png') }}" alt="">
                 </a>
@@ -15,7 +15,7 @@
             </div>
         </button>
         </div>
-                <li class="nav-item mr-md-4 d-none d-md-block">
+                <li class="nav-item mr-md-4 d-none d-lg-block">
                     <a class="nav-link text-dark font-weight-bold font-caveat biggest text-uppercase" href="{{ url('/') }}">
                     <img src="{{ asset('images/logo.png') }}" class="logo" alt="">
                     </a>
@@ -59,27 +59,27 @@
                 {{--                @endguest--}}
                 {{--<img src="{{ asset('images/logo.png') }}" class="logo d-md-none" alt="">--}}
 
-                <li class="nav-item mr-md-4 d-md-none order-1">
+                <li class="nav-item mr-md-4 d-lg-none order-1">
                     <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/') }}">
                         ГЛАВНАЯ
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 d-md-none order-2">
+                <li class="nav-item mr-md-4 d-lg-none order-2">
                     <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/about') }}">
                         О САЛОНЕ
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 d-md-none order-3">
+                <li class="nav-item mr-md-4 d-lg-none order-3">
                     <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('catalog') }}">
                         ЛЮБИМЫЕ ПЛАТЬЯ
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 d-md-none order-4">
+                <li class="nav-item mr-md-4 d-lg-none order-4">
                     <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/#favorite-brends') }}">
                         НАШИ ЛЮБИМЫЕ БРЭНДЫ
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 d-md-none order-5">
+                <li class="nav-item mr-md-4 d-lg-none order-5">
                     <a class="nav-link text-dark font-weight-bold font-caveat big" href="{{ url('/feedback') }}">
                         ОТЗЫВЫ
                     </a>
@@ -89,7 +89,7 @@
                         г. Бишкек, Московская 150
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 order-8">
+                <li class="nav-item mr-md-4 order-8"zzz>
                     <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{{ url('tel: +996 770 001 188') }}">
                         +996 770 001 188
                     </a>
@@ -113,7 +113,7 @@
                 </li>
 
 
-                <li class="menu-burger nav-item position-relative d-none d-md-block order-md-12">
+                <li class="menu-burger nav-item position-relative d-none d-lg-block order-md-12">
                         <img src="{{ asset('images/burger.png') }}" width="20" alt="">
                     <img src="{{ asset('svg/arrow-btn.svg') }}" class="position-absolute arrow-btn" alt="">
                 </li>
