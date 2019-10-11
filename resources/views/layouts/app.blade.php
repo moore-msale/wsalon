@@ -22,6 +22,7 @@
     {{--<link rel="stylesheet" href="{{ asset('css/mmenu.css') }}">--}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/bootstrap-material-datetimepicker.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <style>
         body
         {
@@ -52,10 +53,10 @@
 <body class="bg-white">
 <div class="preloader"></div>
 <div class="backdrop" style="position: fixed; top:0%; left:0%; width:100%; height:100%; z-index:999; display: none; background-color:#dedede; opacity:0.4;"></div>
-    <div id="app" style="overflow-x: hidden;">
+    <div id="app">
         @include('partials.header')
 
-        <main id="cont">
+        <main>
             <div class="pt-3">
             @yield('content')
             </div>
@@ -71,6 +72,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script>
     $(document).ready(function() {
         $('.preloader').fadeOut('slow').delay(400);
@@ -159,29 +161,36 @@
             let phone = $('#phone-' + id);
             let email = $('#email-' + id);
             let date = $('#date-' + id);
-            $.ajax({
-                url: '{{ route('message') }}',
-                method: 'POST',
-                data: {
-                    "_token": "{{ csrf_token() }}",
-                    "name": name.val(),
-                    "phone": phone.val(),
-                    "email": email.val(),
-                    "date": date.val(),
-                },
-                success: data => {
-                    $('#applicationModal').modal('hide');
-                    swal("","Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.","success");
-                    $('#name-' + id).val('');
-                    $('#phone-' + id).val('');
-                    $('#email-' + id).val('');
-                    $('#date-' + id).val('');
-                },
-                error: () => {
-                    console.log(0);
-                    swal("Заявка не отправлена!","Приносим свои извинения","error");
-                }
-            })
+            if(date.val() != '' && phone.val() != '' && name.val() != '' && email.val() != '')
+            {
+                $.ajax({
+                    url: '{{ route('message') }}',
+                    method: 'POST',
+                    data: {
+                        "_token": "{{ csrf_token() }}",
+                        "name": name.val(),
+                        "phone": phone.val(),
+                        "email": email.val(),
+                        "date": date.val(),
+                    },
+                    success: data => {
+                        $('#applicationModal').modal('hide');
+                        swal("","Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.","success");
+                        $('#name-' + id).val('');
+                        $('#phone-' + id).val('');
+                        $('#email-' + id).val('');
+                        $('#date-' + id).val('');
+                    },
+                    error: () => {
+                        console.log(0);
+                        swal("Заявка не отправлена!","Приносим свои извинения","error");
+                    }
+                })
+            }
+            else
+            {
+                swal("","Все поля должны быть заполнены!","error");
+            }
         })
     </script>
     <script>
@@ -193,31 +202,38 @@
             let email = $('#email');
             let date = $('#date');
             let id = $('#dress-id');
-            $.ajax({
-                url: '{{ route('message2') }}',
-                method: 'POST',
-                data: {
-                    "_token": "{{ csrf_token() }}",
-                    "name": name.val(),
-                    "phone": phone.val(),
-                    "email": email.val(),
-                    "date": date.val(),
-                    "id": id.val(),
-                },
-                success: data => {
-                    $('#bidModal').modal('hide');
-                    swal("","Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.","success");
-                    $('#name').val('');
-                    $('#phone').val('');
-                    $('#email').val('');
-                    $('#date').val('');
-                    $('#dress-id').val('');
-                },
-                error: () => {
-                    console.log(0);
-                    swal("Заявка не отправлена!","Приносим свои извинения","error");
-                }
-            })
+            if(date.val() != '' && phone.val() != '' && name.val() != '' && email.val() != '') {
+
+                $.ajax({
+                    url: '{{ route('message2') }}',
+                    method: 'POST',
+                    data: {
+                        "_token": "{{ csrf_token() }}",
+                        "name": name.val(),
+                        "phone": phone.val(),
+                        "email": email.val(),
+                        "date": date.val(),
+                        "id": id.val(),
+                    },
+                    success: data => {
+                        $('#bidModal').modal('hide');
+                        swal("", "Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.", "success");
+                        $('#name').val('');
+                        $('#phone').val('');
+                        $('#email').val('');
+                        $('#date').val('');
+                        $('#dress-id').val('');
+                    },
+                    error: () => {
+                        console.log(0);
+                        swal("Заявка не отправлена!", "Приносим свои извинения", "error");
+                    }
+                })
+            }
+            else
+            {
+                swal("","Все поля должны быть заполнены!","error");
+            }
         })
     </script>
     <script>

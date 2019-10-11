@@ -31,7 +31,7 @@
 @endpush
 @foreach($dresses as $dress)
     <div class="col-sm-6 col-md-4 col-lg-4 item text-center pt-lg-4 pt-4 position-relative mainshine" data-aos="fade-up">
-        <a href="{{ route('dress',$dress->id) }}" class="dressimage "  data-fancybox="gallery">
+        <a href="{{ route('dress',$dress->id) }}" class="dressimage ">
             <div class="imgshine">
             <img class="img-fluid w-100" src="{{ asset('storage/'.$dress->image)  }}">
             </div>

@@ -14,6 +14,7 @@
     </style>
 @endpush
 @section('content')
+    <div class="first-page" style="overflow-x: hidden;">
     <section class="mt-md-4 section-block">
         <div class="container overflow-h">
             <div class="row align-items-center">
@@ -221,7 +222,7 @@
                     <img src="{{ asset('svg/our-wedding.svg') }}"  data-aos="fade-down" class="position-absolute our-wedding" style="top: -20%; width: 80%;right: 48%;" alt="">
                     <img src="{{ asset('svg/atmos.svg') }}" class="" data-aos="fade-left" style="margin-top: 30%; width: 100%;" alt="">
                     <div class="text-center">
-                        <a href="#"><img src="{{ asset('svg/video.svg') }}" data-aos="fade-down-left" class="pt-2 pb-2 hover01" style="bottom: -15%; right: 9%; width: 60%;" alt="">
+                        <a data-fancybox="video" href="{{ asset('images/zhyldiz.mp4') }}"><img src="{{ asset('svg/video.svg') }}" data-aos="fade-down-left" class="pt-2 pb-2 hover01" style="bottom: -15%; right: 9%; width: 60%;" alt="">
                         <div class="w-100"></div>
                         <img src="{{ asset('svg/watch-video.svg') }}" data-aos="fade-down-left" class="" style="bottom: -15%; right: 9%; width: 60%;" alt=""></a>
                     </div>
@@ -578,6 +579,7 @@
             </div>
         </div>
     </section>
+    </div>
 @endsection
 
 @push('styles')

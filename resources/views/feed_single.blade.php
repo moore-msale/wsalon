@@ -85,32 +85,38 @@
             let title = $('#title');
             let feed = $('#feed');
             let phone = $('#phone');
+            if(name.val() != '' && title.val() != '' && feed.val() != '' && phone.val() != '')
+            {
+                $.ajax({
+                    url: '{{ route('feedback_store') }}',
+                    method: 'POST',
+                    data: {
+                        "_token": "{{ csrf_token() }}",
+                        "name": name.val(),
+                        "title": title.val(),
+                        "feed": feed.val(),
+                        "phone": phone.val(),
+                        "id": id,
+                    },
+                    success: data => {
+                        $('#feedModal').modal('hide');
+                        swal("Спасибо за отзыв!","Ваш отзыв был успешно отправлен","success");
+                        $('#name').val('');
+                        $('#title').val('');
+                        $('#feed').val('');
+                        $('#phone').val('');
 
-            $.ajax({
-                url: '{{ route('feedback_store') }}',
-                method: 'POST',
-                data: {
-                    "_token": "{{ csrf_token() }}",
-                    "name": name.val(),
-                    "title": title.val(),
-                    "feed": feed.val(),
-                    "phone": phone.val(),
-                    "id": id,
-                },
-                success: data => {
-                    $('#feedModal').modal('hide');
-                    swal("Спасибо за отзыв!","Ваш отзыв был успешно отправлен","success");
-                    $('#name').val('');
-                    $('#title').val('');
-                    $('#feed').val('');
-                    $('#phone').val('');
-
-                    setTimeout(redirector, 5000);
-                },
-                error: () => {
-                    swal("Ваш отзыв не был отправлен","Приносим свои извинения","error");
-                }
-            })
+                        setTimeout(redirector, 5000);
+                    },
+                    error: () => {
+                        swal("Ваш отзыв не был отправлен","Приносим свои извинения","error");
+                    }
+                })
+            }
+            else
+            {
+                swal("","Все поля должны быть заполнены!","error");
+            }
         })
     </script>
 
