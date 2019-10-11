@@ -1,5 +1,13 @@
 /* 300px - 500px */
 @media screen and (min-width: 300px) and (max-width: 700px) {
+    .imger
+    {
+        height:280px!important;
+    }
+    .text-in-circle
+    {
+        line-height: 65%!important;
+    }
     .call-us
     {
         border-left: 0px;
@@ -210,6 +218,7 @@
 }
 @media only screen and (max-width: 1050px) and (min-width: 900px) {
     /* Welcome page styles */
+
     .choice-text {
         margin-left: 12%!important;
         margin-bottom: 1%!important;
@@ -252,6 +261,32 @@
 
 @media only screen and (max-width: 800px) and (min-width: 700px) {
     /* Welcome page styles */
+
+    .car-items
+    {
+        width:370px!important;
+    }
+    .img-feed
+    {
+        width:370px!important;
+        height: 390px!important;
+    }
+    .call-us
+    {
+        border-left: 0px;
+    }
+    .about-us-text
+    {
+        transform: translate(43%,42%)!important;
+        font-size: 185%!important;
+        line-height: 100%;
+    }
+    .about-us-frame
+    {
+        transform: translate(19%,-148%)!important;
+        font-size:21px!important;
+        line-height: 100%!important;
+    }
     .translateXY-none {
         transform: translate(0, 0)!important;
     }

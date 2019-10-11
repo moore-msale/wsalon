@@ -52,7 +52,7 @@
 <body class="bg-white">
 <div class="preloader"></div>
 <div class="backdrop" style="position: fixed; top:0%; left:0%; width:100%; height:100%; z-index:999; display: none; background-color:#dedede; opacity:0.4;"></div>
-    <div id="app">
+    <div id="app" style="overflow-x: hidden;">
         @include('partials.header')
 
         <main id="cont">

@@ -105,7 +105,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="nav-item mr-md-5 pr-md-5 order-6 mt-3 mt-md-0 order-md-11">
+                <li class="nav-item mr-lg-5 mr-md-3 mr-0 pr-lg-5 order-6 mt-3 mt-md-3 mt-0 mb-md-3 mt-0 order-md-11">
                     <a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 application"
                        href="{{ url('/') }}">
                         Записаться на примерку

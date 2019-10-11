@@ -10,7 +10,7 @@
                     <h2 class="font-caveat font-3x text-center">Каталог платьев</h2>
                 </div>
 
-                <div class="col-md-3 col-12">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="dropdown">
                         <button class="btn dropdown-toggle font-raleway"
                                 style="font-size: 11px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA; width:100%;"
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-12 pb-lg-0 pb-3">
+                <div class="col-lg-3 col-md-6 col-12 pb-lg-0 pb-md-0 pb-3">
                     <div class="dropdown">
                         <button class="btn dropdown-toggle font-raleway"
                                 style="font-size: 11px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA; width:100%;"

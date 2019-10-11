@@ -84,7 +84,7 @@
                 <div class="col-12 col-md-4 p-0 effect-2" style="transform: translate(-15%, -15%);">
                     <img src="{{ asset('images/effect-2.png') }}" data-aos="zoom-in" class="img-fluid" alt="">
                 </div>
-                <div class="col-6 col-xl-4 col-md-4 pl-0 text-sm-right text-center m25  text-xl-left choice-text ">
+                <div class="col-12 col-xl-4 col-md-4 pl-0 text-sm-right text-center m25  text-xl-left choice-text ">
                     <p class="font-raleway big" data-aos="fade-left">
                         Трепетный выбор платья, о котором
                         <br>мы мечтали, которое представляли
@@ -98,7 +98,7 @@
                     <img src="{{ asset('images/machine.png') }}" data-aos="zoom-out-down" class="img-fluid" alt="">
                 </div>
                 <div class="col-4"></div>
-                <div class="col-lg-4 col-6 position-relative water d-none d-sm-block">
+                <div class="col-lg-4 col-6 position-relative water">
                     <img src="{{ asset('svg/eaves.svg') }}" data-aos="fade-left" class="position-absolute img-layers"
                          style="bottom: -10%; left: -20%; width: 15%;" alt="">
                     <img src="{{ asset('svg/eaves2.svg') }}" data-aos="fade-right" class="position-absolute img-layers"
@@ -121,7 +121,7 @@
                     <div style="transform: translateX(-20%);" class="smile">
                         <div class="position-absolute pos-ab-mobile " style="width: 70%; right: -50%; top: -35%; z-index: 2;">
                             <img src="{{ asset('images/circle.png') }}" data-aos="zoom-in" class="img-fluid" style="" alt="">
-                            <p class="font-caveat font-2x text-center position-absolute" data-aos="zoom-in-down"
+                            <p class="font-caveat font-2x text-center position-absolute text-in-circle" data-aos="zoom-in-down"
                                style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-4deg);">
                                 Твоя улыбка и
                                 <br>счастливые глаза
@@ -186,7 +186,7 @@
                          style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;" alt="">
                     <img src="{{ asset('images/image-7.png') }}" data-aos="fade-down-left" class="img-fluid w-75 position-relative"
                          style="z-index: 3; transform: translateX(-10%);" alt="">
-                    <img src="{{ asset('images/image-8.png') }}" data-aos="d-lg-block d-none fade-down-left" class="img-fluid w-75 position-relativ"
+                    <img src="{{ asset('images/image-8.png') }}" data-aos="fade-down-left" class="img-fluid w-75 position-relative d-lg-block d-md-none d-block"
                          style="z-index: 2; transform: translate(45%, -87%);" alt="">
                     <img src="{{ asset('images/image-9.png') }}" data-aos="fade-up-right" class="img-fluid w-75 position-relative"
                          style="z-index: 1; margin: -100% 0 -20% 0;" alt="">

@@ -22,7 +22,7 @@
 
 
 <div class="container-fluid">
-    <div class="row p-lg-5 p-0">
+    <div class="row p-lg-5 p-md-5 p-0 mx-lg-0 mx-md-5 mx-0">
         <?php
             $i = 1;
         ?>
@@ -41,7 +41,7 @@
         @endif
         >
             <div class="p-4 shadow" style="cursor:pointer; background-color: #E4E4DE;" data-toggle="modal" data-target="#feedbackModal-{{ $feed->id }}">
-            <div class="d-flex align-items-end" style="height:380px; background-image: url({{ asset('storage/'.str_replace('\\', '/', $feed->image)) }}); background-size: cover; background-position: center;">
+            <div class="d-flex align-items-end imger" style="height:380px; background-image: url({{ asset('storage/'.str_replace('\\', '/', $feed->image)) }}); background-size: cover; background-position: center;">
 
             </div>
             <div class="w-100 pt-4 pb-3">
