@@ -4,7 +4,7 @@
     <section class="mt-5 border-bottom border-top border-light">
         <div class="container ">
             <div class="row justify-content-center position-relative">
-                <a href="/catalog" class="position-absolute d-lg-block d-none" style="top:15%; left:-15%; color: black;">
+                <a href="/catalog" class="position-absolute d-lg-block d-none" style="top:15%; left:-10%; color: black;">
                     <div class="scaler">
                     <img style="width:100px; height:20px;" src="{{asset('/svg/arleft.svg')}}" alt=""><span class="font-caveat biggest">Вернуться в каталог</span>
                     </div>
