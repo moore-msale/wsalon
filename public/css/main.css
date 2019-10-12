@@ -64,17 +64,17 @@ h2.biggest {
 .nav-item {
     list-style: none;
 }
-#sync2 .owl-nav .owl-prev span, #sync2 .owl-nav .owl-next span
+#feed-carousel .owl-nav .owl-prev span, #feed-carousel .owl-nav .owl-next span
 {
     display:none;
 }
-#sync2 .owl-nav .owl-prev
+#feed-carousel .owl-nav .owl-prev
 {
     width:51px;
     height:16.5px;
     background-image: url('/svg/ArrowLeft.svg');
 }
-#sync2 .owl-nav .owl-next
+#feed-carousel .owl-nav .owl-next
 {
     transform: translateX(20px);
     width:51px;
@@ -117,7 +117,32 @@ h2.biggest {
 .owl-nav.disabled {
     display: block!important;
 }
-
+body{
+    transition: 0.5s;
+}
+body.modal-open {
+    overflow: hidden;
+}
+#shuffle-1
+{
+    transform: rotate(-3deg) translateX(10px);
+}
+#shuffle-2
+{
+    transform: rotate(-5deg) translateX(15px);
+}
+#shuffle-3
+{
+    transform: rotate(5deg) translateX(-5px);
+}
+#shuffle-4
+{
+    transform: rotateX(10deg) translateX(-15px);
+}
+.ui-timepicker-container
+{
+    z-index:9999!important;
+}
 #dresses .owl-prev {
     display: block;
     position: absolute;

@@ -23,6 +23,18 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/bootstrap-material-datetimepicker.css') }}" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/timepicker.min.css') }}">
+    <script src="{{ asset('js/timepicker.min.js') }}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event)
+        {
+            timepicker.load({
+                interval: 30,
+                defaultHour: 8,
+            });
+        });
+    </script>
     <style>
         body
         {
@@ -72,7 +84,11 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    {{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>--}}
+    <script src="http://malsup.github.io/jquery.cycle2.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle2.shuffle.js"></script>
 <script>
     $(document).ready(function() {
         $('.preloader').fadeOut('slow').delay(400);
@@ -236,93 +252,36 @@
             }
         })
     </script>
-    <script>
-        $(document).ready(function() {
+<script>
+    $('#feed-carousel').owlCarousel({
+        items: 1,
+        loop:true,
+        margin:10,
+        onDragged: callback,
+        autoplay:false,
+        {{--navText: ["<img src='{{ asset('svg/arleft.svg')}}'>", "<img src='{{ asset('svg/arright.svg')}}'>"],--}}
+        nav: true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+        }
+    });
+    function callback() {
+        $('.cycle-slideshow').cycle('next');
+    }
+</script>
+<script>
+    $('.owl-next').on('click',function () {
+        $('.cycle-slideshow').cycle('next');
+    })
 
-            var sync1 = $("#sync1");
-            var sync2 = $("#sync2");
-            var slidesPerPage = 1; //globaly define number of elements per page
-            var syncedSecondary = true;
-
-            sync1.owlCarousel({
-                items: 1,
-                slideSpeed: 500,
-                nav: false,
-                // autoplay: true,
-                // animateOut: 'fadeOut',
-                dots: true,
-                // loop: true,
-                touchDrag : false,
-                mouseDrag : false,
-                responsiveRefreshRate: 500,
-                navText: ['<svg width="0%" height="0%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="0%" height="0%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-            }).on('changed.owl.carousel', syncPosition);
-
-            sync2
-                .on('initialized.owl.carousel', function() {
-                    sync2.find(".owl-item").eq(0).addClass("current");
-                })
-                .owlCarousel({
-                    items: slidesPerPage,
-                    dots: true,
-                    nav: true,
-                    // animateOut: 'fadeOut',
-                    smartSpeed: 500,
-                    slideSpeed: 500,
-                    touchDrag : false,
-                    mouseDrag : false,
-                    slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
-                    responsiveRefreshRate: 500
-                }).on('changed.owl.carousel', syncPosition2);
-
-            function syncPosition(el) {
-                //if you set loop to false, you have to restore this next line
-                //var current = el.item.index;
-
-                //if you disable loop you have to comment this block
-                var count = el.item.count - 1;
-                var current = Math.round(el.item.index - (el.item.count / 2) - .5);
-
-                if (current < 0) {
-                    current = count;
-                }
-                if (current > count) {
-                    current = 0;
-                }
-
-                //end block
-
-                sync2
-                    .find(".owl-item")
-                    .removeClass("current")
-                    .eq(current)
-                    .addClass("current");
-                var onscreen = sync2.find('.owl-item.active').length - 1;
-                var start = sync2.find('.owl-item.active').first().index();
-                var end = sync2.find('.owl-item.active').last().index();
-
-                if (current > end) {
-                    sync2.data('owl.carousel').to(current, 500, true);
-                }
-                if (current < start) {
-                    sync2.data('owl.carousel').to(current - onscreen, 500, true);
-                }
-            }
-
-            function syncPosition2(el) {
-                if (syncedSecondary) {
-                    var number = el.item.index;
-                    sync1.data('owl.carousel').to(number, 500, true);
-                }
-            }
-
-            sync2.on("click", ".owl-item", function(e) {
-                e.preventDefault();
-                var number = $(this).index();
-                sync1.data('owl.carousel').to(number, 500, true);
-            });
-        });
-    </script>
+    $('.owl-prev').on('click',function () {
+        $('.cycle-slideshow').cycle('prev');
+    })
+</script>
     <script type="text/javascript">
         // $(document).ready(function(){
         //     // $('#nav-icon3').click(function(){
@@ -371,6 +330,26 @@
             });
         });
     </script>
+<script>
+    $("#applicationModal").on("show", function () {
+        $("body").addClass("modal-open");
+    }).on("hidden", function () {
+        $("body").removeClass("modal-open")
+    });
+</script>
+{{--<script>--}}
+    {{--$(document).ready(function () {--}}
+        {{--if($('.ui-timepicker-container').style.display == 'none')--}}
+        {{--{--}}
+            {{--$("#applicationModal").addClass("modal-open");--}}
+        {{--}--}}
+        {{--else--}}
+        {{--{--}}
+            {{--$("#applicationModal").removeClass("modal-open");--}}
+        {{--}--}}
+
+    {{--})--}}
+{{--</script>--}}
     @stack('scripts')
 </body>
 </html>

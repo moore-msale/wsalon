@@ -482,21 +482,42 @@
                             <div class="row">
                                 <div class="col-lg-5 col-12">
                                     <div class="position-relative">
-                                        <img class="img-fluid" style="transform: translateY(-10%)" src="{{ asset('images/feedback.png') }}" alt="">
-                                        <div class="position-absolute car-items" style="top: 14.2%; left:30.5%; width:240px; height:159px;">
-                                        <div id="sync1" class="owl-carousel owl-theme">
+                                        {{--<img class="img-fluid" style="transform: translateY(-10%)" src="{{ asset('images/feedback.png') }}" alt="">--}}
+                                        {{--<div class="position-absolute car-items" style="top: 14.2%; left:30.5%; width:240px; height:159px;">--}}
+                                        {{--<div id="sync1" class="owl-carousel owl-theme">--}}
+                                            {{--@foreach(\App\Feed::where('active',1)->get() as $feed)--}}
+                                            {{--<div class="item">--}}
+                                                {{--<div class="img-feed" style="width:240px; height:250px; background-image: url({{ asset('storage/'.str_replace('\\', '/', $feed->image)) }}); background-size: cover; background-position: center;"></div>--}}
+                                            {{--</div>--}}
+                                            {{--@endforeach--}}
+                                        {{--</div>--}}
+                                        {{--</div>--}}
+                                        <div class="cycle-slideshow"
+                                             data-cycle-fx=shuffle
+                                             data-cycle-timeout=0
+                                             data-cycle-hide-non-active=false
+                                        >
+                                            <?php
+                                                $i = 1;
+                                            ?>
                                             @foreach(\App\Feed::where('active',1)->get() as $feed)
-                                            <div class="item">
-                                                <div class="img-feed" style="width:240px; height:250px; background-image: url({{ asset('storage/'.str_replace('\\', '/', $feed->image)) }}); background-size: cover; background-position: center;"></div>
-                                            </div>
+                                            <img class="w-75 shadow-lg" id="shuffle-{{$i}}" src="{{ asset('storage/'.str_replace('\\', '/', $feed->image)) }}">
+                                                <?php
+                                                    $i = $i + 1;
+                                                    if($i == 5)
+                                                        {
+                                                            $i = 1;
+                                                        }
+                                                ?>
                                             @endforeach
-                                        </div>
+
                                         </div>
                                     </div>
 
+
                                 </div>
                                 <div class="col-lg-6 col-12" data-aos="fade-up">
-                                    <div id="sync2" class="owl-carousel">
+                                    <div id="feed-carousel" class="owl-carousel">
                                         @foreach(\App\Feed::where('active',1)->get() as $feed)
                                         <div class="item">
                                             <h2 class="font-caveat font-3x" style="color:#000000;">{{ $feed->title }}</h2>
