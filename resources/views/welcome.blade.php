@@ -481,7 +481,7 @@
 
                             <div class="row">
                                 <div class="col-lg-5 col-12">
-                                    <div class="position-relative">
+                                    <div class="position-relative media-carousel">
                                         {{--<img class="img-fluid" style="transform: translateY(-10%)" src="{{ asset('images/feedback.png') }}" alt="">--}}
                                         {{--<div class="position-absolute car-items" style="top: 14.2%; left:30.5%; width:240px; height:159px;">--}}
                                         {{--<div id="sync1" class="owl-carousel owl-theme">--}}
@@ -516,7 +516,7 @@
 
 
                                 </div>
-                                <div class="col-lg-6 col-12" data-aos="fade-up">
+                                <div class="col-lg-6 col-12 pt-lg-0 pt-5" data-aos="fade-up">
                                     <div id="feed-carousel" class="owl-carousel">
                                         @foreach(\App\Feed::where('active',1)->get() as $feed)
                                         <div class="item">

@@ -2,8 +2,8 @@
 <section class="mt-2" style="margin-top: -100px;" id="contacts-form">
     <div class="container-fluid">
         <div class="row align-items-end">
-            <div class="col-lg-2 p-0 d-none d-xl-block position-relative">
-                <img src="{{ asset('images/footer-img.png') }}" class="girl" width="100%" height="500px">
+            <div class="col-lg-2 p-0 d-none d-xl-block position-relative h-100" style="background-image: url({{ asset('images/footer-img.png') }}); background-position: center; background-size: cover;">
+                <img src="{{ asset('images/footer-img.png') }}" class="girl" width="100%" height="500px" style=" opacity: 0;">
                 <div>
 
                 </div>
@@ -65,6 +65,7 @@ form {
     }
 .girl {
     width: 100%!important;
+
 }
 .copy {
     margin-top:  3%!important;

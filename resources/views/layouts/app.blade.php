@@ -85,7 +85,7 @@
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    {{--<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>--}}
     {{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>--}}
     <script src="http://malsup.github.io/jquery.cycle2.js"></script>
     <script src="http://malsup.github.io/jquery.cycle2.shuffle.js"></script>
@@ -257,6 +257,8 @@
         items: 1,
         loop:true,
         margin:10,
+        mouseDrag: false,
+        touchDrag:false,
         onDragged: callback,
         autoplay:false,
         {{--navText: ["<img src='{{ asset('svg/arleft.svg')}}'>", "<img src='{{ asset('svg/arright.svg')}}'>"],--}}
