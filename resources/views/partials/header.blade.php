@@ -190,7 +190,7 @@
             </a>
         </li>
         <li class="nav-item text-center mb-2">
-            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('https://2gis.kg/bishkek/firm/70000001022006342?m=74.592637%2C42.86968%2F18') }}">
+            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('https://2gis.kg/bishkek/firm/70000001022006342?m=74.592637%2C42.86968%2F18') }}" target="_blank">
                 г. Бишкек, Московская 150
             </a>
         </li>
@@ -200,10 +200,10 @@
             </a>
         </li>
         <li class="nav-item text-center">
-            <a href="https://www.instagram.com/weddingsalonkg/">
+            <a href="https://www.instagram.com/weddingsalonkg/" target="_blank">
                 <i class="fab fa-instagram text-light fa-2x mr-3"></i>
             </a>
-            <a href="https://www.facebook.com/wsalonkg/">
+            <a href="https://www.facebook.com/wsalonkg/" target="_blank">
                 <i class="fab fa-facebook-f text-light fa-2x ml-3"></i>
             </a>
         </li>

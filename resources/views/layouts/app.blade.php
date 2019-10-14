@@ -24,17 +24,6 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap-material-datetimepicker.css') }}" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/timepicker.min.css') }}">
-    <script src="{{ asset('js/timepicker.min.js') }}"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function(event)
-        {
-            timepicker.load({
-                interval: 30,
-                defaultHour: 8,
-            });
-        });
-    </script>
     <style>
         body
         {
