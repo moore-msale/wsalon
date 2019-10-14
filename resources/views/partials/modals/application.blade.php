@@ -27,7 +27,10 @@
                     </div>
 
                     <div class="md-form">
-                        <input placeholder="Дата примерки*" type="text" name="date" id="date-2" class="form-control date-format text-white">
+                        <input placeholder="Дата примерки*" type="text" name="date" id="date-2" class="form-control date text-white">
+                    </div>
+                    <div class="md-form">
+                        <input placeholder="Время примерки*" name="date" id="input-2" class="form-control text-white">
                     </div>
 
                     <div class="d-flex justify-content-end">

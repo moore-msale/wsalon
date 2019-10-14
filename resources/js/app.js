@@ -6,6 +6,7 @@
 
 require('./bootstrap');
 
+require('pickerjs/dist/picker');
 // window.Vue = require('vue');
 
 /**

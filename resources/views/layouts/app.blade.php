@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap-material-datetimepicker.css') }}" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker-all.min.css') }}">
+
     <style>
         body
         {
@@ -78,6 +82,116 @@
     {{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>--}}
     <script src="http://malsup.github.io/jquery.cycle2.js"></script>
     <script src="http://malsup.github.io/jquery.cycle2.shuffle.js"></script>
+    {{--<script--}}
+        {{--src="https://code.jquery.com/jquery-3.4.1.min.js"--}}
+        {{--integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="--}}
+        {{--crossorigin="anonymous">--}}
+    {{--</script>--}}
+    <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker-core.js') }}"></script>
+    <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker.js') }}"></script>
+    <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker-datetime.js') }}"></script>
+    <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/i18n/anypicker-i18n-ru.js') }}"></script>
+    <script>
+    let hourses = [];
+    for (let i = 1; i < 24; i++) {
+        hourses.push({label: `${i} :`, val: `${i} :`})
+    }
+    $("#input-1").AnyPicker({
+        mode: "select",
+        theme: "iOS",
+
+        components: [
+            {
+                component: 0,
+                name: "hours",
+                label: "Часы"
+            },
+            {
+                component: 1,
+                name: "minutes",
+                label: "Минуты"
+            }
+        ],
+
+        dataSource: [
+            {
+                component: 0,
+                data: hourses
+            },
+            {
+                component: 1,
+                data: [
+                    {val: '00', label: '00'},
+                    {val: '30', label: '30'}
+                ]
+            }
+        ]
+    });
+
+    $("#input-2").AnyPicker({
+        mode: "select",
+        theme: "iOS",
+
+        components: [
+            {
+                component: 0,
+                name: "hours",
+                label: "Часы"
+            },
+            {
+                component: 1,
+                name: "minutes",
+                label: "Минуты"
+            }
+        ],
+
+        dataSource: [
+            {
+                component: 0,
+                data: hourses
+            },
+            {
+                component: 1,
+                data: [
+                    {val: '00', label: '00'},
+                    {val: '30', label: '30'}
+                ]
+            }
+        ]
+    });
+
+    $("#input-3").AnyPicker({
+        mode: "select",
+        theme: "iOS",
+
+        components: [
+            {
+                component: 0,
+                name: "hours",
+                label: "Часы"
+            },
+            {
+                component: 1,
+                name: "minutes",
+                label: "Минуты"
+            }
+        ],
+
+        dataSource: [
+            {
+                component: 0,
+                data: hourses
+            },
+            {
+                component: 1,
+                data: [
+                    {val: '00', label: '00'},
+                    {val: '30', label: '30'}
+                ]
+            }
+        ]
+    });
+</script>
 <script>
     $(document).ready(function() {
         $('.preloader').fadeOut('slow').delay(400);
@@ -107,9 +221,9 @@
     </script>
     <script>
         $(document).ready(function() {
-            $('.date-format').bootstrapMaterialDatePicker({
-                format: 'dddd DD MMMM YYYY HH:mm',
-                minDate : new Date()
+            $('.date').bootstrapMaterialDatePicker({
+                clearButton:true,
+                time: false
             });
         });
     </script>
@@ -166,7 +280,8 @@
             let phone = $('#phone-' + id);
             let email = $('#email-' + id);
             let date = $('#date-' + id);
-            if(date.val() != '' && phone.val() != '' && name.val() != '' && email.val() != '')
+            let time = $('#input-' + id);
+            if(date.val() != '' && phone.val() != '' && name.val() != '' && email.val() != '' && time.val() != '')
             {
                 $.ajax({
                     url: '{{ route('message') }}',
@@ -177,6 +292,7 @@
                         "phone": phone.val(),
                         "email": email.val(),
                         "date": date.val(),
+                        "time": time.val()
                     },
                     success: data => {
                         $('#applicationModal').modal('hide');
@@ -185,6 +301,7 @@
                         $('#phone-' + id).val('');
                         $('#email-' + id).val('');
                         $('#date-' + id).val('');
+                        $('#input-' + id).val('');
                     },
                     error: () => {
                         console.log(0);
@@ -202,12 +319,14 @@
         $('.bid2').click(e => {
             e.preventDefault();
             let btn = $(e.currentTarget);
+            let num = btn.data('id');
             let name = $('#name');
             let phone = $('#phone');
             let email = $('#email');
             let date = $('#date');
             let id = $('#dress-id');
-            if(date.val() != '' && phone.val() != '' && name.val() != '' && email.val() != '') {
+            let time = $('#input-' + num);
+            if(time.val() != '' && date.val() != '' && phone.val() != '' && name.val() != '' && email.val() != '') {
 
                 $.ajax({
                     url: '{{ route('message2') }}',
@@ -218,6 +337,7 @@
                         "phone": phone.val(),
                         "email": email.val(),
                         "date": date.val(),
+                        "time": time.val(),
                         "id": id.val(),
                     },
                     success: data => {
@@ -228,6 +348,7 @@
                         $('#email').val('');
                         $('#date').val('');
                         $('#dress-id').val('');
+                        $('#input-' + num).val('');
                     },
                     error: () => {
                         console.log(0);

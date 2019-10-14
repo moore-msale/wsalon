@@ -461,6 +461,17 @@ body.modal-open {
     transition: .25s ease-in-out;
 }
 
+.mainHeader {
+    background: #ebebeb;
+}
+.mainNav__list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.mainNav__link {
+    padding: 0 35px;
+}
 
 
 /* Icon 3 */
