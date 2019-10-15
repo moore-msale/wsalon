@@ -26,11 +26,11 @@ $agent = new \Jenssegers\Agent\Agent();
     </div>
     @if(!$agent->isPhone())
         <div class="md-form">
-            <input placeholder="Время примерки*" name="date" id="input-2" class="form-control text-white">
+            <input placeholder="Время примерки*" name="date" id="input-1" class="form-control text-white">
         </div>
     @else
         <div class="md-form pt-0 mt-5">
-            <input type="time" name="time" id="input-2" class="form-control text-white">
+            <input type="time" name="time" id="input-1" class="form-control text-white">
             <label for="input-2">Время примерки</label>
         </div>
     @endif
