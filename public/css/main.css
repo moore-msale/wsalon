@@ -22,7 +22,7 @@ main {
 }
 
 .font-caveat {
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', cursive!important;
 }
 .font-raleway {
     font-family: 'Raleway', sans-serif;
