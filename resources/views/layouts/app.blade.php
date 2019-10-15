@@ -91,6 +91,10 @@
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker.js') }}"></script>
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker-datetime.js') }}"></script>
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/i18n/anypicker-i18n-ru.js') }}"></script>
+<?php
+    $agent = new \Jenssegers\Agent\Agent();
+?>
+@if(!$agent->isPhone())
     <script>
     let hourses = [];
     for (let i = 1; i < 24; i++) {
@@ -192,6 +196,7 @@
         ]
     });
 </script>
+    @endif
 <script>
     $(document).ready(function() {
         $('.preloader').fadeOut('slow').delay(400);
