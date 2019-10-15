@@ -1,4 +1,7 @@
 <!-- Modal -->
+<?php
+$agent = new \Jenssegers\Agent\Agent();
+?>
 <div class="modal fade" id="bidModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
@@ -30,9 +33,16 @@
                     <div class="md-form">
                         <input placeholder="Дата примерки*" type="text" name="date" id="date" class="form-control date text-white">
                     </div>
-                    <div class="md-form">
-                        <input placeholder="Время примерки*" name="date" id="input-3" class="form-control text-white">
-                    </div>
+                    @if(!$agent->isPhone())
+                        <div class="md-form">
+                            <input placeholder="Время примерки*" name="date" id="input-2" class="form-control text-white">
+                        </div>
+                    @else
+                        <div class="md-form pt-0 mt-5">
+                            <input type="time" name="time" id="input-2" class="form-control text-white">
+                            <label for="input-2">Время примерки</label>
+                        </div>
+                    @endif
 
                     <div class="d-flex justify-content-end">
                         <a class="btn rounded-pill text-dark border-0 mt-4 bid2" data-id="3" style="box-shadow: 0px 4px 50px rgba(217, 218, 218, 0.5);background: #C1CEBE;">Отправить заявку</a>

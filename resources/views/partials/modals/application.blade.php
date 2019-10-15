@@ -37,8 +37,9 @@
                         <input placeholder="Время примерки*" name="date" id="input-2" class="form-control text-white">
                     </div>
                     @else
-                        <div class="md-form"><label for="input-2">Время примерки</label>
-                            <input placeholder="Время примерки*" type="time" name="date" id="input-2" class="form-control text-white">
+                        <div class="md-form pt-0 mt-5">
+                            <input type="time" name="time" id="input-2" class="form-control text-white">
+                            <label for="input-2">Время примерки</label>
                         </div>
                     @endif
 

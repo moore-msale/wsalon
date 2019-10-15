@@ -58,6 +58,9 @@
 <body class="bg-white">
 <div class="preloader"></div>
 <div class="backdrop" style="position: fixed; top:0%; left:0%; width:100%; height:100%; z-index:999; display: none; background-color:#dedede; opacity:0.4;"></div>
+<?php
+$agent = new \Jenssegers\Agent\Agent();
+?>
     <div id="app">
         @include('partials.header')
 
@@ -91,9 +94,7 @@
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker.js') }}"></script>
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker-datetime.js') }}"></script>
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/i18n/anypicker-i18n-ru.js') }}"></script>
-<?php
-    $agent = new \Jenssegers\Agent\Agent();
-?>
+
 @if(!$agent->isPhone())
     <script>
     let hourses = [];
@@ -286,6 +287,11 @@
             let email = $('#email-' + id);
             let date = $('#date-' + id);
             let time = $('#input-' + id);
+            console.log(name.val());
+            console.log(phone.val());
+            console.log(email.val());
+            console.log(date.val());
+            console.log(time.val());
             if(date.val() != '' && phone.val() != '' && name.val() != '' && email.val() != '' && time.val() != '')
             {
                 $.ajax({
