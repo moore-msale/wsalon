@@ -4,7 +4,7 @@
     <div class="font-raleway" style="padding:7%; border:1px #3a3c51 solid; border-radius:30px;">
         <br>
         <br>
-        <h2 class="text-fut-bold"><strong>Новая заявка с сайта</strong></h2>
+        <h2 class="text-fut-bold"><strong>Новая заявка на примерку</strong></h2>
         <br>
         Информация о клиенте
         <br>
