@@ -45,7 +45,7 @@
 
 
                     <div class="d-flex justify-content-end">
-                        <a class="btn btn-wedding rounded-pill text-dark border-0 mt-4 bid font-weight-bold" data-id="2">Отправить заявку</a>
+                        <a class="btn-sm btn-wedding rounded-pill text-dark border-0 mt-4 bid font-weight-bold" data-id="2">Отправить заявку</a>
                     </div>
 
                 </form>
@@ -61,9 +61,9 @@
                         <p class="font-raleway text-light mb-3 small pb-5">
                             Мы принимаем по предварительной записи. Записаться можно здесь, в шапке сайта  или по номеру:
                         </p>
-                        <p class="font-caveat text-white" style="font-size: 260%;">
+                        <a href="tel:0770001188" class="font-caveat text-white" style="font-size: 260%; text-decoration: none;">
                             0 770 001 188
-                        </p>
+                        </a>
                     </div>
                 </div>
             </div>

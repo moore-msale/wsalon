@@ -89,12 +89,12 @@
                         г. Бишкек, Московская 150
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 order-8"zzz>
+                <li class="nav-item mr-md-4 order-8">
                     <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{{ url('tel: +996 770 001 188') }}">
                         +996 770 001 188
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 order-8">
+                <li class="nav-item mr-md-4 order-8 d-lg-block d-none">
                     <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="https://www.instagram.com/weddingsalonkg/" target="_blank">
                         <div class="instagram">
                             <div class="logo2">
@@ -103,6 +103,14 @@
                                 <div class="logo_light"></div>
                             </div>
                         </div>
+                    </a>
+                </li>
+                <li class="nav-item text-center d-lg-none d-block order-8 pb-3">
+                    <a href="https://www.instagram.com/weddingsalonkg/" target="_blank">
+                        <i class="fab fa-instagram text-dark fa-2x mr-3"></i>
+                    </a>
+                    <a href="https://www.facebook.com/wsalonkg/" target="_blank">
+                        <i class="fab fa-facebook-f text-dark fa-2x ml-3"></i>
                     </a>
                 </li>
                 <li class="nav-item mr-lg-5 mr-md-3 mr-0 pr-lg-5 order-6 mt-3 mt-md-3 mt-0 mb-md-3 mt-0 order-md-11">
@@ -151,7 +159,7 @@
     </div>
 </nav>
 <div id="mySidenav" class="sidenav d-md-flex d-none">
-    <a href="javascript:void(0)" class="closebtn text-white">×</a>
+    <a href="javascript:void(0)" style="text-decoration: none;" class="closebtn text-white">×</a>
     <ul class="pl-4 menu-nav" style="list-style: none;">
         <li class="w-100"></li>
         <img src="{{ asset('svg/white-logo.svg') }}" class="logo mb-5" alt="">
@@ -200,10 +208,10 @@
             </a>
         </li>
         <li class="nav-item text-center">
-            <a href="https://www.instagram.com/weddingsalonkg/" target="_blank">
+            <a href="https://www.instagram.com/weddingsalonkg/" style="text-decoration: none;" target="_blank">
                 <i class="fab fa-instagram text-light fa-2x mr-3"></i>
             </a>
-            <a href="https://www.facebook.com/wsalonkg/" target="_blank">
+            <a href="https://www.facebook.com/wsalonkg/" style="text-decoration: none;" target="_blank">
                 <i class="fab fa-facebook-f text-light fa-2x ml-3"></i>
             </a>
         </li>

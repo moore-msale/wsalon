@@ -45,7 +45,7 @@ $agent = new \Jenssegers\Agent\Agent();
                     @endif
 
                     <div class="d-flex justify-content-end">
-                        <a class="btn rounded-pill text-dark border-0 mt-4 bid2" data-id="3" style="box-shadow: 0px 4px 50px rgba(217, 218, 218, 0.5);background: #C1CEBE;">Отправить заявку</a>
+                        <a class="btn-sm rounded-pill text-dark border-0 mt-4 bid2" data-id="3" style="box-shadow: 0px 4px 50px rgba(217, 218, 218, 0.5);background: #C1CEBE;">Отправить заявку</a>
                     </div>
 
                 </form>
@@ -61,9 +61,9 @@ $agent = new \Jenssegers\Agent\Agent();
                         <p class="font-raleway text-light mb-3 small pb-5">
                             Мы принимаем по предварительной записи. Записаться можно здесь, в шапке сайта  или по номеру:
                         </p>
-                        <p class="font-caveat text-white" style="font-size: 260%;">
+                        <a href="tel:0770001188" class="font-caveat text-white" style="font-size: 260%;">
                             0 770 001 188
-                        </p>
+                        </a>
                     </div>
                 </div>
             </div>

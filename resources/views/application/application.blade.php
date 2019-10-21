@@ -36,6 +36,6 @@ $agent = new \Jenssegers\Agent\Agent();
     @endif
 
     <div class="d-flex justify-content-end">
-        <a class="btn btn-wedding rounded-pill text-dark border-0 mt-4 bid font-weight-bold" data-id="1" style="">Отправить заявку</a>
+        <a class="btn-sm btn-wedding rounded-pill text-dark border-0 mt-4 bid font-weight-bold" data-id="1" style="">Отправить заявку</a>
     </div>
 </form>

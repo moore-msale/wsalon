@@ -78,7 +78,7 @@
                         <br>о тебе
                     </p>
                     <a href="/about" data-aos="zoom-in"
-                       class="btn btn-wedding shadow font-raleway font-weight-bold text-dark rounded-pill px-4">
+                       class="btn-sm btn-wedding shadow font-raleway font-weight-bold text-dark rounded-pill px-4">
                         Узнать о нас больше
                     </a>
                 </div>
@@ -418,7 +418,7 @@
     </section>
 
     <section class="position-relative overflow-h section-block">
-        <img src="{{ asset('svg/your_love.svg') }}" data-aos="fade-down-right" class="position-absolute" alt="" style="width: 20%; left: 0%; top: -10%;">
+        <img src="{{ asset('svg/your_love.svg') }}" data-aos="fade-down-right" class="position-absolute" alt="" style="width: 20%; left: 0%; top: -5%;">
 
         <div class="container">
             <div class="row mb-5">
@@ -531,7 +531,7 @@
                                     </div>
                                     <div class="text-right">
                                     <a href="/feedback" data-aos="zoom-in"
-                                       class="btn btn-wedding font-raleway font-weight-bold text-dark rounded-pill px-4 mr-auto">
+                                       class="btn-sm btn-wedding font-raleway font-weight-bold text-dark rounded-pill px-4 mr-auto">
                                         Все отзывы
                                     </a>
 
