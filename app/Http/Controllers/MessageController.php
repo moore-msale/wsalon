@@ -10,7 +10,7 @@ class MessageController extends Controller
 {
     public function Mail(Request $request)
     {
-        \Illuminate\Support\Facades\Mail::to('mackinkenny@gmail.com')->send(new Mail($request->all()));
+        \Illuminate\Support\Facades\Mail::to('Wsalonkg@gmail.com')->send(new Mail($request->all()));
 
         if($request->ajax()) {
             return response()->json("success");
@@ -21,7 +21,7 @@ class MessageController extends Controller
 
     public function Mail2(Request $request)
     {
-        \Illuminate\Support\Facades\Mail::to('mackinkenny@gmail.com')->send(new Mail2($request->all()));
+        \Illuminate\Support\Facades\Mail::to('Wsalonkg@gmail.com')->send(new Mail2($request->all()));
 
         if($request->ajax()) {
             return response()->json("success");
