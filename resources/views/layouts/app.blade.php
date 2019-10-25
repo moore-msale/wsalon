@@ -75,7 +75,7 @@ $agent = new \Jenssegers\Agent\Agent();
     @include('partials.modals.application')
 
     <script src="{{ asset('js/app.js') }}"></script>
-    <script type="text/javascript" src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/moment-with-locales.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap-material-datetimepicker.js') }}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
