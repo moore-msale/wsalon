@@ -94,7 +94,15 @@ $agent = new \Jenssegers\Agent\Agent();
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker.js') }}"></script>
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker-datetime.js') }}"></script>
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/i18n/anypicker-i18n-ru.js') }}"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150904479-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-150904479-1');
+</script>
 @if(!$agent->isPhone())
     <script>
     let hourses = [];
