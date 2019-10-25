@@ -83,8 +83,8 @@ $agent = new \Jenssegers\Agent\Agent();
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     {{--<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>--}}
     {{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>--}}
-    <script src="http://malsup.github.io/jquery.cycle2.js"></script>
-    <script src="http://malsup.github.io/jquery.cycle2.shuffle.js"></script>
+    <script src="{{ asset('js/cycle2.js') }}"></script>
+    <script src="{{ asset('js/cycle2.shuffle.js') }}"></script>
     {{--<script--}}
         {{--src="https://code.jquery.com/jquery-3.4.1.min.js"--}}
         {{--integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="--}}
