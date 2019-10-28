@@ -7,7 +7,7 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-4 col-12">
-                    <h2 class="font-caveat font-3x text-center">Каталог платьев</h2>
+                    <h2 class="font-caveat font-3x text-center">{!! $content->title !!}</h2>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-12">
@@ -16,7 +16,7 @@
                                 style="font-size: 11px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA; width:100%;"
                                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                            Сортировка по авторам
+                            {!! $content->sort1 !!}
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             @foreach(\App\Author::all() as $author)
@@ -32,7 +32,7 @@
                                 style="font-size: 11px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA; width:100%;"
                                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                            Сортировка по силуэтам
+                            {!! $content->sort2 !!}
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             @foreach(\App\Silhouette::all() as $silhouette)
@@ -68,7 +68,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-12 pb-3 pt-5 text-center">
                     <p class="text-center font-caveat font-2x" data-aos="fade-down">
-                        И это только частичка всей той красоты, что ждёт свою невесту. В нашем салоне регулярно представлено более 130 моделей платьев.
+                        {!! $content->capture !!}
                     </p>
                     <img src="{{ asset('svg/oliva.svg') }}" data-aos="fade-down-left" class="img-fluid w-25 oliva" alt="">
                 </div>

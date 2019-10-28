@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Catalog;
 use App\Dress;
 use Illuminate\Http\Request;
 
@@ -29,6 +30,7 @@ class DressController extends Controller
             $dresses = Dress::all();
         }
 
-        return view('dress-catalog',['dresses' => $dresses]);
+        $content = Catalog::all()->first();
+        return view('dress-catalog',['dresses' => $dresses, 'content' => $content]);
     }
 }

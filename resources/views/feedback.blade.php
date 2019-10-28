@@ -8,7 +8,7 @@
         <div class="container ">
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-12 pt-lg-0 pt-4">
-                    <h2 class="font-caveat font-3x text-center w-100">Отзывы наших клиентов</h2>
+                    <h2 class="font-caveat font-3x text-center w-100">{!! $content->title !!}</h2>
                 </div>
                 {{--<div class="col-lg-3 col-12 d-flex align-items-center py-lg-0 py-4">--}}
                     {{--<a class="nav-link btn-sm btn-wedding text-dark font-weight-bold shadow rounded-pill px-4 mx-auto"  data-toggle="modal" data-target="#feedModal"--}}

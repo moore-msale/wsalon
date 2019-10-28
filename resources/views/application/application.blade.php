@@ -1,12 +1,12 @@
 <?php
 $agent = new \Jenssegers\Agent\Agent();
+$window = \App\Window::all()->first();
 ?>
 <form style="padding: 3rem;border: 30px solid #3A3C51; background: #363749;">
     @csrf
-    <h3 class="font-caveat text-light mb-3" style="font-size:260%;">Запишитесь на примерку</h3>
+    <h3 class="font-caveat text-light mb-3" style="font-size:260%;">{!! $window->title !!}</h3>
     <p class="font-raleway text-light mb-3 small">
-        Оставьте свою заявку на примерку платья, наш
-        <br>менеджер перезвонит вам для подтверждения
+        {!! $window->text1 !!}
     </p>
 
     <div class="md-form">

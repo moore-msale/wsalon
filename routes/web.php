@@ -19,10 +19,12 @@ Route::group(['prefix' => '/moo'], function () {
     Voyager::routes();
 });
 Route::get('/', function () {
-    return view('welcome');
+    $main_page = \App\MainPage::all()->first();
+    return view('welcome',['content' => $main_page]);
 });
 Route::get('/about', function () {
-    return view('about');
+    $content = \App\About::all()->first();
+    return view('about',['content' => $content]);
 });
 
 
@@ -39,7 +41,8 @@ Route::post('/message', 'MessageController@mail')->name('message');
 Route::post('/message2', 'MessageController@mail2')->name('message2');
 Route::get('/dress/{id}', 'DressController@index')->name('dress');
 Route::get('/feedback', function () {
-    return view('feedback');
+    $content = \App\Feedpage::all()->first();
+    return view('feedback',['content' => $content]);
 });
 
 Route::group($checker, function () {

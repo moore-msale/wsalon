@@ -1,4 +1,8 @@
 <!--Форма заявки-->
+<?php
+    $contact = \App\Contact::all()->first();
+
+?>
 <section class="mt-2" style="margin-top: -100px;" id="contacts-form">
     <div class="container-fluid">
         <div class="row align-items-end">
@@ -17,13 +21,13 @@
                 <div class="position-absolute" style="background-color: #2D2F41; top:10%; transform: translateX(-80px);">
                     <div class="p-3" style="width: 80px;">
                         <div class="text-center py-4">
-                            <a href="https://www.instagram.com/weddingsalonkg/" target="_blank">
+                            <a href="{!! $contact->instagram !!}" target="_blank">
                     <i class="fab fa-instagram text-light fa-2x"></i>
                             </a>
                         </div>
                         <div style="border-top:1px solid #d2d2d2;"></div>
                     <div class="text-center py-4">
-                        <a href="https://www.facebook.com/wsalonkg/" target="_blank">
+                        <a href="{!! $contact->facebook !!}" target="_blank">
                     <i class="fab fa-facebook-f text-light fa-2x"></i>
                         </a>
                     </div>

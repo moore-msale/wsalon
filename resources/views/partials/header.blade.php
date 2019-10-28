@@ -1,3 +1,6 @@
+<?php
+    $contact = \App\Contact::all()->first();
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top menuse" style="box-shadow: none; z-index:998!important;" >
     <div class="container-fluid">
         <div class="d-flex w-100 d-lg-none">
@@ -84,18 +87,18 @@
                         ОТЗЫВЫ
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 order-7 mt-lg-0 mt-3">
+                <li class="nav-item mr-md-4 order-7 mt-lg-0 mt-3 addressat">
                     <a class="nav-link text-dark font-weight-bold font-caveat biggest text-uppercase" href="{{ url('https://2gis.kg/bishkek/firm/70000001022006342?m=74.592637%2C42.86968%2F18') }}" target="_blank">
-                        г. Бишкек, Московская 150
+                        {!! $contact->address !!}
                     </a>
                 </li>
-                <li class="nav-item mr-md-4 order-8">
-                    <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{{ url('tel: +996 770 001 188') }}">
-                        +996 770 001 188
+                <li class="nav-item mr-md-4 order-8 contacter">
+                    <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{{ url('tel:'.$contact->phone) }}">
+                        {!! $contact->phone !!}
                     </a>
                 </li>
                 <li class="nav-item mr-md-4 order-8 d-lg-block d-none">
-                    <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="https://www.instagram.com/weddingsalonkg/" target="_blank">
+                    <a class="nav-link text-dark font-weight-bold font-caveat biggest" href="{!! $contact->instagram !!}" target="_blank">
                         <div class="instagram">
                             <div class="logo2">
                                 <div class="logo_border"></div>
@@ -106,10 +109,10 @@
                     </a>
                 </li>
                 <li class="nav-item text-center d-lg-none d-block order-8 pb-3">
-                    <a href="https://www.instagram.com/weddingsalonkg/" target="_blank">
+                    <a href="{!! $contact->instagram !!}" target="_blank">
                         <i class="fab fa-instagram text-dark fa-2x mr-3"></i>
                     </a>
-                    <a href="https://www.facebook.com/wsalonkg/" target="_blank">
+                    <a href="{!! $contact->facebook !!}" target="_blank">
                         <i class="fab fa-facebook-f text-dark fa-2x ml-3"></i>
                     </a>
                 </li>
@@ -199,19 +202,19 @@
         </li>
         <li class="nav-item text-center mb-2">
             <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('https://2gis.kg/bishkek/firm/70000001022006342?m=74.592637%2C42.86968%2F18') }}" target="_blank">
-                г. Бишкек, Московская 150
+                {!! $contact->address !!}
             </a>
         </li>
         <li class="nav-item text-center mb-4">
-            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('tel: +996 770 001 188') }}">
-                +996 770 001 188
+            <a class="nav-link text-light font-weight-bold font-caveat big text-uppercase" href="{{ url('tel:'.$contact->phone) }}">
+                {!! $contact->phone !!}
             </a>
         </li>
         <li class="nav-item text-center">
-            <a href="https://www.instagram.com/weddingsalonkg/" style="text-decoration: none;" target="_blank">
+            <a href="{!! $contact->instagram !!}" style="text-decoration: none;" target="_blank">
                 <i class="fab fa-instagram text-light fa-2x mr-3"></i>
             </a>
-            <a href="https://www.facebook.com/wsalonkg/" style="text-decoration: none;" target="_blank">
+            <a href="{!! $contact->facebook !!}" style="text-decoration: none;" target="_blank">
                 <i class="fab fa-facebook-f text-light fa-2x ml-3"></i>
             </a>
         </li>

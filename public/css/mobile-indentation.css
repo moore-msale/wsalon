@@ -265,9 +265,19 @@
 
 @media only screen and (max-width: 800px) and (min-width: 700px) {
     /* Welcome page styles */
+    .cholpon
+    {
+        transform: translate(85%,-150%) !important;
+    }
+    .dresses-car .owl-stage-outer
+    {
+        margin-left: auto;
+        margin-right:auto;
+        width:80%;
+    }
     .media-carousel
     {
-        transform: translateX(50px);
+        transform: translateY(150px );
     }
     .car-items
     {
@@ -285,8 +295,8 @@
     .about-us-text
     {
         transform: translate(43%,42%)!important;
-        font-size: 185%!important;
-        line-height: 100%;
+        font-size: 165%!important;
+        line-height: 95%;
     }
     .about-us-frame
     {
@@ -328,7 +338,8 @@
         transform: translate(81%, 7%)!important;
     }
     .pt-34 {
-        padding-top: 34%!important;
+        padding-top: 0%!important;
+        transform: translateY(100px)!important;
     }
     .love-note {
         right: -1%!important;
@@ -379,5 +390,28 @@
     }
     .balloon {
         bottom: 67% !important;
+    }
+}
+@media only screen and (max-width: 1100px) and (min-width: 1000px)
+{
+    .about-us-text
+    {
+        transform: translate(53%,55%)!important;
+        /*font-size: 165%!important;*/
+        line-height: 95%;
+    }
+    .addressat
+    {
+        display:none;
+    }
+    .contacter
+    {
+        display:none;
+    }
+    .dresses-car .owl-stage-outer
+    {
+        margin-left: auto;
+        margin-right:auto;
+        width:80%;
     }
 }

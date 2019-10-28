@@ -7,7 +7,7 @@
             }
             .section-block
             {
-                margin-bottom:80px;
+                margin-bottom:00px;
             }
         }
 
@@ -22,31 +22,30 @@
                     <div class="d-flex align-items-end">
                         <div class="col-6 p-1 translateY-none" style="transform: translateY(-50px);">
                             <div class="card shadow-none">
-                                <img src="{{ asset('images/image-2.png') }}" class="card-img" data-aos="fade-down-right" alt="">
+                                <img src="{{ asset('storage/'.$content->image1_section1) }}" class="card-img" data-aos="fade-down-right" alt="">
                                 <div
                                     class="card-img-overlay d-flex justify-content-center align-items-center text-center    text-white">
                                     <p class="font-weight-bold font-caveat h1" data-aos="fade-up"
-                                       style="line-height: 140%; letter-spacing: 0.07em;">Дарим <br> подарки за <br>
-                                        примерку</p>
+                                       style="line-height: 140%; letter-spacing: 0.07em;">{!!  $content->text1_section1 !!}</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 p-1 position-relative">
-                            <img src="{{ asset('images/image-1.png') }}" class="img-fluid" data-aos="fade-down-left" alt="">
+                            <img src="{{ asset('storage/'.$content->image2_section1) }}" class="img-fluid" data-aos="fade-down-left" alt="">
                             <img src="{{ asset('svg/ribbons.svg') }}" class="position-absolute" style="width: 90%;right: 5%; top: -3%;" alt="">
                         </div>
                     </div>
                     <div class="d-flex align-items-end translateY-none" style="transform: translateY(-50px);">
                         <div class="col-6 p-1" style="transform: translateY(-50px);">
-                            <img src="{{ asset('images/image-3.png') }}" class="img-fluid" data-aos="fade-up-right" alt="">
+                            <img src="{{ asset('storage/'.$content->image3_section1) }}" class="img-fluid" data-aos="fade-up-right" alt="">
                             <img src="{{ asset('svg/broke-heart.svg') }}" class="position-absolute" data-aos="fade-up" style="right: 15%; top: 13%;" alt="">
                             <p class="font-caveat position-absolute main-text" data-aos="fade-up" style=" font-size: 2.2rem; line-height: 100%; letter-spacing: 0.05em; color: #fff; bottom: 10%; right: 25%;">Love &<br> marriage</p>
                         </div>
                         <div class="col-6 p-1 position-relative">
-                            <img src="{{ asset('images/image-4.png') }}" class="img-fluid"  data-aos="fade-up-left" alt="">
+                            <img src="{{ asset('storage/'.$content->image4_section1) }}" class="img-fluid"  data-aos="fade-up-left" alt="">
                             <img src="{{ asset('svg/flo.svg') }}" class="position-absolute main-section-img-2" style="width: 90%;right:-19%; bottom: 26%;" alt="">
                         </div>
-                        <img src="{{ asset('images/flowers.png') }}" class="circle-flower position-absolute main-section-img-1" data-aos="fade-left" style="width: 40%; right: -21%; bottom: 40%; z-index: 0;" alt="">
+                        <img src="{{ asset('storage/'.$content->image5_section1) }}" class="circle-flower position-absolute main-section-img-1" data-aos="fade-left" style="width: 40%; right: -21%; bottom: 40%; z-index: 0;" alt="">
                         <img src="{{ asset('svg/flour.svg') }}" class="free-flo position-absolute main-section-img-2" style="width: 10%; right: -20%; top: 0;" alt="">
                     </div>
                 </div>
@@ -55,8 +54,7 @@
                     <img src="{{ asset('images/logo.png') }}" class="logo" data-aos="fade-down" alt="">
                     <img src="{{ asset('svg/flours.svg') }}" class="position-absolute right-3" style="right: -3%; top: 10%;" alt="">
                     <img src="{{ asset('images/heart.png') }}" class="position-absolute w-25" style="left: -30%;" alt="">
-                    <p class="font-caveat mt-5 h1" data-aos="fade-left">“Искренность твоих эмоций,<br>
-                        когда мы находим вместе то самое <br> платье - наша величайшая награда.”</p>
+                    <p class="font-caveat mt-5 h1" data-aos="fade-left">{!!  $content->text2_section1 !!}</p>
                     <img src="{{ asset('images/mini-hr.png') }}" width="70" alt="">
                     <img src="{{ asset('images/effect-1.png') }}" class="d-block ml-auto" width="120" alt="">
                     <img src="{{ asset('svg/tho-love.svg') }}" class="position-absolute" style="left: 30%; bottom: 25%;" alt="">
@@ -71,11 +69,9 @@
     <section class="overflow-h section-block">
         <div class="container mt-3 mb-5 pb-5">
             <div class="row">
-                <div class="col-12 col-md-6  col-xl-4 pr-0">
+                <div class="col-12 col-md-6 col-xl-4 pr-0">
                     <p class="font-caveat font-3x" data-aos="fade-right" style="line-height: 110%; letter-spacing: 0.02em;">
-                        W салон - это в первую
-                        <br>очередь история
-                        <br>о тебе
+                        {!!  $content->text1_section2 !!}
                     </p>
                     <a href="/about" data-aos="zoom-in"
                        class="btn-sm btn-wedding shadow font-raleway font-weight-bold text-dark rounded-pill px-4">
@@ -87,10 +83,7 @@
                 </div>
                 <div class="col-12 col-xl-4 col-md-4 pl-0 text-sm-right text-center m25  text-xl-left choice-text ">
                     <p class="font-raleway big" data-aos="fade-left">
-                        Трепетный выбор платья, о котором
-                        <br>мы мечтали, которое представляли
-                        <br>и фантазировали, начинается <с></с>
-                        <br>самых маленьких деталей.
+                        {!!  $content->text2_section2 !!}
                     </p>
                 </div>
             </div>
@@ -104,9 +97,9 @@
                          style="bottom: -10%; left: -20%; width: 15%;" alt="">
                     <img src="{{ asset('svg/eaves2.svg') }}" data-aos="fade-right" class="position-absolute img-layers"
                          style="right: 0; top: 0; width: 15%;" alt="">
-                    <img src="{{ asset('images/3.png') }}" data-aos="zoom-in" class="img-fluid rounded-circle shadow-lg img-layer2"
+                    <img src="{{ asset('storage/'.$content->image1_section2) }}" data-aos="zoom-in" class="img-fluid rounded-circle shadow-lg img-layer2"
                          style="border-bottom-left-radius: 0px !important;" alt="">
-                    <img src="{{ asset('images/3.png') }}" data-aos="zoom-in"
+                    <img src="{{ asset('storage/'.$content->image1_section2) }}" data-aos="zoom-in"
                          class="img-fluid rounded-circle position-absolute img-layer1"
                          style="border-bottom-left-radius: 0px !important; width: 92%; top: 5px; left: 20px; z-index: -1;"
                          alt="">
@@ -124,37 +117,26 @@
                             <img src="{{ asset('images/circle.png') }}" data-aos="zoom-in" class="img-fluid" style="" alt="">
                             <p class="font-caveat font-2x text-center position-absolute text-in-circle" data-aos="zoom-in-down"
                                style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-4deg);">
-                                Твоя улыбка и
-                                <br>счастливые глаза
-                                <br>- <span class="text-white">
-                                    наше
-                                <br>вдохновение
-                                </span>
+                                {!!  $content->text1_section3 !!}
                             </p>
                         </div>
                         <div
                             style="width: 130%; height: 90%; border: 2px dashed #fff; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-2deg); z-index:1; "
                             class="position-absolute"></div>
-                        <img src="{{ asset('images/image-5.png') }}" data-aos="fade-right" class="" style="width: 120%;" alt="">
+                        <img src="{{ asset('storage/'.$content->image1_section3) }}" data-aos="fade-right" class="" style="width: 120%;" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex align-items-end pt-md-0 pt-5">
+                <div class="col-lg-6 col-12 col-md-12 d-flex align-items-end pt-md-0 pt-5 pb-lg-0 pb-md-5 pb-0 mb-lg-0 mb-md-5 mb-0">
                     <div class="row">
-                    <div class="col-lg-6 col-md-12 col-5 pt-xl-5 pt-0 mt-xl-4 mt-0 r-72">
+                    <div class="col-lg-6 col-md-6 col-5 pt-xl-5 pt-0 mt-xl-4 mt-0">
                         <p class="font-raleway text-right big texter" data-aos="fade-down">
-                            В W салоне каждая невеста
-                            <br>преображается, словно
-                            <br>Золушка из сказки. Ну а
-                            <br>после полуночи волшебство
-                            <br>не заканчивается, ведь
-                            <br>платье остаётся с тобой
-                            <br>навсегда.
+                            {!!  $content->text2_section3 !!}
                         </p>
                     </div>
-                    <div class="col-lg-6 col-md-12  col-7  position-relative">
+                    <div class="col-lg-6 col-md-6  col-7  position-relative">
                         <div class="position-absolute"
                              style="border: 2px dashed #fff; width: 80%; height: 90%; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-2deg); z-index:2;"></div>
-                        <img src="{{ asset('images/image-6.png') }}" data-aos="fade-left" class="img-fluid " alt="">
+                        <img src="{{ asset('storage/'.$content->image2_section3) }}" data-aos="fade-left" class="img-fluid " alt="">
                         <img src="{{ asset('svg/mes-love.svg') }}" data-aos="fade-left" class="img-fluid d-lg-block d-none" style="position: absolute; bottom:-28%; left:25%; width:40%; height:40%;" alt="">
                     </div>
                     </div>
@@ -169,27 +151,22 @@
                 <div class="col-12 col-md-5">
                     <img src="{{ asset('svg/love.svg') }}" data-aos="fade-up" class="mb-5 position-relative love"
                          style="z-index: 5; width: 60%; transform: translateX(80%);" alt="">
-                    <p class="font-caveat font-3x" data-aos="fade-right" style="line-height: 110%;">Только ты и твоя
-                        <br>улыбка!</p>
+                    <p class="font-caveat font-3x" data-aos="fade-right" style="line-height: 110%;">{!!  $content->title_section4 !!}</p>
                     <p class="font-raleway big" data-aos="fade-right">
-                        Как же хорошо, когда можно подобрать
-                        <br>полный образ в одном месте.
+                        {!!  $content->text1_section4 !!}
                     </p>
                     <p class="font-raleway big" data-aos="fade-right">
-                        Ведь в W салоне огромный выбор не только
-                        <br>платьев, но и фаты и украшений для причёски.
-                        <br>Все то, что поможет тебе сиять в этот
-                        <br>волшебный день.
+                        {!!  $content->text2_section4 !!}
                     </p>
                 </div>
                 <div class="col-12 col-md-7 position-relative">
                     <img src="{{ asset('svg/logo.svg') }}" class="position-absolute w-25"
                          style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;" alt="">
-                    <img src="{{ asset('images/image-7.png') }}" data-aos="fade-down-left" class="img-fluid w-75 position-relative"
+                    <img src="{{ asset('storage/'.$content->image1_section4) }}" data-aos="fade-down-left" class="img-fluid w-75 position-relative"
                          style="z-index: 3; transform: translateX(-10%);" alt="">
-                    <img src="{{ asset('images/image-8.png') }}" data-aos="fade-down-left" class="img-fluid w-75 position-relative d-lg-block d-md-none d-block"
+                    <img src="{{ asset('storage/'.$content->image2_section4) }}" data-aos="fade-down-left" class="img-fluid w-75 position-relative d-lg-block d-md-none d-block"
                          style="z-index: 2; transform: translate(45%, -87%);" alt="">
-                    <img src="{{ asset('images/image-9.png') }}" data-aos="fade-up-right" class="img-fluid w-75 position-relative"
+                    <img src="{{ asset('storage/'.$content->image3_section4) }}" data-aos="fade-up-right" class="img-fluid w-75 position-relative"
                          style="z-index: 1; margin: -100% 0 -20% 0;" alt="">
                     <p class="position-absolute font-alex font-4x right-3"
                        style="color: #C1CEBE; bottom: 10%; right: -5%; z-index: 5;" data-aos="fade-left">Wedding Salon</p>
@@ -206,14 +183,14 @@
             <div class="row d-flex justify-content-between">
                 <div class="col-12 col-md-8 position-relative">
                     <img src="{{ asset('svg/flavor.svg') }}" class="position-absolute flavor" data-aos="fade-right" style="top: -15%; left: -6%; z-index: -1; width: 15%;" alt="">
-                    <img src="{{ asset('images/16.png') }}" class="position-absolute img-mobile" data-aos="zoom-in" style="width: 65%; bottom: 50%; left: 30%; z-index: -1;transform: rotate(3.55deg);" alt="">
+                    <img src="{{ asset('storage/'.$content->image2_section5) }}" class="position-absolute img-mobile" data-aos="zoom-in" style="width: 65%; bottom: 50%; left: 30%; z-index: -1;transform: rotate(3.55deg);" alt="">
 
-                    <img src="{{ asset('images/17.png') }}" data-aos="fade-right" style="width: 40%; z-index: 2;box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);" alt="">
+                    <img src="{{ asset('storage/'.$content->image1_section5) }}" data-aos="fade-right" style="width: 40%; z-index: 2;box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);" alt="">
                     <img src="{{ asset('svg/balloon.svg') }}" class="heart-balloons position-absolute balloon" style="bottom: 37%; right: 9%; width: 14%;" alt="">
                     <div class="d-md-flex d-block">
-                        <h3 class="font-caveat font-2x mobile-pad happy-title" data-aos="fade-right" style="width: 70%;padding: 12% 0 0 10%;">Счастье должно быть во всем: и в глазах,и в нарядах.</h3>
+                        <h3 class="font-caveat font-2x mobile-pad happy-title" data-aos="fade-right" style="width: 70%;padding: 12% 0 0 10%;">{!!  $content->title_section5 !!}</h3>
                         <p class="font-raleway pad big pt-34" data-aos="fade-up" style=" width: 100%; float: right;padding-top: 29%; text-align: left;">
-                            «W Salon» знает, что такое качество, и предлагает покупателям только лучшее. Индивидуальность каждой невесты - вот самый главный принцип нашей работы. Искренность в улыбке в момент, когда мы находим вместе то самое платье - наша величайшая награда.
+                            {!!  $content->text1_section5 !!}
                         </p>
                     </div>
                 </div>
@@ -237,7 +214,7 @@
             <div class="row">
 
                 <div class="col-12 col-md-4 pt-4 order-2 order-lg-1">
-                    <h3 class="font-caveat font-3x text-left position-relative pb-lg-0 pb-5" data-aos="fade-down-right" style="z-index: 5;">Привет,<br> я - Юля
+                    <h3 class="font-caveat font-3x text-left position-relative pb-lg-0 pb-5" data-aos="fade-down-right" style="z-index: 5;">{!!  $content->text3_section6 !!}
                     </h3>
                     <img src="{{ asset('images/ulia.png') }}" data-aos="fade-down-right" class=" img-fluid rounded-circle position-relative w-75"
                          style="z-index: 1; transform: translate(35%,-17%); border: 5px solid #D97AA2;" alt="">
@@ -246,7 +223,7 @@
                 </div>
 
                 <div class="col-12 col-md-4 order-1 order-lg-2">
-                    <h3 class="font-caveat font-3x text-left" data-aos="fade-down">Наши девочки помогут выбрать твое платье!</h3>
+                    <h3 class="font-caveat font-3x text-left" data-aos="fade-down">{!!  $content->title_section6 !!}</h3>
 
                     <img src="{{ asset('images/cholpon.png') }}" data-aos="fade-up-left" class="img-fluid rounded-circle position-relative w-75"
                          style="z-index: 1; transform: translate(15%, 20%); border: 5px solid #D97AA2;" alt="">
@@ -254,20 +231,15 @@
                          style="z-index: 2; transform: translate(190%, -20%); width: 122px; height: 119px" alt="">
 
                     <h3 class="font-caveat font-3x align-self-end text-center cholpon" data-aos="fade-up-left" style="transform: translate(70%,-150%)">
-                        Меня зовут <br>Чолпон
+                        {!!  $content->text4_section6 !!}
                     </h3>
                 </div>
                 <div class="col-12 col-md-4 pt-md-5 pb-3 text-md-left text-right order-3 order-lg-3">
                     <p class="font-raleway big" data-aos="fade-down-left">
-                        Мы знаем что выбор свадебного
-                        <br>платья не из легких и поэтому мы и
-                        <br>наши дорогуши феечки выслушают
-                        <br>тебя, помогут разобраться в
-                        <br>ассортименте и выберут для тебя то
-                        <br>самое платье.
+                        {!!  $content->text1_section6 !!}
                     </p>
                     <p class="font-raleway big" data-aos="fade-down-left">
-                        Доверься нам и не беспокойся ни о чем!
+                        {!!  $content->text2_section6 !!}
                     </p>
                 </div>
             </div>
@@ -285,7 +257,7 @@
 
                 <div class="col-md-6 col-12 text-center mar-img ">
                     <p class="font-caveat font-3x align-self-center" data-aos="fade-down" style="line-height: 1;">
-                        Мы поможем подобрать “то самое платье” для твоего счастливого дня
+                        {!!  $content->title_section7 !!}
                     </p>
                 </div>
 
@@ -383,18 +355,18 @@
         </div>
     </section>
 
-    <section class=" overflow-h section-block">
+    <section class="overflow-h section-block">
 
         <div class="container py-5 position-relative">
             <img src="{{ asset('svg/OBJECTS.svg') }}" class="love-note position-absolute right-3" alt="" style="width: 15%; right: -10%; top: -5%;">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="font-caveat font-4x text-center" data-aos="fade-down">Топовые платья</h2>
+                    <h2 class="font-caveat font-4x text-center" data-aos="fade-down">{!!  $content->title_section8 !!}</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div id="dresses" class="owl-carousel owl-theme">
+                    <div id="dresses" class="owl-carousel owl-theme dresses-car">
                         @foreach(\App\Dress::where('top',1)->get() as $author)
                             <div class="item authors p-1" data-aos="fade-down">
                                 <a href="{{ route('dress', $author->id) }}" style="text-decoration: none; color:black;">
@@ -423,7 +395,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12">
-                    <h2 class="text-center font-caveat font-4x" style="line-height:1;" data-aos="fade-up">Наши любимые<br>бренды</h2>
+                    <h2 class="text-center font-caveat font-4x" style="line-height:1;" data-aos="fade-up">{!!  $content->title_section9 !!}</h2>
                 </div>
             </div>
             <div class="row">
@@ -447,15 +419,9 @@
             <img src="{{ asset('svg/coffeeMaker.svg') }}" data-aos="fade-down-right" class="coffeeMaker position-absolute" alt="" style="width: 15%; left: -10%; top: 1%;">
             <div class="row align-items-center mar-img">
                 <div class="col-12 col-md-5 offset-1">
-                    <h2 class="font-caveat font-3x" style="line-height: 100%;" data-aos="fade-down-right">Приходи на примерку и мы угостим вкусняшками :)</h2>
+                    <h2 class="font-caveat font-3x" style="line-height: 100%;" data-aos="fade-down-right">{!!  $content->title_section10 !!}</h2>
                     <p class="font-raleway big" data-aos="fade-down-right">
-                        Кофе - это не всё, чем может похвастаться
-                        <br>наш кофе поинт. В уютной атмосфере вы
-                        <br>можете проводить встречи и обсудить
-                        <br>организационные вопросы за чашечкой
-                        <br>свежесваренного кофе.
-                        <br>Мы, как место встречи, обеспечим тёплую
-                        <br>атмосферу и вкуснейший кофе.
+                        {!!  $content->text1_section10 !!}
                     </p>
                 </div>
                 <div class="col" data-aos="fade-down-left">
@@ -480,7 +446,7 @@
                         <div class="container">
 
                             <div class="row">
-                                <div class="col-lg-5 col-12">
+                                <div class="col-lg-5 col-md-5 col-12">
                                     <div class="position-relative media-carousel">
                                         {{--<img class="img-fluid" style="transform: translateY(-10%)" src="{{ asset('images/feedback.png') }}" alt="">--}}
                                         {{--<div class="position-absolute car-items" style="top: 14.2%; left:30.5%; width:240px; height:159px;">--}}
@@ -516,7 +482,7 @@
 
 
                                 </div>
-                                <div class="col-lg-6 col-12 pt-lg-0 pt-5" data-aos="fade-up">
+                                <div class="col-lg-6 col-md-7 col-12 pt-lg-0 pt-5" data-aos="fade-up">
                                     <div id="feed-carousel" class="owl-carousel">
                                         @foreach(\App\Feed::where('active',1)->get() as $feed)
                                         <div class="item">
@@ -588,7 +554,7 @@
 
                 <div class="col-md-8 col-12 text-center">
                     <p class="font-2x TTLove" style="letter-spacing: 0.02em;" data-aos="fade-down">
-                        „Свадебное платье — главный атрибут истинной любви.“
+                        {!!  $content->title_section11 !!}
                     </p>
                     <img src="{{ asset('svg/oliva.svg') }}" data-aos="fade-down-left" class="img-fluid w-25 oliva" alt="">
                 </div>
