@@ -376,7 +376,9 @@
                                         <img style="height:500px;" src="{{ asset('storage/'.$author->image) }}" class="img-fluid d-lg-none d-block" alt="">
                                     </div>
                                     <div class="card-body text-center">
+                                        @if(isset($author->author))
                                         <h3 class="font-caveat font-3x" id="favorite-brends">{{ $author->author->name }}</h3>
+                                        @endif
                                         <p class="font-raleway big">Collection 2019</p>
                                     </div>
                                 </div>
