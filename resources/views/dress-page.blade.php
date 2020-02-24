@@ -30,6 +30,7 @@
                         <h2 class="dress-header pb-4 font-raleway font-weight-bold font-2x text-white text-center">
                             {{ $dress->title }}
                         </h2>
+                        @if(isset($dress->author->name))
                         <div class="d-flex align-items-center">
                             <p class="dress-point font-weight-light font-raleway mb-1 text-white w-25 text-center">
                                 Дизайнер
@@ -40,7 +41,8 @@
                             </p>
                             </div>
                         </div>
-
+                        @endif
+                        @if(isset($dress->country))
                         <div class="d-flex align-items-center mt-3">
                             <p class="dress-point font-weight-light font-raleway mb-1 text-white w-25 text-center">
                                 Страна
@@ -51,6 +53,7 @@
                             </p>
                             </div>
                         </div>
+                        @endif
 
                         <div class="d-flex align-items-center mt-3">
                             <p class="dress-point font-weight-light font-raleway mb-1 text-white w-25 text-center">
