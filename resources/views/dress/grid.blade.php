@@ -36,16 +36,22 @@
             <img class="img-fluid w-100" src="{{ asset('storage/'.$dress->image)  }}">
             </div>
             <div class="position-absolute bg-white shadow p-3" style="bottom: 0; width: 92%; z-index:100;">
+                @if(isset($dress->title))
                 <h4 class="ml-1 text-left font-caveat font-2x" style="color: #3A3C51; ">{{ $dress->title }}</h4>
-                <div  class="d-flex text-left">
+                @endif
+                <div class="d-flex text-left">
+                    @if(isset($dress->author->name))
                     <div class="mr-3 ml-2">
                         <p class="font-raleway mb-0" style="color: #3A3C51; font-size: 0.8rem;">Дизайнер</p>
                         <h5 class="font-raleway" style="color: #3A3C51; font-weight: 600;  font-size: 0.9rem;">{{ $dress->author->name }}</h5>
                     </div>
+                    @endif
+                    @if(isset($dress->country))
                     <div>
                          <p class="font-raleway mb-0" style="color: #3A3C51; font-size: 0.8rem;">Страна</p>
                         <h5 class="font-raleway" style="color: #3A3C51; font-weight: 600;  font-size: 0.9rem;">{{ $dress->country }}</h5>
                     </div>
+                    @endif
                 </div>            
             </div>   
         </a>
