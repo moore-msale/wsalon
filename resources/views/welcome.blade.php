@@ -79,7 +79,7 @@
                     </a>
                 </div>
                 <div class="col-12 col-md-4 p-0 effect-2" style="transform: translate(-15%, -15%);">
-                    <img src="{{ asset('images/effect-2.png') }}" data-aos="zoom-in" class="img-fluid" alt="">
+                    <img src="{{ asset('images/effect-2.png') }}" data-aos="zoom-in" class="" style="width:120%;" alt="">
                 </div>
                 <div class="col-12 col-xl-4 col-md-4 pl-0 text-sm-right text-center m25  text-xl-left choice-text ">
                     <p class="font-raleway big" data-aos="fade-left">
