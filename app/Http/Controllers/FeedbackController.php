@@ -19,7 +19,7 @@ class FeedbackController extends Controller
             $feed->check = 1;
             $feed->save();
 
-            \Illuminate\Support\Facades\Mail::to('mackinkenny@gmail.com')->send(new Feeder($request->all()));
+            \Illuminate\Support\Facades\Mail::to('Wsalonkg@gmail.com')->send(new Feeder($request->all()));
         }
 
 
