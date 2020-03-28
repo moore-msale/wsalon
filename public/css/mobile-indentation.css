@@ -108,10 +108,12 @@
         transform: translate(1%,0)!important;
     }
     .about-us-text {
-        transform: translate(43%,56%)!important;
+      transform: translateY(67%)!important;
+      left: 32%;
+      font-size: 28px!important;
     }
     .about-us-frame {
-        transform: translate(32%,-170%)!important;
+        transform: translate(72%,-220%)!important;
         font-size: 18px!important;
     }
     .effect-2 {
@@ -216,9 +218,21 @@
 }
 @media screen and (min-width: 410px) and (max-width: 420px) {
     .about-us-frame {
-        transform: translate(32%,-123%)!important;
+        left: 32%;
+        bottom: 37%;
+        transform: translate(0,0)!important;
         font-size: 20px!important
     }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .about-us-frame {
+      transform: translate(35%,-128%)!important;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 200px) {
+  .font-raleway br{
+    display:none;
+  }
 }
 @media only screen and (max-width: 1050px) and (min-width: 900px) {
     /* Welcome page styles */
@@ -263,6 +277,28 @@
     }
 }
 
+
+@media only screen and (max-width:991px) and (min-width:769px){
+  .about-us-frame
+  {
+      transform: translate(24%,-159%)!important;
+      font-size: 19px!important;
+      line-height: 100%!important;
+  }
+  .about-us-text {
+    transform: translate(87%,37%)!important;
+    font-size: 19px!important;
+  }
+}
+
+@media only screen and (min-width:700px) and (max-width:769px){
+  .about-us-text
+  {
+      transform: translate(118%,94%)!important;
+      font-size: 165%!important;
+      line-height: 95%;
+  }
+}
 @media only screen and (max-width: 800px) and (min-width: 700px) {
     /* Welcome page styles */
     .cholpon
@@ -291,18 +327,6 @@
     .call-us
     {
         border-left: 0px;
-    }
-    .about-us-text
-    {
-        transform: translate(43%,42%)!important;
-        font-size: 165%!important;
-        line-height: 95%;
-    }
-    .about-us-frame
-    {
-        transform: translate(19%,-148%)!important;
-        font-size:21px!important;
-        line-height: 100%!important;
     }
     .translateXY-none {
         transform: translate(0, 0)!important;
@@ -390,6 +414,12 @@
     }
     .balloon {
         bottom: 67% !important;
+    }
+    .about-us-frame {
+      left: 32%;
+      bottom: 37%;
+      transform: translate(0,0)!important;
+      font-size: 14px!important;
     }
 }
 @media only screen and (max-width: 1100px) and (min-width: 1000px)

@@ -53,3 +53,9 @@ Route::group($checker, function () {
 
 Route::get('/feed', 'FeedbackController@single')->name('feed');
 Route::post('/feedback_store','FeedbackController@store')->name('feedback_store');
+
+View::composer(['*'],function($view){
+    $seos = \App\Seo::where('url',Request::server('REQUEST_URI'))->first();
+
+    $view->with('seo',$seos);
+});

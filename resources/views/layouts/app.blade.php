@@ -3,12 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="лучшийсвадебныйсалон,свадебныйсалонКыргызстанБишкек,свадьба,свадебныеплатья,дизайнерскиеплатья2020года,торжество,платьемечты,свадебныекороны,эксклюзивныеплатья,свадебныйбукет,живыеГолландскиецветы,бутоньерки,браслет,фата,свадебныехлопоты,свадьбамечты,сборыневесты,незабываемыевпечатления,невеста,свадебнаяфотосессия,свадебныеаксессуары,свадебныеукрашенияручнойработы,свадебныесоветыневестам,креативныеидеинасвадьбу,волшебныйобразневесты,свадебныедетали,свадебныеплатьябишкек,свадебныеуслуги,свадебныеаксессуарыназаказбишкек,более40видовэксклюзивнойфаты,платьясошлейфом,подборобраза,незабываемыепримеркиплатьясмамойподругами,свадебныетренды2020,свадебныеперчатки,сборсвадебногобукета,свадебныетуфли,деньсвадьбы,свадебныепрофессионалы,платьеневесты,платья20192020,кружевныеплатья,платьяручнойработы,легкиеплатьябишкек,дизайнерскиеплатьяводномэкземпляре,легкиесвадебныеплатья,пышныеплатья,платьявпол,платьявевропейскомстиле,Weddingwearbishkek,dariakarlozybishkek,oksanamukhabishkek,ariamofashiongroupbishkek,tesorovbishkeke" />
-    
+    <meta name="google-site-verification" content="ouoxz2Fipa_TY-WlVyrsoHTfrC4FjOHBxQzUCCq5s98" />
+
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>Wsalon - только ты и твоя улыбка!</title>
+    <title>{{isset($seo) ?  $seo->title : 'Wsalon - только ты и твоя улыбка!'}}</title>
+    <meta name="description" content="{{isset($seo) ?  $seo->description : ''}}"/>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KHCXVMJ');</script>
+    <!-- End Google Tag Manager →
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -57,6 +65,11 @@
     @stack('styles')
 </head>
 <body class="bg-white">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHCXVMJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div class="preloader"></div>
 <div class="backdrop" style="position: fixed; top:0%; left:0%; width:100%; height:100%; z-index:999; display: none; background-color:#dedede; opacity:0.4;"></div>
 <?php
@@ -74,7 +87,7 @@ $agent = new \Jenssegers\Agent\Agent();
     @include('partials.footer')
     </div>
     @include('partials.modals.application')
-
+    <a id="back2Top" title="Back to top" href="#"><img src="{{asset('/svg/arleft.svg')}}" alt=""></a>
     <script src="{{ asset('js/app.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/moment-with-locales.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap-material-datetimepicker.js') }}"></script>
@@ -95,8 +108,7 @@ $agent = new \Jenssegers\Agent\Agent();
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker.js') }}"></script>
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker-datetime.js') }}"></script>
     <script src="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/i18n/anypicker-i18n-ru.js') }}"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150904479-1"></script>
+
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -208,6 +220,24 @@ $agent = new \Jenssegers\Agent\Agent();
 </script>
     @endif
 <script>
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+  });
+  $(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+  });
+</script>
+<script>
     $(document).ready(function() {
         $('.preloader').fadeOut('slow').delay(400);
     });
@@ -301,37 +331,43 @@ $agent = new \Jenssegers\Agent\Agent();
             console.log(email.val());
             console.log(date.val());
             console.log(time.val());
-            if(date.val() != '' && phone.val() != '' && name.val() != '' && email.val() != '' && time.val() != '')
+            let phone_count = phone.val();
+            if(date.val() == '' && phone.val() == '' && name.val() == '' && email.val() == '' && time.val() == '')
             {
-                $.ajax({
-                    url: '{{ route('message') }}',
-                    method: 'POST',
-                    data: {
-                        "_token": "{{ csrf_token() }}",
-                        "name": name.val(),
-                        "phone": phone.val(),
-                        "email": email.val(),
-                        "date": date.val(),
-                        "time": time.val()
-                    },
-                    success: data => {
-                        $('#applicationModal').modal('hide');
-                        swal("","Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.","success");
-                        $('#name-' + id).val('');
-                        $('#phone-' + id).val('');
-                        $('#email-' + id).val('');
-                        $('#date-' + id).val('');
-                        $('#input-' + id).val('');
-                    },
-                    error: () => {
-                        console.log(0);
-                        swal("Заявка не отправлена!","Приносим свои извинения","error");
-                    }
-                })
-            }
-            else
-            {
-                swal("","Все поля должны быть заполнены!","error");
+              swal("","Все поля должны быть заполнены!","info");
+
+            }else if(phone_count.length<9 || phone_count.length>17 || /[a-zа-яё]/i.test(phone_count)){
+              swal("","Введите правильный номер телфона!","info");
+
+            }else if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.val()))){
+              swal("","Введите правильный email!","info");
+
+            }else{
+              $.ajax({
+                  url: '{{ route('message') }}',
+                  method: 'POST',
+                  data: {
+                      "_token": "{{ csrf_token() }}",
+                      "name": name.val(),
+                      "phone": phone.val(),
+                      "email": email.val(),
+                      "date": date.val(),
+                      "time": time.val()
+                  },
+                  success: data => {
+                      $('#applicationModal').modal('hide');
+                      swal("","Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.","success");
+                      $('#name-' + id).val('');
+                      $('#phone-' + id).val('');
+                      $('#email-' + id).val('');
+                      $('#date-' + id).val('');
+                      $('#input-' + id).val('');
+                  },
+                  error: () => {
+                      console.log(0);
+                      swal("Заявка не отправлена!","Приносим свои извинения","error");
+                  }
+              })
             }
         })
     </script>

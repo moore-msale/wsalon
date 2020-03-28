@@ -10,15 +10,15 @@ $window = \App\Window::all()->first();
     </p>
 
     <div class="md-form">
-        <input placeholder="Ваше имя*" type="text" name="name" id="name-1" class="form-control text-white">
+        <input placeholder="Ваше имя*" type="text" name="name" id="name-1" class="form-control text-white" required>
     </div>
 
     <div class="md-form">
-        <input placeholder="Ваш телефон*" type="text" name="phone" id="phone-1" class="form-control text-white">
+        <input placeholder="Ваш телефон*" type="text" name="phone" id="phone-1" class="form-control text-white" required>
     </div>
 
     <div class="md-form">
-        <input placeholder="Ваш Email*" type="email" name="email" id="email-1" class="form-control text-white">
+        <input placeholder="Ваш Email*" type="email" name="email" id="email-1" class="form-control text-white" required>
     </div>
 
     <div class="md-form">
