@@ -86,6 +86,7 @@ $agent = new \Jenssegers\Agent\Agent();
 
     @include('partials.footer')
     </div>
+    
     @include('partials.modals.application')
     <a id="back2Top" title="Back to top" href="#"><img src="{{asset('/svg/arleft.svg')}}" alt=""></a>
     <script src="{{ asset('js/app.js') }}"></script>
