@@ -737,3 +737,9 @@ body.modal-open {
     background-color: #e4f2e1;
     color: #000;
 }
+.mo-404-text{
+    font-size: 32px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.05em;
+}

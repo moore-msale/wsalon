@@ -21,7 +21,7 @@ Route::group(['prefix' => '/moo'], function () {
 Route::get('/', function () {
     $main_page = \App\MainPage::all()->first();
     return view('welcome',['content' => $main_page]);
-});
+})->name('main');
 Route::get('/about', function () {
     $content = \App\About::all()->first();
     return view('about',['content' => $content]);
@@ -54,8 +54,13 @@ Route::group($checker, function () {
 Route::get('/feed', 'FeedbackController@single')->name('feed');
 Route::post('/feedback_store','FeedbackController@store')->name('feedback_store');
 
+
 View::composer(['*'],function($view){
     $seos = \App\Seo::where('url',Request::server('REQUEST_URI'))->first();
 
     $view->with('seo',$seos);
+});
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/updateSitemap', 'SitemapController@updateSitemap')->name('updateSitemap');
 });

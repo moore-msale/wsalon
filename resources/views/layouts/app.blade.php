@@ -19,6 +19,7 @@
     <!-- End Google Tag Manager →
 
     <!-- Fonts -->
+    <link rel="shortcut icon" href="{{asset('images/logo-icon.png')}}" />
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -83,8 +84,10 @@ $agent = new \Jenssegers\Agent\Agent();
             @yield('content')
             </div>
         </main>
-
-    @include('partials.footer')
+    
+    @if(!isset($error_handler_404))
+        @include('partials.footer')
+    @endif
     </div>
     
     @include('partials.modals.application')
