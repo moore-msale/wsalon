@@ -278,7 +278,7 @@
                 ?>
                 @foreach(\App\Silhouette::all() as $silhouette)
                     <div class="col-12 col-md-6 col-lg-4 my-3 hover01" data-aos="fade-down">
-                        <a href="{{ route('catalog',['silhouette' => $silhouette->id]) }}" style="text-decoration: none;">
+                        <a href="catalog/{{ str_replace(' ','-',$silhouette->name) }}" style="text-decoration: none;">
                         <div class="card border-0 rounded-0"
                              style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 500px; max-height: 650px;">
                             <div class="position-relative text-center py-5">
