@@ -16,11 +16,25 @@
                                 style="font-size: 11px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA; width:100%;"
                                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                            {!! $content->sort1 !!}
+                                @if(isset($sortBy))
+                                  @if($sortBy == 'author')
+                                    {!! $sortByName !!}
+                                  @else
+                                    {!! $content->sort1 !!}
+                                  @endif
+                                @else
+                                  {!! $content->sort1 !!}
+                                @endif
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             @foreach(\App\Author::all() as $author)
-                            <a class="dropdown-item font-raleway" href="{{ route('catalog',['author' => $author->id]) }}">{{ $author->name }}</a>
+                              @if(isset($sortBy))
+                                @if($sortBy == 'author' && $author->name == $sortByName)
+                                  <a class="dropdown-item font-raleway disabled" href="/catalog/{{str_replace(' ','_',$author->name) }}">{{ $author->name }}</a>
+                                  @continue
+                                @endif
+                              @endif
+                              <a class="dropdown-item font-raleway" href="/catalog/{{str_replace(' ','_',$author->name)}}">{{ $author->name }}</a>
                             @endforeach
                             <a class="dropdown-item font-raleway" href="{{ route('catalog')}}">Сбросить сортировку</a>
                         </div>
@@ -32,11 +46,25 @@
                                 style="font-size: 11px; box-shadow: inset 1px 4px 8px rgba(0, 0, 0, 0.1); background: #FAFAFA; width:100%;"
                                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                            {!! $content->sort2 !!}
+                                @if(isset($sortBy))
+                                  @if($sortBy == 'silhouette')
+                                    {!! $sortByName !!}
+                                  @else
+                                    {!! $content->sort2 !!}
+                                  @endif
+                                @else
+                                  {!! $content->sort2 !!}
+                                @endif
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             @foreach(\App\Silhouette::all() as $silhouette)
-                                <a class="dropdown-item font-raleway" href="{{ route('catalog',['silhouette' => $silhouette->id]) }}">{{ $silhouette->name }}</a>
+                                @if(isset($sortBy))
+                                  @if($sortBy == 'silhouette' && $silhouette->name == $sortByName)
+                                    <a class="dropdown-item font-raleway disabled" href="catalog/{{str_replace(' ','_',$silhouette->name)}}">{{ $silhouette->name }}</a>
+                                    @continue
+                                  @endif
+                                @endif
+                                <a class="dropdown-item font-raleway" href="/catalog/{{str_replace(' ','_',$silhouette->name)}}">{{ $silhouette->name }}</a>
                             @endforeach
                             <a class="dropdown-item font-raleway" href="{{ route('catalog')}}">Сбросить сортировку</a>
                         </div>

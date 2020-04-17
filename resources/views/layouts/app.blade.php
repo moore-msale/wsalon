@@ -10,6 +10,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{isset($seo) ?  $seo->title : 'Wsalon - только ты и твоя улыбка!'}}</title>
     <meta name="description" content="{{isset($seo) ?  $seo->description : ''}}"/>
+    <meta property="og:title" content="{{isset($seo) ?  $seo->title : 'Wsalon - только ты и твоя улыбка!'}}" />
+    <meta property="og:description" content="{{isset($seo) ?  $seo->description : ''}}" />
+    <meta property="og:image" content="{{asset(isset($seo) ?  'storage/'.$seo->image : '/images/wsalon-og.jpeg')}}" />
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -37,7 +40,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('time/nehakadam-AnyPicker-b59ef38/dist/anypicker-all.min.css') }}">
-
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "wsalon",
+      "url": "https://wsalon-showroom.com/",
+      "logo": "https://wsalon-showroom.com/images/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул.Московская 150",
+        "addressLocality": "г.Бишкек",
+        "addressRegion": "Кыргызстан",
+        "availableLanguage": "Russian"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+996 770 001 188",
+        "contactType": "обслуживание клиентов",
+        "areaServed": "KG",
+        "availableLanguage": [
+        "Русский",
+        "Кыргызский"
+        ]
+      }
+    }
+    </script>
     <style>
         body
         {
@@ -84,12 +112,12 @@ $agent = new \Jenssegers\Agent\Agent();
             @yield('content')
             </div>
         </main>
-    
+
     @if(!isset($error_handler_404))
         @include('partials.footer')
     @endif
     </div>
-    
+
     @include('partials.modals.application')
     <a id="back2Top" title="Back to top" href="#"><img src="{{asset('/svg/arleft.svg')}}" alt=""></a>
     <script src="{{ asset('js/app.js') }}"></script>
@@ -336,12 +364,12 @@ $agent = new \Jenssegers\Agent\Agent();
             console.log(date.val());
             console.log(time.val());
             let phone_count = phone.val();
-            if(date.val() == '' && phone.val() == '' && name.val() == '' && email.val() == '' && time.val() == '')
+            if(date.val() == '' || phone.val() == '' || name.val() == '' || email.val() == '' || time.val() == '')
             {
               swal("","Все поля должны быть заполнены!","info");
 
             }else if(phone_count.length<9 || phone_count.length>17 || /[a-zа-яё]/i.test(phone_count)){
-              swal("","Введите правильный номер телфона!","info");
+              swal("","Введите правильный номер телефона!","info");
 
             }else if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.val()))){
               swal("","Введите правильный email!","info");
@@ -386,39 +414,45 @@ $agent = new \Jenssegers\Agent\Agent();
             let date = $('#date');
             let id = $('#dress-id');
             let time = $('#input-' + num);
-            if(time.val() != '' && date.val() != '' && phone.val() != '' && name.val() != '' && email.val() != '') {
+            let phone_count = phone.val();
 
-                $.ajax({
-                    url: '{{ route('message2') }}',
-                    method: 'POST',
-                    data: {
-                        "_token": "{{ csrf_token() }}",
-                        "name": name.val(),
-                        "phone": phone.val(),
-                        "email": email.val(),
-                        "date": date.val(),
-                        "time": time.val(),
-                        "id": id.val(),
-                    },
-                    success: data => {
-                        $('#bidModal').modal('hide');
-                        swal("", "Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.", "success");
-                        $('#name').val('');
-                        $('#phone').val('');
-                        $('#email').val('');
-                        $('#date').val('');
-                        $('#dress-id').val('');
-                        $('#input-' + num).val('');
-                    },
-                    error: () => {
-                        console.log(0);
-                        swal("Заявка не отправлена!", "Приносим свои извинения", "error");
-                    }
-                })
-            }
-            else
-            {
-                swal("","Все поля должны быть заполнены!","error");
+            if(time.val() == '' || date.val() == '' || phone.val() == '' || name.val() == '' || email.val() == '') {
+              swal("","Все поля должны быть заполнены!","info");
+
+            }else if(phone_count.length<9 || phone_count.length>17 || /[a-zа-яё]/i.test(phone_count)){
+              swal("","Введите правильный номер телефона!","info");
+
+            }else if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.val()))){
+              swal("","Введите правильный email!","info");
+
+            }else{
+              $.ajax({
+                  url: '{{ route('message2') }}',
+                  method: 'POST',
+                  data: {
+                      "_token": "{{ csrf_token() }}",
+                      "name": name.val(),
+                      "phone": phone.val(),
+                      "email": email.val(),
+                      "date": date.val(),
+                      "time": time.val(),
+                      "id": id.val(),
+                  },
+                  success: data => {
+                      $('#bidModal').modal('hide');
+                      swal("", "Спасибо за Вашу заинтересованность. В ближайшее время с Вами свяжется одна из наших феечек для подтверждения записи.", "success");
+                      $('#name').val('');
+                      $('#phone').val('');
+                      $('#email').val('');
+                      $('#date').val('');
+                      $('#dress-id').val('');
+                      $('#input-' + num).val('');
+                  },
+                  error: () => {
+                      console.log(0);
+                      swal("Заявка не отправлена!", "Приносим свои извинения", "error");
+                  }
+              })
             }
         })
     </script>
