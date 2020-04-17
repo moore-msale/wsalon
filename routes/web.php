@@ -33,7 +33,7 @@ Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/catalog', 'DressController@catalog')->name('catalog');
-Route::get('/catalog/{title}', 'DressController@catalogSort')->name('catalogSort')->middleware('decodeurl');
+Route::get('/catalog/{title}', 'DressController@catalogSort')->name('catalogSort');
 //Route::get('/catalog', function () {
 //    return view('dress-catalog',['dresses' => \App\Dress::all()]);
 //});
