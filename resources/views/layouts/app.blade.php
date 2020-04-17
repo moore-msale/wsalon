@@ -12,7 +12,7 @@
     <meta name="description" content="{{isset($seo) ?  $seo->description : ''}}"/>
     <meta property="og:title" content="{{isset($seo) ?  $seo->title : 'Wsalon - только ты и твоя улыбка!'}}" />
     <meta property="og:description" content="{{isset($seo) ?  $seo->description : ''}}" />
-    <meta property="og:image" content="{{asset(isset($seo) ?  'storage/'.$seo->image : 'images/wsalon-og.jpeg')}}" />
+    <meta property="og:image:secure_url" content="{{asset(isset($seo) ?  'storage/'.$seo->image : 'images/wsalon-og.jpeg')}}" />
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
