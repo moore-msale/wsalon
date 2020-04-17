@@ -61,6 +61,8 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'clearcache' => \App\Http\Middleware\ClearCache::class,
+        'decodeurl' => \App\Http\Middleware\DecodeUrls::class,
+
     ];
 
     /**
