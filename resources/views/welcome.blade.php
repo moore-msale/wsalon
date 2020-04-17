@@ -278,7 +278,7 @@
                 ?>
                 @foreach(\App\Silhouette::all() as $silhouette)
                     <div class="col-12 col-md-6 col-lg-4 my-3 hover01" data-aos="fade-down">
-                        <a href="catalog/{{ str_replace(' ','-',$silhouette->name) }}" style="text-decoration: none;">
+                        <a href="catalog/{{ str_replace(' ','-',ruToEnLetter($silhouette->name)) }}" style="text-decoration: none;">
                         <div class="card border-0 rounded-0"
                              style="background: radial-gradient(343.50px at 50% 50%, #51546D 0%, #3A3C51 100%); min-height: 500px; max-height: 650px;">
                             <div class="position-relative text-center py-5">
@@ -369,7 +369,7 @@
                     <div id="dresses" class="owl-carousel owl-theme dresses-car">
                         @foreach(\App\Dress::where('top',1)->get() as $author)
                             <div class="item authors p-1" data-aos="fade-down">
-                                <a href="{{ route('dress', $author->id) }}" style="text-decoration: none; color:black;">
+                                <a href="/dress/{{str_replace(' ','_',ruToEnLetter($author->title)) }}" style="text-decoration: none; color:black;">
                                 <div class="card border-0">
                                     <div class="card-img-top">
                                         <img style="height:390px;" src="{{ asset('storage/'.$author->image) }}" class="img-fluid d-lg-block d-none" alt="">

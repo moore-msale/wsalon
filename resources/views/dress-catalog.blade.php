@@ -30,11 +30,11 @@
                             @foreach(\App\Author::all() as $author)
                               @if(isset($sortBy))
                                 @if($sortBy == 'author' && $author->name == $sortByName)
-                                  <a class="dropdown-item font-raleway disabled" href="/catalog/{{str_replace(' ','_',$author->name) }}">{{ $author->name }}</a>
+                                  <a class="dropdown-item font-raleway disabled" href="/catalog/{{str_replace(' ','_',ruToEnLetter($author->name)) }}">{{ $author->name }}</a>
                                   @continue
                                 @endif
                               @endif
-                              <a class="dropdown-item font-raleway" href="/catalog/{{str_replace(' ','_',$author->name)}}">{{ $author->name }}</a>
+                              <a class="dropdown-item font-raleway" href="/catalog/{{str_replace(' ','_',ruToEnLetter($author->name))}}">{{ $author->name }}</a>
                             @endforeach
                             <a class="dropdown-item font-raleway" href="{{ route('catalog')}}">Сбросить сортировку</a>
                         </div>
@@ -60,11 +60,11 @@
                             @foreach(\App\Silhouette::all() as $silhouette)
                                 @if(isset($sortBy))
                                   @if($sortBy == 'silhouette' && $silhouette->name == $sortByName)
-                                    <a class="dropdown-item font-raleway disabled" href="catalog/{{str_replace(' ','_',$silhouette->name)}}">{{ $silhouette->name }}</a>
+                                    <a class="dropdown-item font-raleway disabled" href="catalog/{{str_replace(' ','_',ruToEnLetter($silhouette->name))}}">{{ $silhouette->name }}</a>
                                     @continue
                                   @endif
                                 @endif
-                                <a class="dropdown-item font-raleway" href="/catalog/{{str_replace(' ','_',$silhouette->name)}}">{{ $silhouette->name }}</a>
+                                <a class="dropdown-item font-raleway" href="/catalog/{{str_replace(' ','_',ruToEnLetter($silhouette->name))}}">{{ $silhouette->name }}</a>
                             @endforeach
                             <a class="dropdown-item font-raleway" href="{{ route('catalog')}}">Сбросить сортировку</a>
                         </div>
