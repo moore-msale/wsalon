@@ -57,7 +57,7 @@ Route::post('/feedback_store','FeedbackController@store')->name('feedback_store'
 
 View::composer(['*'],function($view){
     $search = urldecode(Request::server('REQUEST_URI'));
-    $seos = \App\Seo::where('url',$search))->first();
+    $seos = \App\Seo::where('url',$search)->first();
 
     $view->with('seo',$seos);
 });
