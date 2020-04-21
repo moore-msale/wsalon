@@ -30,8 +30,8 @@ class DressController extends Controller
         return view('dress-catalog',['dresses' => $dresses, 'content' => $content]);
     }
     public function catalogSort($title){
-      $title = str_replace('-',' ',$title);
       $word = Slug::where('word',$title)->first();
+      $title = str_replace('-',' ',$title);
       if($word){
         $title = $word->from;
       }
