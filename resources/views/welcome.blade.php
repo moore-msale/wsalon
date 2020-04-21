@@ -369,7 +369,7 @@
                     <div id="dresses" class="owl-carousel owl-theme dresses-car">
                         @foreach(\App\Dress::where('top',1)->get() as $author)
                             <div class="item authors p-1" data-aos="fade-down">
-                                <a href="/dress/{{str_replace(' ','_',ruToEnLetter($author->title)) }}" style="text-decoration: none; color:black;">
+                                <a href="/dress/{{str_replace(' ','-',ruToEnLetter($author->title)) }}" style="text-decoration: none; color:black;">
                                 <div class="card border-0">
                                     <div class="card-img-top">
                                         <img style="height:390px;" src="{{ asset('storage/'.$author->image) }}" class="img-fluid d-lg-block d-none" alt="">

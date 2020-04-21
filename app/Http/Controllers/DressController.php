@@ -6,6 +6,8 @@ use App\Catalog;
 use App\Dress;
 use App\Silhouette;
 use App\Author;
+use App\Slug;
+
 
 use Illuminate\Http\Request;
 
@@ -28,8 +30,11 @@ class DressController extends Controller
         return view('dress-catalog',['dresses' => $dresses, 'content' => $content]);
     }
     public function catalogSort($title){
-      $title = str_replace('_',' ',enToRuLetter($title));
-      
+      $title = str_replace('-',' ',$title);
+      $word = Slug::where('word',$title)->first();
+      if($word){
+        $title = $word->from;
+      }
       $author = Author::where('name',$title)->first();
       $silhouette = Silhouette::where('name',$title)->first();
       $dresses = Dress::all();

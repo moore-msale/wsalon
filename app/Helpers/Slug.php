@@ -11,7 +11,7 @@
             'Z','I','Y','K','L','M','N','O','P','R','S','T','U',
             'F' ,'H' ,'Ts' ,'Ch','Sh' ,'Sht' ,'A' ,'Y' ,'Yu' ,'Ya' );
 
-    $text = str_replace($cyr,$lat, $text);
+    $text = mb_strtolower(str_replace($cyr,$lat, $text));
 
     if($text != $old){
       $slug = Slug::where('word',$text)->first();
