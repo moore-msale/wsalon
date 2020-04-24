@@ -1,8 +1,7 @@
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
-        CheckCaseOnly On
-        CheckSpelling On
+
     </IfModule>
 
     RewriteEngine on
