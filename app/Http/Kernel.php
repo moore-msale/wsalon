@@ -61,6 +61,9 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'clearcache' => \App\Http\Middleware\ClearCache::class,
+        'lowercaseroutes' => \App\Http\Middleware\LowercaseRoutes::class,
+        'changeidtoname' => \App\Http\Middleware\ChangeIDToName::class,
+        'changeunderscorewithdash' => \App\Http\Middleware\ChangeUnderscoreWithDash::class,
     ];
 
     /**

@@ -13,10 +13,24 @@ use Illuminate\Http\Request;
 
 class DressController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('lowercaseroutes');
+        $this->middleware('changeunderscorewithdash');
+        $this->middleware('changeidtoname');      
+    }
+
     public function index($title)
     {
-        $title = str_replace('_',' ',enToRuLetter($title));
+        $title = str_replace('-',' ',$title);
+        $word = Slug::where('word',$title)->first();
+        if($word){
+          $title = $word->from;
+        }
         $dress = Dress::where('title',$title)->first();
+        if(!$dress){
+          abort(404);
+        }
         return view('dress-page',['dress' => $dress]);
     }
 
