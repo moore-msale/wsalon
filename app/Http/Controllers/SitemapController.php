@@ -9,7 +9,6 @@ class SitemapController extends Controller
 {
     public function updateSitemap(){
         SitemapGenerator::create('https://wsalon-showroom.com/')->writeToFile('sitemap.xml');
-
-        return redirect()->back();
+        return redirect('/moo');
     }
 }
