@@ -59,7 +59,7 @@
                     <img src="{{ asset('images/effect-1.png') }}" class="d-block ml-auto" width="120" alt="">
                     <img src="{{ asset('svg/tho-love.svg') }}" class="position-absolute" style="left: 30%; bottom: 25%;" alt="">
 
-                    <h2 class="font-alex mt-4 font-4x font-weight-bold"  data-aos="fade-up">Wedding Salon</h2>
+                    <h2 class="font-alex mt-4 font-4x font-weight-bold"  data-aos="fade-up">Wedding Salon<h2/>
                     <img src="{{ asset('svg/mimi.svg') }}" class="position-absolute right-3 d-md-block d-none" style="right: -3%; bottom: -10%;" alt="">
 
                 </div>
@@ -361,7 +361,7 @@
             <img src="{{ asset('svg/OBJECTS.svg') }}" class="love-note position-absolute right-3" alt="" style="width: 15%; right: -10%; top: -5%;">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="font-caveat font-4x text-center" data-aos="fade-down">{!!  $content->title_section8 !!}</h2>
+                    <p class="font-caveat font-4x text-center" data-aos="fade-down">{!!  $content->title_section8 !!}<p/>
                 </div>
             </div>
             <div class="row">
@@ -397,7 +397,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12">
-                    <h2 class="text-center font-caveat font-4x" style="line-height:1;" data-aos="fade-up">{!!  $content->title_section9 !!}</h2>
+                    <p class="text-center font-caveat font-4x" style="line-height:1;" data-aos="fade-up">{!!  $content->title_section9 !!}<p/>
                 </div>
             </div>
             <div class="row">
@@ -421,7 +421,7 @@
             <img src="{{ asset('svg/coffeeMaker.svg') }}" data-aos="fade-down-right" class="coffeeMaker position-absolute" alt="" style="width: 15%; left: -10%; top: 1%;">
             <div class="row align-items-center mar-img">
                 <div class="col-12 col-md-5 offset-1">
-                    <h2 class="font-caveat font-3x" style="line-height: 100%;" data-aos="fade-down-right">{!!  $content->title_section10 !!}</h2>
+                    <p class="font-caveat font-3x" style="line-height: 100%;" data-aos="fade-down-right">{!!  $content->title_section10 !!}<p/>
                     <p class="font-raleway big" data-aos="fade-down-right">
                         {!!  $content->text1_section10 !!}
                     </p>
@@ -488,7 +488,7 @@
                                     <div id="feed-carousel" class="owl-carousel">
                                         @foreach(\App\Feed::where('active',1)->get() as $feed)
                                         <div class="item">
-                                            <h2 class="font-caveat font-3x" style="color:#000000;">{{ $feed->title }}</h2>
+                                            <p class="font-caveat font-3x" style="color:#000000;">{{ $feed->title }}<p/>
                                             <p class="font-raleway" style="color:#000000;">
                                                 {{ $feed->feed }}
                                             </p>
@@ -510,7 +510,7 @@
                         </div>
 
                         {{--<div class="item">--}}
-                            {{--<h2 class="font-caveat font-3x">Лучший свадебный салон в городе</h2>--}}
+                            {{--<p class="font-caveat font-3x">Лучший свадебный салон в городе<p/>--}}
                             {{--<p class="font-raleway big">--}}
                                 {{--Кофе - это не всё, чем может похвастаться--}}
                                 {{--<br>наш кофе поинт. В уютной атмосфере вы--}}
@@ -523,7 +523,7 @@
                             {{--<h3 class="font-raleway pb-2 pt-2" style="font-weight: 600; text-transform: uppercase; font-size:15px;">Айгуль Караева</h3>--}}
                         {{--</div>--}}
                         {{--<div class="item">--}}
-                            {{--<h2 class="font-caveat font-3x">Лучший свадебный салон в городе</h2>--}}
+                            {{--<p class="font-caveat font-3x">Лучший свадебный салон в городе<p/>--}}
                             {{--<p class="font-raleway big">--}}
                                 {{--Кофе - это не всё, чем может похвастаться--}}
                                 {{--<br>наш кофе поинт. В уютной атмосфере вы--}}
