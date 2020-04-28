@@ -6,11 +6,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-12">
-                <p class="font-caveat font-3x  text-md-left text-center" data-aos="fade-down-right">
+                <h1 class="font-caveat font-3x  text-md-left text-center" data-aos="fade-down-right">
                     <img src="{{ asset('svg/flaw.svg') }}" class="img-fluid position-relative"
                          style="transform: translate(-80%, -80%);" alt="">
                     {!! $content->title !!}
-                </p>
+                </h1>
 
 
             </div>

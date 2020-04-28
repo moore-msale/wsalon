@@ -7,7 +7,7 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-4 col-12">
-                    <h2 class="font-caveat font-3x text-center">{!! $content->title !!}</h2>
+                    <h1 class="font-caveat font-3x text-center">{!! $content->title !!}</h1>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-12">

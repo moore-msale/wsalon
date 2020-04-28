@@ -54,7 +54,7 @@
                     <img src="{{ asset('images/logo.png') }}" class="logo" data-aos="fade-down" alt="">
                     <img src="{{ asset('svg/flours.svg') }}" class="position-absolute right-3" style="right: -3%; top: 10%;" alt="">
                     <img src="{{ asset('images/heart.png') }}" class="position-absolute w-25" style="left: -30%;" alt="">
-                    <p class="font-caveat mt-5 h1" data-aos="fade-left">{!!  $content->text2_section1 !!}</p>
+                    <h1 class="font-caveat mt-5 h1" data-aos="fade-left">{!!  $content->text2_section1 !!}</h1>
                     <img src="{{ asset('images/mini-hr.png') }}" width="70" alt="">
                     <img src="{{ asset('images/effect-1.png') }}" class="d-block ml-auto" width="120" alt="">
                     <img src="{{ asset('svg/tho-love.svg') }}" class="position-absolute" style="left: 30%; bottom: 25%;" alt="">

@@ -11,7 +11,7 @@
         <div class="container ">
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-12 py-2">
-                    <h2 class="font-caveat font-3x text-center w-100">Здравствуйте, {{ $feed->name }}</h2>
+                    <h1 class="font-caveat font-3x text-center w-100">Здравствуйте, {{ $feed->name }}</h1>
                     <p class="font-caveat font-2x text-center w-100">Оставьте нам свой отзыв о нашем салоне</p>
                 </div>
             </div>

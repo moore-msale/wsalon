@@ -10,7 +10,7 @@
                     </div>
                 </a>
                 <div class="col-lg-4 col-8 text-center">
-                    <h2 class="font-caveat font-3x">{{ $dress->title }}</h2>
+                    <h1 class="font-caveat font-3x">{{ $dress->title }}</h1>
                 </div>
             </div>
         </div>
