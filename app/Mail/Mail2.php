@@ -28,7 +28,6 @@ class Mail2 extends Mailable
      */
     public function build()
     {
-        return $this->from('da@to-moore.com')->subject('Новая заявка с сайта
-')->markdown('mail.text2');
+        return $this->from('wsalonform@gmail.com')->subject('Новая заявка с сайта')->markdown('mail.text2');
     }
 }

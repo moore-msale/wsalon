@@ -28,7 +28,6 @@ class Feeder extends Mailable
      */
     public function build()
     {
-        return $this->from('da@to-moore.com')->subject('Новый отзыв с сайта
-')->markdown('mail.feed');
+        return $this->from('wsalonform@gmail.com')->subject('Новый отзыв с сайта')->markdown('mail.feed');
     }
 }
